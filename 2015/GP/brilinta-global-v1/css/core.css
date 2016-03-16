@@ -1,0 +1,338 @@
+
+/**********************************/
+/*** 
+/*** START: turn on to aid development
+/*** 
+/**********************************/
+
+/*.pips-container a,
+.btn-show-overlay,
+.btn-show-menu, 
+.big-cta,
+.choose-story-link {
+    background: red;
+    opacity: 0.4;
+}*/
+
+#content .video-link {
+    font-size: 26px;
+    line-height: 60px;
+    color: black;
+}
+
+/**********************************/
+/*** 
+/*** END: turn on to aid development
+/*** 
+/**********************************/
+
+
+/************/
+
+
+body {
+    background: #f05133;
+}
+
+a {
+    text-decoration: none;
+}
+
+#viewport {
+    position: relative;
+    overflow: hidden;
+    width: 1024px;
+    height: 768px;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transition: all .3s ease-in;
+}
+
+#content.menu-displayed {
+    -webkit-transition: all .2s ease-out;
+    -webkit-transform: translate3d(-323px,0,0);
+}
+
+.swiper-slide {
+    background-size: cover !important;
+    width: 1024px;
+    height: 768px;
+    position: relative;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.reveal .pips-container {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 13px;
+}
+
+.reveal .pips-container li {
+    height: 20px;
+    width: 35px;
+    margin-bottom: 2.6px;
+}
+
+.reveal .pips-container li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+} 
+
+.reveal .fragment {
+    position: absolute;
+    background-size: cover;
+    background-repeat: none;
+    background-position: 0 0;
+}
+
+.reveal .smoke-and-mirrors {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    z-index: 1;
+    right: 0;
+    position: absolute;
+}
+
+.reveal .choose-story-link {
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 60px;
+    right: 255px;
+    top: 0;
+    z-index: 10;    
+}
+
+.video-player {
+    width: 1024px;
+    height: 576px;
+    margin-top: 96px;
+}
+
+/**********************/
+/** START: overrides
+/**********************/
+
+.reveal .slides > section, 
+.reveal .slides > section > section {
+    padding: 0;
+}
+
+/**********************/
+/** END: overrides
+/**********************/
+
+
+/**********************/
+/** START: off canvas
+/**********************/
+
+#content .btn-show-menu {
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 60px;
+    right: 45px;
+    top: 0;
+    z-index: 10;
+}
+
+#menu-container {
+    width: 323px;
+    height: 768px;
+    position: absolute;
+    right: -323px;
+    top: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    z-index: 100;
+}
+
+#menu-container .menu-title {
+    display: block;
+    width: 310px;
+    margin: 15px 0 0 15px;
+}
+
+#menu-container h2 {
+    color: #fff;
+    font-family: Helvetica;
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin: 30px 15px 0 48px;
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 15px;
+    line-height: .8em;
+}
+
+#menu-container .menu-link {
+    display: block;
+    position: relative;
+}
+
+#menu-container .menu-link span {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 12px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    line-height: 28px;
+    font-weight: 100;
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+#menu-container .menu-link img {
+    width: 278px;
+    margin: 15px 0 0 47px;
+}
+
+#menu-container .menu-link:last-child {
+    margin-bottom: 30px;
+}
+
+/**********************/
+/** END: off canvas
+/**********************/
+
+/**********************/
+/** START: overlay
+/**********************/
+
+#content .btn-show-overlay {
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 60px;
+    top: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#content .pi-link {
+    right: 150px;
+}
+
+#content .ref-link {
+    right: 203px;
+}
+
+#content .info-link {
+    right: 98px;
+}
+
+#content .video-link {
+    right: 55px;
+    top: 80px;
+    width: 200px;
+}
+
+#overlay-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    cursor: pointer;
+    display: none;
+    background-size: contain;
+    background-position: 0 0;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+#overlay-container.no-interaction {
+    background-color: #000;
+    opacity: 0.8;
+}
+
+/**********************/
+/** END: overlay stuff
+/**********************/
+
+
+
+
+
+
+/***************************************************/
+/***
+/*** START: Reveal js framework default styles
+/***
+/***************************************************/
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: #13daec; }
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: #13daec; }
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #13daec; }
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: #13daec; }
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #71e9f4; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #71e9f4; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #71e9f4; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #71e9f4; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+  background: #13daec;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+/*********************************************
+ * SLIDE NUMBER
+ *********************************************/
+.reveal .slide-number {
+  color: #13daec; }
+
+/***************************************************/
+/***
+/*** END: Reveal js framework default styles
+/***
+/***************************************************/
+

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="BRILINTA - Improved outcomes, start here">
+<title>BRILINTA - Improved outcomes, start here</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style type="text/css">
+	/*.slide-bg { background:url('img/background_33.png') 0 0 no-repeat; }*/
+	.lib { height:305px; margin-top:100px;  }
+	.lib li { float:left; width:220px; height:inherit; position:relative; background:url('img/pdfs.png') 0 0 no-repeat; background-size:100% auto; line-height:20px; }
+	.lib li:nth-child(2) { margin:0 60px; background-position-y: -618px; }
+	.lib li:last-child { background-position-y: -309px; }
+	li > span { position:absolute; top:-60px; left:0; width:inherit;  }
+	
+</style> 
+</head>
+<body>
+	<section class="slide-width">
+ 		<div class="slide-bg">
+			<header>
+            	<ul class="controls">
+                	<!--<li class="ref"><i>REF</i></li>-->
+                    <li class="pi"><i>PI</i></li>
+                </ul>
+          	</header>
+            <article class="contents">
+                <h1 class="single">Library</h1>
+				<ul class="lib">
+                	<li><span>New Zealand Data Sheet</span></li>
+                    <li><span>Wallentin L, et al. New England Journal 2009</span></li>
+                    <li><span>PLATO Genetics - Wallentin</span></li>
+                </ul>
+              
+                
+                <div class="logo"></div>
+            </article>
+   		</div>
+	</section>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/touchy.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script type="text/javascript">
+	$( function(){
+		function goToSlide(btn, url){
+			$('.'+btn).on('tap', function(){
+				document.location = 'veeva:gotoSlide('+url+', BRIREF)';
+			});
+		}
+	
+		goToSlide('lib > li:first-child', 'BrilintaDatasheet.zip');
+		goToSlide('lib > li:nth-child(2)', 'Wallentin2009PlatoNE.zip');
+		goToSlide('lib > li:last-child', 'PlatoGeneticsWallentin.zip');
+	
+	})
+</script>
+</body>
+</html>

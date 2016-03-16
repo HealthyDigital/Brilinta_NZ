@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="BRILINTA - Improved outcomes, start here">
+<title>BRILINTA - Improved outcomes, start here</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style type="text/css">
+	.slide-bg { background:url('img/brilinta_pic.jpg') 0 0 no-repeat; background-size:100% auto; }
+	.slide-width .controls > li { color:#ffffff; border-color:#ffffff; }
+	.intro { font-family: 'CodeProLC'; position:absolute; top:220px; width:500px; font-size:24px; line-height:26px; }
+	.intro h2 { font-family: 'CodeProLight'; color:#fff; font-size:46px; line-height:40px; margin-bottom:25px; }
+	h2 strong { display:block; font-family: 'CodeBold'; }
+	.start { display:block; font-family: 'Helvetica'; font-size:18px; margin:55px 0 0 5px; border:2px solid #fff; text-align:center; position:relative; }
+		.start, .start > strong { width:85px; height:85px; }
+		.start > i { display:table-cell; height:inherit; width:inherit; vertical-align:middle;  }
+		.start > strong { position:absolute; }
+		.start > strong { left:-1px; top:-1px; border:1px solid #fff;  -webkit-transform:scale(1.2, 1.2);  }
+		.start > .last { left:-2px; top:-2px; border:2px solid #fff;  -webkit-animation: glow 1s ease-out infinite; }
+		@-webkit-keyframes glow {
+			from { -webkit-transform:scale(0.5, 0.5); opacity:1;}
+			to { -webkit-transform:scale(1.8, 1.8); opacity:0; }
+		}
+	
+	.contents .logo { left:-55px; background-position-x: 0; width:1024px;  }
+</style> 
+</head>
+<body>
+	<section class="slide-width">
+ 		<div class="slide-bg">
+			<header>
+            	<ul class="controls">
+                	<li class="ref"><i>REF</i></li>
+                    <li class="pi"><i>PI</i></li>
+                </ul>
+          	</header>
+            <article class="contents white">
+            	<div class="intro">
+                    <h2>IMPROVED OUTCOMES <strong>START HERE</strong></h2>
+                    <p>In patients with ACS, BRILINTA<br />
+    reduces the combined risk of CV<br />
+    death, MI or stroke vs. clopidogrel<br />
+    at 12 months (primary composite<br />
+    endpoint: ARR 1.9%; RRR; 16%; p&lt;0.001)<sup>1</sup></p>
+    <span class="start"><strong>&nbsp;</strong><i>START</i><strong class="last">&nbsp;</strong></span></div>
+    <div class="logo"></div>
+            </article>
+         
+   		</div>
+         <!--References -->
+            <div class="popup">
+                <div><span class="close"></span>
+                    <h2 class="white">REFERENCE</h2>
+                    <ul class="white">
+                        <li>Wallentin L, et al. N Engl J Med 2009; 361: 1045–57.</li>
+                    </ul>
+                </div>
+            </div>
+	</section>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/touchy.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script type="text/javascript">
+	$( function(){
+		$('.start').on('tap', function(){
+			document.location = 'veeva:gotoSlide(BrilintaOutcomes03.zip)';
+		})
+		
+	})
+</script>
+</body>
+</html>

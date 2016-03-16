@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="BRILINTA - Improved outcomes, start here">
+<title>BRILINTA - Improved outcomes, start here</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style type="text/css">
+	.slide-bg { background:url('img/1_background.png') 0 0 no-repeat; }
+	 .bg-img { width:800px; height:460px; background:url('img/table.png') 0 0 no-repeat; margin-top:15px; position:relative; }
+	.footnote .s18 { font-size:18px; color:#e76905; margin-bottom: 20px; }
+	.footnote { bottom: 5px; line-height:16px; width:640px; }
+	.key { right:0px; top:8px; width:125px; }
+		.key li { width:inherit; height:105px; margin-bottom:60px; position:relative; line-height:18px;  }
+		.key li i { position:absolute; width:inherit; right:-110px; top:45px;   }
+	
+	.s18 { font-size:18px; }
+	.slide-bg, .bg-img, .key li { background-size:100% auto; }
+	.slide-width .subslide { right:-153px; top:395px; }
+	
+</style>
+</head>
+<body>
+	<section class="slide-width">
+ 		<div class="slide-bg">
+			<header>
+            	<ul class="controls">
+                	<!--<li class="stopwatch"></li>-->
+                	<li class="ref"><i>REF</i></li>
+                    <li class="pi"><i>PI</i></li>
+                </ul>
+          	</header>
+            <article class="contents four">
+                <h1><i>WHEN their pathway is not<br />
+dEfIned, HOW DO YOU GIVE<br />
+THEM&nbsp;THE BEST START TOWARDS<br />
+IMPROVED OUTCOMES?</i></h1>
+                <div class="bg-img">
+                    <ul class="key code">
+                        <li><i>STEMI<br />PCI*</i></li>
+                        <li><i>NSTE ACS<br />PCI*</i></li>
+                        <li><i>NSTE ACS<br />NON INVASIVE</i></li>
+                    </ul>
+				</div>
+                  <div class="logo"></div>
+                  <div class="footnote">
+                  <p class="s18">Adapted from ESC-Guidelines ACCA Toolkit<sup>1</sup></p>
+                  <p>*Some STEMI patients receive thrombolysis and/or are treated medically only and some<br />
+NSTE-ACS patients undergo CABG</p></div>
+            </article>
+           
+   		</div>
+        
+        <!--References -->
+ 		<div class="popup">
+    		<div><span class="close"></span>
+                <h2 class="white">REFERENCE</h2>
+                <ul class="white">
+                    <li>Hamm CW, et al. Eur Heart J 2011; 32:2999-3054.</li>
+                </ul>
+      		</div>
+		</div>
+	</section>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/touchy.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script type="text/javascript">
+	$( function(){
+	
+		function goToSlide(btn, url){
+			$('.'+btn).on('tap', function(){
+				document.location = 'veeva:gotoSlide('+url+')';
+			});
+		}
+		
+		goToSlide('key > li:first-child','BrilintaSpecialist03b.zip');
+		goToSlide('key > li:nth-child(2)','BrilintaSpecialist09.zip');
+		goToSlide('key > li:last-child','BrilintaSpecialist14.zip');
+		
+	})
+</script>
+</body>
+</html>

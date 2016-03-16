@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Brilinta</title>
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="lib/css/reveal.min.css">
+        <link rel="stylesheet" href="css/core.css">
+        <link rel="stylesheet" href="css/intro.css">
+    </head>
+
+    <body>
+
+        <!-- START: viewport -->
+        <div id="viewport">
+
+            <!-- START: content -->
+            <div id="content">
+
+                <!-- START: reveal -->
+                <div class="reveal">
+
+                    <!-- START: slides. Any section element inside of this container is displayed as a slide -->
+                    <div class="slides">
+
+                        <section>
+                            <div class="swiper-slide" data-slide="intro-0-0" data-type="jpg" data-no-choose-story="true">
+                                <a class="start-cta btn-goto pulse-ring" href="#/1">&nbsp;</a>
+                            </div>
+                        </section>
+
+                        <section>
+                            <section>
+                                <div class="swiper-slide" data-slide="intro-1-0" data-no-choose-story="true">
+                                    <a class="big-cta red-cta btn-goto" href="red.html">&nbsp;</a>
+                                    <a class="big-cta orange-cta btn-goto" href="orange.html">&nbsp;</a>
+                                    <a class="big-cta yellow-cta btn-goto" href="yellow.html">&nbsp;</a>
+                                    <a class="big-cta red-summary-cta btn-goto" href="red.html#/4">&nbsp;</a>
+                                    <a class="big-cta orange-summary-cta btn-goto" href="orange.html#/4">&nbsp;</a>
+                                    <a class="big-cta yellow-summary-cta btn-goto" href="yellow.html#/4">&nbsp;</a>
+                                </div>
+                            </section>
+
+                            <section>
+                                <div class="swiper-slide" data-slide="intro-1-1" data-no-choose-story="true"></div>
+                            </section>
+
+                        </section>
+
+                    </div><!-- END: slides -->
+
+                </div><!-- END: reveal -->
+
+                <!-- START: menu-container -->
+                <div id="menu-container" data-generate="false">
+                    <img class="menu-title" src="img/menu-title.png">
+                    <h2>Home</h2>
+                    <a class="menu-link" href="brilinta-global-v1.html#/0/0"><span>1.0</span><img src="img/menu-intro-0-0.png"></a>
+                    <h2>Section 2.0</h2>
+                    <a class="menu-link" href="brilinta-global-v1.html#/1/0"><span>2.0</span><img src="img/menu-intro-1-0.png"></a>
+                    <a class="menu-link" href="brilinta-global-v1.html#/1/1"><span>2.1</span><img src="img/menu-intro-1-1.png"></a>
+                 </div><!-- END: menu container -->
+
+                <div id="overlay-container"></div>
+
+            </div><!-- END: content -->
+
+        </div><!-- END: viewport -->
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="lib/js/reveal.min.js"></script>
+        <script src="lib/js/jquery-1.11.1.min.js"></script>
+        <script src="lib/js/jquery.tap.js"></script>
+        <script src="js/core.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: false,
+                progress: false,
+                history: true,
+                center: false,
+                transition: 'default',
+                transitionSpeed: 'fast',
+                width: 1024,
+                height: 768,
+                margin: 0,
+                overview: false
+            });
+
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                PresentationModule.init();
+            });
+        </script>
+
+    </body>
+</html>

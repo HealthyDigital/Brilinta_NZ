@@ -1,0 +1,698 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="BRILINTA - Improved outcomes, start here">
+<title>BRILINTA - Improved outcomes, start here</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style type="text/css">
+	.s1-bg { background:url('img/27_background.png') 0 0 no-repeat; }
+	.s3-bg { background:url('img/1_background.png') 0 0 no-repeat; }
+	.s4-bg { background:url('img/4_background.png') 0 0 no-repeat; }
+	.s8-bg { background:url('img/background_33.png') 0 0 no-repeat; }
+	.desc { position:absolute; width:85%; top:352px; }
+		.desc li { float:left; width:25%; height:90px; margin:0 20px; text-align:center; line-height:17px;  padding-bottom: 2px; position:relative; }
+		.desc li:first-child, .desc li:nth-child(4) { margin-right:35px; }
+		.desc li:nth-child(2), .desc li:nth-child(5) { margin-right:50px; }
+		.desc li:first-child, .desc li:nth-child(2), .desc li:nth-child(3) { margin-bottom:177px;}
+		.desc li:nth-child(4), .desc li:nth-child(5), .desc li:last-child { height:auto; }
+		.desc li > span { position:absolute; width:100%; height:180px; top:-180px; left:0; z-index:10px; }
+		
+		.desc.two { top:auto; bottom:3px; left:0; right:0;  }
+		/*.desc.two li { width:25%; }*/
+	.slide1 h1 { color:#fff; border-color:#fff; margin-bottom:0; }
+	.slide1 .img { width:825px; }
+	.slide1 .img img { width:100%; }
+
+	/*.slide2 .list { width:86%; padding:40px 35px 25px 50px; background:rgba(200, 200, 200, 0.4); font-size:22px; line-height:30px; margin: 20px 0 0; }
+	.slide2 .list li { margin-bottom:25px; }
+	.slide2 .list span { color: #e76905; }
+	.slide2 .footnote { bottom: 5px; line-height:16px; width:740px; }*/
+	.slide2 h1 { letter-spacing:-1px; }
+		.slide2 .tb-wrap tr > th:first-child { width:110px; }
+		.slide2 tr > td:nth-child(2) { font-family: 'HelveNeuLig'; text-align:left; width:590px;  }
+		.slide2 tr > td:first-child { text-align:left; background:rgba(100, 100, 100, 0.3); color:#fff;  }
+		.slide2 tr > td { vertical-align:top; }
+		.slide2 td > span { color:#67116f; }
+		.slide2 .tb-wrap tr:nth-child(3) > td, .slide2 .tb-wrap tr:nth-child(5) > td, .slide2 .tb-wrap tr:nth-child(8) > td  {  border-bottom:none; padding-bottom:2px;  }
+		.slide2 .tb-wrap tr:nth-child(6) > td {  border-bottom:none; border-top:none; padding-top:2px; padding-bottom:2px;  }
+		.slide2 .tb-wrap tr:nth-child(4) > td, .slide2 .tb-wrap tr:nth-child(7) > td, .slide2 .tb-wrap tr:last-child > td { border-top:none; padding-top:2px; }
+	
+	.slide3 .head { background:rgba(231, 105, 5, 0.7) }
+		.slide3 .head2 { background:rgba(152, 152, 152,0.85) }
+		.slide3 .head td, .slide3 .head2 td { color:#fff; }
+		.slide3 .tb-wrap { width:710px; }
+		.slide3 .tb-wrap tr > th:first-child { width:auto; text-align:center; }
+		.slide3 .tb-wrap td { border:none; font-size:13px; line-height:15px; padding:5px 15px 4px; }
+		.slide3 .tb-wrap .nbb > td { padding-bottom:0; }
+		.slide3 .tb-wrap .br { border-right:1px solid #989898; }
+		.slide3 .tb-wrap .bb { border-bottom:1px solid #adabab; }
+		.slide3 tr > td:first-child { width:190px; text-align:left; text-transform:uppercase; }
+	
+	.slide4 h1, .slide4b h1 { width:88%; }
+		.slide4 .plato, .slide4b .plato { right:25px; }
+		.slide4 .col-1-2 { width:660px; height:360px; background:url('img/30_graph.png') 0 0 no-repeat; }
+		.slide4 .col-2-2 { width:210px; padding:15px 10px; height:300px; margin-top:5px; }
+		.slide4 .s18 { margin-bottom:22px; }
+		.slide4 .footnote { bottom: 40px; }
+	
+	.slide4b .bg-img { width:660px; height:360px; background:url('img/31_graph.png') 0 0 no-repeat; margin-top:70px; }
+	.slide4b .footnote { bottom: 60px; }
+	
+	.slide5 .bg-img { width:860px; height:360px; background:url('img/32_graph.png') 0 0 no-repeat; margin-top:5px; }
+		.slide5 .footnote { bottom: 100px; margin-left:58px; }
+	.slide6 h1 { font-size:47px; }
+	.slide6 .col-1-2 { width:620px; height:420px; background:url('img/33_graph.png') 0 0 no-repeat; }
+		.slide6 .col-2-2 { padding:15px 7px; width:260px; }
+		.slide6 .col-2-2 li { margin-bottom:12px; }
+		.slide6 .footnote { bottom: 20px; line-height:16px; }
+	
+	.slide7 .bg-img { width:880px; height:400px; background:url('img/graph_13.png') 0 0 no-repeat; margin-top:25px; position:relative; }
+		.slide7 .key { position:absolute; width:200px; right:-10px; bottom:104px; font-size:11px; line-height:17px; color: #989898; }
+		.slide7 .key li:first-child { position:absolute; right:24px; top:-145px; }
+		.slide7 .key i { display:inline-block; margin-right:25px; }
+		.slide7 .footnote { bottom: 3px; line-height:16px; width:640px; }
+
+	/*.slide8 h1 {  border:none; }*/
+	.slide8 .bg-img { width:74%; height:490px; background:url('img/diagram_33.png') 0 0 no-repeat;  margin-top:30px; }
+	.slide8 .grad-w { position:absolute; right:10px; top: 230px; width:200px; height:390px; padding:15px; background-image: -webkit-linear-gradient(top, rgba(255,255,255, .8), rgba(255,255,255, 0)); font-size:18px; line-height:24px; }
+	.slide8 .grad-w p { margin-bottom:15px; }
+	.slide8 .footnote li { margin-bottom:5px; color:#e76905;  }
+	.slide8 .footnote li > span { color:#fff; }
+	.slide8 .footnote { width:310px; bottom: 5px; font-size:17px; line-height:18px; color:#fff; }
+	
+	.s18 { font-size:18px; }
+	.s17 { font-size:17px; }
+	.slide2 .col-1-2, .slide3 .col-1-2, .s1-bg, .s3-bg, .s4-bg, .slide1 .bg-img, .slide4 .col-1-2, 
+	.slide6 .col-1-2, .slide4b .bg-img, .slide5 .bg-img, .slide7 .bg-img, .slide8 .bg-img, .slide-bg { background-size:100% auto; }
+	
+</style>
+</head>
+<body>
+	<section class="slide-width">
+ 		<div class="slide-bg s1-bg">
+			<header>
+            	<ul class="controls white">
+                	<li class="stopwatch"></li>
+                	<li class="ref"><i>REF</i></li>
+                    <li class="pi"><i>PI</i></li>
+                </ul>
+          	</header>
+            <article class="contents three slide1">
+                <h1>when time is muscle, <br />start and continue <br />with brilinta</h1>
+                <div class="img"><img src="img/27_icons.png" /></div>
+          		<ul class="desc white">
+                	<li><span></span>Endorsed in<br />
+STEMI and PPCI<br />
+guidelines<sup>1,2</sup></li>
+                    <li><span></span>Benefits regardless of age,<br />
+weight, management<br />
+strategy, diabetes, renal<br />
+function and history of TIA<br />
+or ischaemic stroke<sup>3,4</sup></li>
+                    <li><span></span>Benefit in the<br />
+elderly subgroup<br />
+consistent with overall<br />
+PLATO population<sup>5</sup></li>
+<li><span></span>Rapid and potent<br />
+inhibition of platelets<sup>4,6</sup></li>
+                	<li><span></span>Provides consistent<br />
+anti-platelet activity<sup>4</sup></li>
+<li><span></span>Consistency of platelet<br />
+inhibition regardless of<br />
+CYP2C19 or ABCB1<br />
+genotype<sup>4,7</sup></li>
+                   
+                </ul>
+                <!--<ul class="desc two white">
+                	<li>Rapid and potent<br />
+inhibition of platelets<sup>4,6</sup></li>
+                	<li>Provides consistent<br />
+anti-platelet activity<sup>4</sup></li>
+<li>Consistency of platelet<br />
+inhibition regardless of<br />
+CYP2C19 or ABCB1<br />
+genotype<sup>4,7</sup></li>
+                </ul>-->
+                  <div class="logo white"></div>
+                  
+            </article>
+            <!--slide 2 -->
+            <article class="contents two slide2 hide">
+            	<h1 class="single">BRILINTA ENDORSED IN GUIDELINES<sup>1-4</sup></h1>
+				<div class="tb-wrap code">
+                    	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="pci">
+                        	<tr>
+                            	<th class="no-boder-r"></th>
+                                <th class="no-boder-r no-boder-l">STEMI UNDERGOING PRIMARY PCI</th>
+                                <th class="no-boder-r no-boder-l">CLASS</th>
+                                <th class="no-boder-r no-boder-l">LEVEL OF <br />EVIDENCE</th>
+                            </tr>
+                            <tr>
+                            	<td class="no-boder-l bbw" >NZ CSANZ 2013<sup>1</sup></td>
+                                <td>Ticagrelor is the preferred P2Y12 inhibitor and should be given at presentation to all<br />
+patients with a loading dose of 180mg and then 90mg bid for 12 months</td>
+                                <td>I</td>
+                                <td class="no-boder-r">B</td>
+                            </tr>
+                            <tr>
+                            	<td class="no-boder-l no-boder-b">ESC/EACTS
+2014<sup>2</sup></td>
+                                <td>Ticagrelor (180mg loading dose, 90mg twice daily), in preference to clopidogrel, is
+recommended in addition to ASA and maintained over 12 months unless there are
+contraindications such as excessive risk of bleeding if no contraindication.</td>
+                                <td>I</td>
+                                <td class="no-boder-r">B</td>
+                            </tr>
+                            <tr>
+                              <td class="no-boder-l no-boder-t bbw"></td>
+                              <td>It is recommended to give P2Y<sub>12</sub> inhibitors at the time of first medical contact.</td>
+                              <td>I</td>
+                              <td class="no-boder-r">B</td>
+                            </tr>
+                            <tr>
+                              <td class="no-boder-l no-boder-b">ESC 2012<sup>3</sup></td>
+                              <td >DAPT with a combination of aspirin and ticagrelor is recommended (over aspirin and
+                            	  clopidogrel).</td>
+                              <td>I</td>
+                              <td class="no-boder-r">A</td>
+                            </tr>
+                            <tr>
+                              <td class="no-boder-l no-boder-t no-boder-b"></td>
+                              <td>DAPT with aspirin must be continued for up to 12 months after STEMI in patients
+                            	  who receive a stent.</td>
+                              <td>I</td>
+                              <td class="no-boder-r">C</td>
+                            </tr>
+                            <tr>
+                              <td class="no-boder-l no-boder-t bbw"></td>
+                            	<td>
+                            	  DAPT should be used for up to 1 year in patients with STEMI who did not receive
+                           	  a stent.</td>
+                                <td>IIa</td>
+                                <td class="no-boder-r">C</td>
+                            </tr>
+                            <tr>
+                              <td class="no-boder-l no-boder-b no-boder-t">ACC/AHA 2013<sup>4</sup></td>
+                              <td>P2Y<sub>12</sub> inhibitor therapy should be given for 1 year to patients with STEMI who<br />
+receive a stent (BMS or DES) during primary PCI using the following doses:</td>
+                              <td>I</td>
+                              <td class="no-boder-r">B</td>
+                            </tr>
+                            <tr>
+                            	<td class="no-boder-l no-boder-t"></td>
+                                <td>
+<span>•</span> ticagrelor: 180mg loading as early as possible, 90mg twice a day for 1 year<br />
+A loading dose of a P2Y<sub>12</sub> receptor inhibitor should be given as early as possible or<br />
+at time of primary PCI to patients with STEMI.</td>
+                                <td>I</td>
+                                <td class="no-boder-r">B</td>
+                            </tr>
+                        </table>
+                </div>
+                <!--<ul class="list purple">
+                	<li><span>Patients who discontinue antiplatelet treatment prematurely are at increased risk
+for&nbsp;further cardiac events<sup>1</sup></span></li>
+                   
+<li><span>New Zealand Guidelines recommend treatment with Brilinta should be continued
+for&nbsp;12 months for all appropriate patients with Acute Coronary Syndrome<sup>2,3</sup></span></li>
+<li><span>Major international guidelines also recommend treatment with Brilinta be continued
+for&nbsp;12 months irrespective of type of ACS or treatment strategy<sup>4,5,6</sup></span></li>
+<li><span>In the PLATO trial, Brilinta for 12 months significantly reduced the combined risk of
+CV&nbsp;death, MI or stroke compared to clopidogrel<sup>7</sup></span></li>
+                </ul>-->
+                <div class="logo"></div>
+            </article> 
+            <!--slide 3 -->
+            <article class="contents four slide3 hide">
+            	<h1><i>BRILINTA’S BENEFITS VS.<br />
+CLOPIDOGREL WERE CONSISTENT<br />
+ACROSS PATIENT MANAGEMENT STRATEGY,<br />
+AGE, WEIGHT OR MEDICAL HISTORY*<sup>1,2</sup></i></h1>
+   					<div class="tb-wrap code">
+                    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <th colspan="6" class="no-boder-l">HAZARD RATIOS AND RATES OF PRIMARY ENDPOINT
+<br />(A COMPOSITE OF CV DEATH, MI OR STROKE)</th>
+                          </tr>
+                           <tr class="head">
+                            <td>CHARACTERISTICS</td>
+                            <td>TOTAL<br />&nbsp;PATIENTS&nbsp;</td>
+                             <td colspan="2">KM % AT<br />MONTH 12</td>
+                            <td>HAZARD RATIO<br />
+                             (95% CI)</td>
+                            <td>p VALUE<br />(INTERACTION)</td>
+                          </tr>
+                           <tr class="head2">
+                            <td class="br">PLANNED MANAGEMENT <br />STRATEGY</td>
+                            <td class="br"></td>
+                            <td>TI.</td>
+                            <td class="br">CI.</td>
+                            <td class="br"></td>
+                            <td></td>
+                          </tr>
+                           <tr class="nbb">
+                            <td class="tdbg">INVASIVE</td>
+                            <td>13,408</td>
+                            <td>8.9</td>
+                            <td>10.6</td>
+                            <td>0.84 (0.75, 0.94)</td>
+                            <td>0.88</td>
+                          </tr>
+                          <tr>
+                            <td class="tdbg">MEDICALLY MANAGED</td>
+                            <td>5,216</td>
+                            <td>12.0</td>
+                            <td>14.3</td>
+                            <td>0.85 (0.73, 1.00)</td>
+                            <td></td>
+                          </tr>
+                          </tr>
+                           <tr class="head2">
+                            <td>AGE GROUP</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          </tr>
+                           <tr class="nbb">
+                            <td class="tdbg">&lt;75 years</td>
+                            <td>15,744</td>
+                            <td>8.6</td>
+                            <td>10.4</td>
+                            <td>0.82 (0.74, 0.91)</td>
+                            <td>0.22</td>
+                          </tr>
+                          <tr>
+                            <td class="tdbg">&ge;75 years</td>
+                            <td>2,878</td>
+                            <td>16.8</td>
+                            <td>18.3</td>
+                            <td>0.94 (0.78, 1.12)</td>
+                            <td></td>
+                          </tr>
+                          <tr class="head2">
+                            <td>Weight GROUP</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          </tr>
+                           <tr class="nbb">
+                            <td class="tdbg">&lt;60 kg</td>
+                            <td>1,312</td>
+                            <td>13.1</td>
+                            <td>17.3</td>
+                            <td>0.75 (0.60, 0.99)</td>
+                            <td>0.36</td>
+                          </tr>
+                          <tr>
+                            <td class="tdbg">&ge;60kg</td>
+                            <td>17,256</td>
+                            <td>9.5</td>
+                            <td>11.2</td>
+                            <td>0.86 (0.78, 0.94)</td>
+                            <td></td>
+                          </tr>
+                          <tr class="head2">
+                            <td>Medical history</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          </tr>
+                          <tr class="nbb">
+                            <td class="tdbg">no diabetes</td>
+                            <td>13,962</td>
+                            <td>8.4</td>
+                            <td>10.2</td>
+                            <td>0.83 (0.74, 0.92)</td>
+                            <td>0.49</td>
+                          </tr>
+                          <tr>
+                            <td class="tdbg bb">diabetes</td>
+                            <td>4,662</td>
+                            <td>14.1</td>
+                            <td>16.2</td>
+                            <td>0.88 (0.76, 1.03)</td>
+                            <td></td>
+                          </tr>
+                          <tr class="nbb">
+                            <td class="tdbg">No Ischaemic stroke/TIA</td>
+                            <td>17,462</td>
+                            <td>9.2</td>
+                            <td>11.1</td>
+                            <td>0.84 (0.76, 0.93)</td>
+                            <td>0.84</td>
+                          </tr>
+                          <tr>
+                            <td class="tdbg bb">Ischaemic stroke/TIA</td>
+                            <td>1,152</td>
+                            <td>19.0</td>
+                            <td>20.8</td>
+                            <td>0.87 (0.66, 1.13)</td>
+                            <td></td>
+                          </tr>
+                          <tr class="nbb">
+                            <td class="tdbg">creatinine clearance &lt;60</td>
+                            <td>3,237</td>
+                            <td>17.3</td>
+                            <td>22.0</td>
+                            <td>0.77 (0.65, 0.90)</td>
+                            <td>0.13</td>
+                          </tr>
+                          <tr>
+                            <td class="tdbg">creatinine clearance &ge;60</td>
+                            <td>11,965</td>
+                            <td>7.9</td>
+                            <td>8.9</td>
+                            <td>0.90 (0.79, 1.02)</td>
+                            <td></td>
+                          </tr>
+                          
+                        </table>
+                    </div>
+                   <div class="footnote">*Medical history of diabetes, renal function and history of TIA or ischaemic stroke<sup>1,2</sup></div>
+                      <div class="logo"></div>
+            </article> 
+             <!--slide 4 -->
+            <article class="contents three slide4 hide"> <span class="plato risk"><i><strong>RISK</strong> BENEFIT</i></span>
+            	<h1>CV MORTALITY BENEFIT<br />
+WAS CONSISTENT ACROSS<br />
+THE ELDERLY sub-GROUPS<sup>&dagger;1</sup></h1>
+   <p class="s18">All cause mortality treatment effect by age<sup>1</sup></p>
+   
+                    <div class="cols">
+                        <div class="col-1-2"></div>
+                        <div class="col-2-2 grad-w">
+                        	The primary efficacy endpoint<br />
+(a composite of death from<br />
+vascular causes, MI or stroke<br />
+at 1 year) for age &lt;75 was<br />
+8.6% for BRILINTA vs. 10.4%<br />
+for clopidogrel and for age<br />
+&ge;75 was 17.2% for BRILINTA<br />
+vs. 18.3%; for clopidogrel<br />
+(interaction p=0.56)<sup>1</sup>
+                        </div>
+                    </div>
+                    
+                      <div class="logo"></div>
+                      <div class="footnote">n=2,878 for &ge;75 years of age and n=15,744 for &lt;75 years of age<sup>1</sup><br />
+<sup>&dagger;</sup> The secondary endpoint all cause mortality at 1 year was 3.6% for BRILINTA vs. 4.8% for clopidogrel for<br />
+&lt;75 years of age (ARR 0.8%, RRR 20%; HR 0.80; 95% CI 0.68-0.95) and 9.8% for BRILINTA vs. 12.4% for<br />
+clopidogrel for &ge;75 years of age (ARR 1.6%, RRR 23%; HR 0.77; 95% CI 0.60-0.98; interaction p=0.76)<sup>1</sup></div>
+                
+            </article>
+             <!--slide 4b -->
+            <article class="contents four slide4b hide"> <span class="plato risk"><i><strong>RISK</strong> BENEFIT</i></span>
+            	<h1><i>No SIGNIFICANT<br />
+increased risk in<br />
+age-related PLATO major<br />
+bleeding vs. clopidogrel<sup>*1</sup></i></h1>
+
+                     <div class="bg-img"></div>
+                      <div class="logo"></div>
+                      <div class="footnote">* No significant increase in PLATO-defined overall major bleeding with BRILINTA vs. clopidogrel was<br />
+observed in patients aged &ge;75 years (HR, 1.02; 95% confidence interval, 0.82– 1.27) or patients aged &lt;75<br />
+years (HR 1.04; 95% CI, 0.94–1.15; interaction p=0.89)</div>
+                
+            </article>            
+            <!--slide 5 -->
+            <article class="contents two slide5 hide">
+            	<h1>rapid and potent<br />
+platelet inhibition<sup>1,2</sup></h1>
+			<p class="pad-l s18">BRILINTA shows faster and greater inhibition of<br />
+platelet aggregation (IPA) than clopidogrel<sup>*1</sup></p>
+                     <div class="bg-img"></div>
+                      <div class="logo"></div>
+                      <div class="footnote">* This study was performed in a stable coronary artery disease population<sup>1</sup><br />
+BRILINTA is not indicated in this population<sup>2</sup></div>
+                
+            </article>
+             <!--slide 6 -->
+            <article class="contents slide6 hide"> 
+            	<h1 class="single">consistent anti-platelet activity<sup>1</sup></h1>
+                    <div class="cols">
+                        <div class="col-1-2"></div>
+                        <div class="col-2-2 grad-w">
+                        	<ul class="list">
+                                <li>VerifyNow P2Y12 measurements
+                            were lower in the BRILINTA group
+                            compared with the clopidogrel
+                            group at both trough and peak,
+                            with remarkable consistency of
+                            response in the BRILINTA group
+                            at&nbsp;peak</li>
+                                <li>PRU levels &gt;235 are associated
+                            with increased risk of stent
+                            thrombosis</li>
+                                <li>45% and 39% of clopidogrel-treated
+                            patients exceeded this
+                            level&nbsp;at trough and peak,
+                            respectively (both p&lt;0.001)</li>
+                                <li>Only one BRILINTA-treated
+                            patient&nbsp;exceeded this level during
+                            maintenance treatment</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                      <div class="logo"></div>
+                      <div class="footnote">Effects of clopidogrel 5 mg/day (n=32) or ticagrelor 90 mg twice daily (n=37) on individual platelet function<br />
+responses pre- (trough) and 2 to 4 hours post- (peak) maintenance dose assessed by VerifyNow P2Y12 assay<br />
+The PLATO PLATELET substudy was conducted in patients with ACS according to the same inclusion criteria as<br />
+that of the main PLATO study</div>
+                
+            </article>
+             <!--slide 7 -->
+            <article class="contents three slide7 hide">
+            	 <h1>consistent efficacy
+results&nbsp;regardless of
+CYP2C19&nbsp;genotype<sup>1,2</sup></h1>
+<p class="s18">Kaplan-Meier estimates of events of the primary efficacy endpoint in relation to the CYP2C19 genotype</p>
+                <div class="bg-img">
+                    <ul class="key">
+                        <li><i>p=0.061</i> p=0.038</li>
+                        <li>BRILINTA, any loss of function (n=1,384)</li>
+                        <li>BRILINTA, no loss of function (n=3,554)</li>
+                        <li>Clopidogrel, any loss of function (n=1,388)</li>
+                        <li>Clopidogrel, no loss of function (n=3,516)</li>
+                    </ul>
+				</div>
+                  <div class="logo"></div>
+                  <div class="footnote"><p>The primary efficacy endpoint (a composite of death from vascular causes, MI or stroke at 1 year) was 8.6% for
+BRILINTA and 11.2% for clopidogrel (ARR 2.2%, RRR 23%; HR 0.77; 95% CI 0.60-0.99) for patients with any
+loss-of-function allele and 8.8% for BRILINTA and 10.0% for clopidogrel (ARR 1.2%, RRR 14%; HR 0.86; 95%
+CI&nbsp;0.74-1.01; interaction p=0.46) for patients with no loss-of-function allele<sup>1</sup></p>
+
+Data were consistent in relation to the ABCB1 genotype. Kaplan-Meier estimates of events of the primary
+outcomes were consistently lower in patients treated with BRILINTA compared with clopidogrel regardless of
+ABCB1 polymorphisms<sup>1</sup></div>
+            </article>
+              <!--slide 8 -->
+            <article class="contents slide8 two hide">
+            	<h1 class="white">STARTING PATIENTS<br />
+ON BRILINTA<sup>1</sup></h1>
+              
+                	<div class="bg-img"></div>
+                     <div class="grad-w">
+                     <p>No dose adjustment is
+required across ACS
+patient populations
+including:<sup>1</sup></p>
+                        <ul class="list">
+                          <li>age (18+)</li>
+<li>weight</li>
+<li>renal impairment</li>
+<li>mild hepatic impairment</li>
+<li>CYP2C19 or ABCB1
+genotype</li>
+                        </ul>
+                    </div>
+                  <div class="footnote">
+                  <ul class="list">
+<li><span>For patients who are unable to swallow<br />
+the tablets whole, Brilinta 90mg can<br />
+now be crushed to a fine powder and<br />
+mixed in water and drunk immediately.</span></li>
+<li><span>If a patient misses a dose of Brilinta,<br />
+they should take one 90 mg tablet<br />
+(their next dose) at its scheduled time.</span></li>
+</ul>
+</div>
+            </article>
+            
+            <ul class="subslide eight">
+            	<li class="sm"><span class="slide8">Dosage</span></li> 
+                <li class="sm"><span class="slide7">Geno-<br />type</span></li> 
+                <li><span class="slide6">Anti-platelet activity</span></li> 
+                <li class="sm"><span class="slide5">Platelet inhibition</span></li>
+            	<li><span class="slide4">Elderly</span>
+                	<ul>
+                        <li><span class="slide4b">Bleeding</span></li>
+                    </ul>
+                </li>
+                <li><span class="slide3">Consistent benefit</span></li>
+                <li class="sm"><span class="slide2">Guide-lines</span></li>
+                <li class="sm active"><span class="slide1">Intro-duction</span></li>
+            </ul>
+   		</div>
+        <!--References -->
+ 		<div class="popup">
+    		<div><span class="close"></span>
+                <h2 class="white">REFERENCES</h2>
+                <ul class="white ref1">
+                    <li>Steg PG, et al. Circulation, 2010; 122: 2131–41.</li>
+                    
+					<li>ESC/EACTS guidelines on myocardial revascularization.
+                    	<br />Eur Heart J 2014: epub ahead of publication.</li>
+                    <li>Wallentin L, et al. N Engl J Med 2009; 361: 1045–57.</li>
+                    <li>BRILINTA<sup>&reg;</sup> (ticagrelor) Data Sheet. 25 March 2014.</li>
+                    <li>Husted S, et al. Circ Cardiovasc Qual Outcomes <br />2012;5:680–8.</li>
+                    <li>Gurbel PA, et al. Circulation 2009; 120: 2577–85.</li>
+                    <li>Wallentin L, et al. Lancet 2010;376:1320-1328.</li>
+                    <!--<li>Fournier N, et al. Int J Cardiol 2013; 168: 4566-7.</li>-->
+                </ul>
+                 <ul class="white ref2 hide">
+                    <li>Hamer A, et al. NZMJ 2012; 125(1357); 1-26.</li>
+                  
+ 					<li>Windecker S, et al. Eur J Cardiothorac Surg.<br />
+2014;46(4):517-92.</li>
+ 					<li>Steg G et al. Eur Heart J 2012; 33: 2569-2619.</li>
+ 					<li>O’Gara PT et al. JACC 2013; 61: 78-140.</li>
+                </ul>
+                <ul class="white ref3 hide">
+                	<li>Wallentin L, et al. N Engl J Med 2009;361:1045-1057<br />(supplementary information).</li>
+                    <li>James S, et al. Circulation 2010;122(11):1056–1067.</li>
+                </ul>
+                <ul class="white ref4 hide">
+                	<li>Husted S, et al. Circ Cardiovasc Qual Outcomes <br />2012;5:680-688.</li>
+                </ul>
+                <ul class="white ref5 hide">
+                	<li>Gurbel PA, et al. Circulation 2009; 120: 2577-85.</li>
+                    <li>BRILINTA<sup>&reg;</sup> (ticagrelor) Data Sheet. 25 March 2014.</li>
+                </ul>
+                <ul class="white ref6 hide">
+                	<li>Storey RF, et al. JACC 2010;36(18): 1456-1462.</li>
+                </ul>
+                <ul class="white ref7 hide">
+                	<li>Wallentin L, et al. Lancet 2010;376:1320-1328.</li>
+                    <li>BRILINTA<sup>&reg;</sup> (ticagrelor) Data Sheet. 25 March 2014.</li>
+                </ul>
+                 <ul class="white ref8 hide">
+                	<li>BRILINTA<sup>&reg;</sup> (ticagrelor) Data Sheet. 25 March 2014.</li>
+                </ul>
+      		</div>
+		</div>
+	</section>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/touchy.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script type="text/javascript">
+	$( function(){
+		var li = $('.subslide li'), h2 = $('.popup h2'), s1bg = $('.slide-bg'), ctl = $('.controls'),
+			ref1 = $('.ref1'), ref2 = $('.ref2'), ref3 = $('.ref3'), ref4 = $('.ref4'),
+			ref4b = $('.ref4b'), ref5 = $('.ref5'), ref6 = $('.ref6'), ref7 = $('.ref7'), ref8 = $('.ref8');
+		li.find('span').each(function() {
+			var $this = $(this);
+				$this.on('tap', function(){
+					var cl = $this.attr('class');
+						$('.contents').hide();
+						li.removeClass('active');
+						$this.parent().addClass('active');
+						$('.subslide li:not(".active")').removeClass('slide');
+						$this.parent().toggleClass('slide');
+						$('.popup ul').hide();
+						h2.text('REFERENCES');
+						s1bg.removeClass('s1-bg s3-bg s4-bg s8-bg');
+						ctl.removeClass('white');
+					
+						$('.'+cl).show();
+					switch(cl){
+						case 'slide1':
+							s1bg.addClass('s1-bg');
+							ctl.addClass('white');
+							ref1.show();
+						break;
+						case 'slide2':
+							ref2.show();
+						break;
+						case 'slide3':
+							s1bg.addClass('s3-bg');
+							ref3.show();
+						break;
+						case 'slide3':
+							ref3.show();
+						break;
+						case 'slide4':
+							s1bg.addClass('s4-bg');
+							h2.text('REFERENCE');
+							ref4.show();
+						break;
+						case 'slide4b':
+							h2.text('REFERENCE');
+							ref4.show();
+						break;
+						case 'slide5':
+							ref5.show();
+						break;
+						case 'slide6':
+							h2.text('REFERENCE');
+							ref6.show();
+						break;
+						case 'slide7':
+							s1bg.addClass('s4-bg');
+							ref7.show();
+						break;
+						case 'slide8':
+							s1bg.addClass('s8-bg');
+							h2.text('REFERENCE');
+							ref8.show();
+						break;
+					}
+				})
+		});
+		
+		$('.desc li').each(function() {
+			var t = $(this);
+				t.find('span').on('tap', function(){
+
+					switch(t.index()){
+						case 0:
+							li.eq(7).find('span').trigger('tap');
+						break;
+						case 1:
+							li.eq(6).find('span').trigger('tap');
+						break;
+						case 2:
+							li.eq(4).find('span').first().trigger('tap');
+						break;
+						case 3:
+							li.eq(3).find('span').trigger('tap');
+						break;
+						case 4:
+							li.eq(2).find('span').trigger('tap');
+						break;
+						case 5:
+							li.eq(1).find('span').trigger('tap');
+						break;
+					}
+					
+				})
+            
+        });
+		
+	})
+</script>
+</body>
+</html>

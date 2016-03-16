@@ -1,0 +1,253 @@
+
+.reveal .different1-cta {
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    top: 410px;
+    left: 135px;
+}
+
+.reveal .different2-cta {
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    top: 410px;
+    left: 335px;
+}
+
+.reveal .different3-cta {
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    top: 410px;
+    left: 528px;
+}
+
+.reveal .different4-cta {
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    top: 410px;
+    left: 725px;
+}
+
+.reveal .plato-cta {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 868px;
+    top: 101px;
+}
+
+.reveal .risk-cta {
+    position: absolute;    
+    height: 100px;
+    width: 100px;
+    left: 764px;
+    top: 101px;
+}
+
+.reveal .plato-more-cta {
+    position: absolute;    
+    left: 260px;
+    top: 325px;
+    width: 190px;
+    height: 190px
+}
+
+.reveal .triton-more-cta {
+    position: absolute;    
+    left: 533px;
+    top: 325px;
+    width: 190px;
+    height: 190px
+}
+
+#content .reveal .contra-link {
+    position: absolute;    
+    top: 65px;
+    left: 860px;
+    width: 120px;
+    height: 45px;
+}
+
+.reveal .brilinta1-cta {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 210px;
+    left: 65px;
+}
+
+.reveal .brilinta2-cta {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 210px;
+    left: 265px;
+}
+
+.reveal .brilinta3-cta {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 210px;
+    left: 466px;
+}
+
+.reveal .brilinta4-cta {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 210px;
+    left: 668px;
+}
+
+.reveal .brilinta5-cta {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 495px;
+    left: 152px;
+}
+
+.reveal .brilinta6-cta {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 495px;
+    left: 356px;
+}
+
+.reveal .brilinta7-cta {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 495px;
+    left: 561px;
+}
+
+.reveal .toggle-cta {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 80px;
+    left: 825px;
+}
+
+/***********************/
+/*** 
+/*** Fragments
+/***
+/***********************/
+
+.reveal .frag-1-1a {
+    width: 802px;
+    height: 85px;
+    top: 463px;
+    left: 36px;
+    background-image: url('../img/1024x768/red-1-1a.png');
+}
+
+.reveal .frag-1-1b {
+    width: 784px;
+    height: 203px;
+    top: 257px;
+    left: 37px;
+    background-image: url('../img/1024x768/red-1-1b.png');
+}
+
+.reveal .frag-2-0a {
+    position: absolute;
+    width: 247px;
+    height: 191px;
+    background: url('../img/1024x768/red-2-0a.png') no-repeat 0 0;
+    background-size: cover;
+    right: 712px;
+    top: 390px;
+}
+
+.reveal .frag-2-0a .smoke-and-mirrors {
+    background-image: url('../img/1024x768/red-2-0d.png');
+}
+
+.reveal .frag-2-0a .numbers {
+    width: 51px;
+    height: 168px;
+    background-image: url('../img/1024x768/red-2-0b.png');
+    background-size: cover;
+    position: relative;
+    right: -254px;
+    top: -13px;
+    display: none;
+}
+
+.reveal .frag-2-0a .summary {
+    width: 573px;
+    height: 19px;
+    background-image: url('../img/1024x768/red-2-0c.png');
+    background-size: cover;
+    position: relative;
+    left: -27px;
+    bottom: -148px;
+    display: none;
+}
+
+.reveal .frag-2-4a {
+    width: 112px;
+    height: 284px;
+    top: 284px;
+    left: 98px;
+    background-image: url('../img/1024x768/red-2-4a.png');
+}
+
+.reveal .frag-2-4b {
+    width: 562px;
+    height: 294px;
+    top: 274px;
+    left: 134px;
+    background-image: url('../img/1024x768/red-2-4b.png');
+}
+
+
+/*****************************/
+/***
+/*** fragments for retina
+/***
+/*****************************/
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+
+    .reveal .frag-1-1a {
+        background-image: url('../img/red-1-1a.png');
+    }
+
+    .reveal .frag-1-1b {
+        background-image: url('../img/red-1-1b.png');
+    }
+
+    .reveal .frag-2-0a {
+        background-image: url('../img/red-2-0a.png');
+    }
+
+    .reveal .frag-2-0a .smoke-and-mirrors {
+        background-image: url('../img/red-2-0d.png');
+    }
+
+    .reveal .frag-2-0a .numbers {
+        background-image: url('../img/red-2-0b.png');
+    }
+
+    .reveal .frag-2-0a .summary {
+        background-image: url('../img/red-2-0c.png');
+    }
+
+    .reveal .frag-2-4a {
+        background-image: url('../img/red-2-4a.png');
+    }
+
+    .reveal .frag-2-4b {
+        background-image: url('../img/red-2-4b.png');
+    }
+
+}

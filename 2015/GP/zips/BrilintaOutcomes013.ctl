@@ -1,0 +1,2 @@
+USER=cloader@veeva.partner19.healthyPASSWORD=Healthy12345FILENAME=BrilintaOutcomes013.zipEMAIL=bene@healthydigital.net
+Name=BrilintaOutcomes013Slide_Version_vod__c=1.0.0Description_vod__c=Supporting Brilinta adherence

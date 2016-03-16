@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="BRILINTA - Improved outcomes, start here">
+<title>BRILINTA - Improved outcomes, start here</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style type="text/css">
+	.main-bg { background:url('img/overlay_23.png') 0 0 no-repeat; }
+	.main .circles { overflow:hidden; width:810px; margin:60px auto 0; padding-bottom:30px; }
+		.main .circles li { float:left; width:180px; height:185px; margin-right:20px; background:url('img/glow_circle.png') 0 0 no-repeat; text-align:center; font-size:28px; line-height:30px; position:relative; }
+		.main .circles li:last-child { margin-right:0; }
+		.main .circles li i { position:absolute; bottom:-35px; left:0; right:0; margin: 0 auto; width:120px; height:40px; text-align:center; font-size:15px; line-height:18px;  }
+		.main .circles li > span { display:block; width:120px; height:110px; margin: 30px auto 0; background:url('img/icons.png') 0 38px no-repeat; }
+		.main .circles li:nth-child(2) > span { background-position-y: -65px; }
+		.main .circles li:nth-child(3) > span { background-position-y: -190px; }
+		.main .circles li:last-child > span { background-position-y: -315px; }
+		.main .circles li, .main .circles li > span, .main-bg { background-size:100% auto; }
+	.main .s40 { font-size:40px; margin-top:90px; }
+	.main .footnote { bottom: 75px; font-size:18px;  width:430px; }
+	
+	.slide1 .contents h1 { margin-bottom:20px;  }
+	.slide1 .list li { margin-bottom:3px; }
+	.slide1 .cols { height:300px; margin-top:30px; }
+	.slide1 .col-1-2 { width:180px; background:url('img/imacs.png') 0 0 no-repeat; margin:0 15px 0 10px; }
+	.slide1 .myheart { position:absolute; width:170px; height:60px;background:url('img/myheart.png') 0 0 no-repeat; right:96px; top:225px; }
+	.slide1 .col-1-2, .slide1 .myheart { background-size:100% auto; }
+	.slide1 .col-2-2 { width:660px; margin-top:15px; }
+	.slide1 .col-2-2 li { font-family: 'HelveNeuBol'; font-size:15px; margin-bottom:12px; }
+	.slide1 .col-2-2 li > span { display:inline-block; padding: 14px 10px; width:430px; color:#fff; background:#e76905; }
+	.slide1 .col-2-2 li > :first-child { width:150px; margin-right:3px; text-align:center;font-size:17px; }
+	
+	.slide2 .list li { margin-bottom:15px; }
+	.slide2 .cols { height:375px; margin-top:25px; }
+	.slide2 .col-1-2 { width:330px; margin-right:40px; }
+	.slide2 .col-2-2 { width:500px; position:relative; background:rgba(0, 0, 0, 0.5)  }
+	
+	.s2-bg { background:url('img/overlay_27.png') 0 0 no-repeat; background-size:100% auto; }
+	.slide2b h1 { width:810px; line-height:42px; margin:6px 0 25px; }
+	.slide2b .plato { line-height:16px; }
+	.slide2b .plato strong { display:block; width:75%; margin:0 auto 4px; padding-bottom:1px; border-bottom:1px solid #fff; }
+	.slide2b .tab { width:95%; margin-bottom:30px; }
+	.slide2b .tab img { width:100%; }
+	.slide2b p { font-size:22px; line-height:30px; margin-bottom:20px; }
+	
+	.slide3 .list li { margin-bottom:22px; font-size:18px; line-height:25px; }
+	.slide3 .cols { height:375px; margin-top:25px; }
+	.slide3 .col-1-2 { width:330px; margin-right:40px; }
+	.slide3 .col-2-2 { width:500px; position:relative; background:rgba(0, 0, 0, 0.5) }
+	
+	.slide3b h1 {  margin-bottom:20px; }
+	.slide3b .bg-img { width:92%; height:400px; background:url('img/graph_31.png') 0 0 no-repeat; background-size:100% auto; margin-top:40px; }
+	.slide3b .list { position:absolute; right:18px; top: 215px; width:220px; }
+	.slide3b .list li { margin-bottom:10px; line-height:20px; }
+	.slide3b .footnote { bottom: 50px; margin-left: 55px; line-height:18px; }
+	
+	.s4-bg { background:url('img/background_33.png') 0 0 no-repeat; }
+	.slide4 h1 {  margin-bottom:20px; border:none; }
+	.slide4 .bg-img { width:74%; height:490px; background:url('img/diagram_33.png') 0 0 no-repeat;  margin-top:50px; }
+	.s4-bg, .slide4 .bg-img { background-size:100% auto; }
+	.grad-w { position:absolute; right:-20px; top: 230px; width:210px; height:390px; padding:15px 20px; background-image: -webkit-linear-gradient(top, rgba(255,255,255, .8), rgba(255,255,255, 0)); font-size:18px; line-height:24px; }
+	.grad-w p { margin-bottom:15px; }
+	.slide4 .list li {  }
+	/*.slide4 .footnote { width:310px; bottom: 5px;  line-height:17px; color:#fff; }*/
+	.slide4 .footnote li { margin-bottom:5px; color:#e76905;  }
+	.slide4 .footnote li > span { color:#fff; }
+	.slide4 .footnote { width:310px; bottom: 5px; font-size:17px; line-height:18px; color:#fff; }
+	
+	/*.slide-width .subslide { top:300px; right:-84px; }*/
+	.slide-width .subslide.sg { top:250px; right:-34px; }
+	.slide-width .subslide.sg.up { top:200px; }
+	
+</style> 
+</head>
+<body>
+	<section class="slide-width">
+ 		<div class="slide-bg main-bg">
+			<header>
+            	<ul class="controls">
+                	<li class="ref hide"><i>REF</i></li>
+                    <li class="pi"><i>PI</i></li>
+                </ul>
+          	</header>
+            <article class="contents main">
+                <h1>supporting<br />
+brilinta adherence</h1>
+				<p class="code-l s40">What we can do to help</p>
+                <ul class="circles code">
+                    <li class="s1"><span></span><i>My Heart
+Programme</i></li>
+                    <li class="s2"><span></span><i>Dyspnoea
+Information</i></li>
+                    <li class="s3"><span></span><i>Minor Bleeding
+Information</i></li>
+                    <li class="s4"><span></span><i>Administration</i></li>
+                </ul>
+               
+                <div class="logo"></div>
+            </article>
+             <!-- slide 1 -->
+            <article class="contents slide1 hide">
+            	<h1 class="single">Introducing MyHeart</h1>
+				<p> All patients prescribed Brilinta will be offered the opportunity to enrol in the MyHeart Patient<br />
+Support Programme. MyHeart is a free, individualised programme designed by clinical health<br />
+psychologists to complement the dialogue you have with your patients by:</p>
+                <ul class="list">
+                <li>Supporting adherence to Brilinta</li>
+                <li>Reinforcing positive behaviours including; exercise, attending cardiac<br />
+rehab, smoking cessation and healthy living</li>
+                </ul>
+                <div class="cols">
+                	<div class="col-1-2"></div>
+                    <div class="col-2-2">
+                  		<ul>
+                        	<li><span>Nurse Phone Line</span> <span>All patients will have access to a registered nurse</span></li>
+                            <li><span>Magazines</span> <span>A magazine series designed to inform and support patients</span></li>
+                            <li><span>Website</span> <span>Displays the content most relevant to the patient</span></li>
+                            <li><span>SMS</span> <span>Tailored messages of support</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="myheart"></span>
+                <div class="logo"></div>
+            </article>
+              <!-- slide 2 -->
+            <article class="contents slide2 hide">
+                <h1 class="single">dyspnoea – patient care</h1>
+                <div class="cols">
+                	<div class="col-1-2">
+                    	  <ul class="list">
+                          	<li>Usually mild to moderate and reported<br />
+early after starting treatment<sup>1,2</sup></li>
+<li>Approximately 30% of dyspnoea events<br />
+resolved within 7 days<sup>1</sup></li>
+<li>The majority of patients reporting<br />
+dyspnoea only experienced a
+single&nbsp;episode<sup>2</sup></li>
+<li>Dyspnoea generally resolved without<br />
+the need for treatment discontinuation<sup>1,2</sup></li>
+<li>Patients with asthma/COPD may have an<br />
+increased risk of experiencing dyspnoea<sup>2</sup></li>
+<li>Not associated with new or worsening<br />
+heart or lung disease<sup>1</sup></li>
+                          </ul>
+                    </div>
+                    <div class="col-2-2"><video controls width="500" height="375">
+                       	<source src="Harvey3.mp4" type="video/mp4">
+				</video></div>
+                </div>
+                <div class="logo"></div>
+                 
+            </article>
+             <!-- slide 2b -->
+            <article class="contents slide2b hide">
+            	<h1>Dyspnoea was more
+common&nbsp;vs. clopidogrel<sup>1-3</sup></h1>
+				<span class="plato"><i><strong>RISK</strong>BENEFIT</i></span>
+               <div class="tab"><img src="img/table.png" /></div>
+               <p>BRILINTA-associated dyspnoea was mostly mild-to-moderate in intensity<sup>2</sup></p>
+<p>Most events were reported as a single episode occurring early after starting treatment<sup>2</sup></p>
+<p>Dyspnoea was reported as a serious adverse event in 0.14% of patients with BRILINTA<br />
+vs. 0.02% with clopidogrel<sup>2</sup></p>
+<p>Dyspnoea was not associated with new or worsening heart or lung disease<sup>2</sup></p>
+                <div class="logo"></div>
+            </article>
+            <!-- slide 3 -->
+            <article class="contents slide3 hide">
+            	 <h1 class="single">minor bleeding – patient care</h1>
+                <div class="cols">
+                	<div class="col-1-2">
+                    	  <ul class="list">
+                          	<li>Minor bleeding included nose bleeds,<br />
+gum bleeds, bruising and oozing from<br />
+injection sites</li>
+<li>Patients who discontinue antiplatelet<br />
+therapy prematurely are at increased<br />
+risk for further cardiac events<sup>1</sup></li>
+<li>Seek medical advice before<br />
+discontinuing Brilinta due to minor<br />
+bleeding or other concerns<sup>1</sup></li>
+<li>It would be helpful for your patient to<br />
+inform other physicians and dentists<br />
+that they are taking Brilinta<sup>1</sup></li>
+                          </ul>
+                    </div>
+                    <div class="col-2-2"><video controls width="500" height="375">
+                       	<source src="Harvey2.mp4" type="video/mp4">
+				</video></div>
+                </div>
+                <div class="logo"></div>
+            </article>
+            <!-- slide 3b -->
+            <article class="contents slide3b hide">
+            	 <h1>Brilinta may be associated
+with minor bleeding<sup>1</sup></h1>
+<p class="pad-l">PLATO – defined bleeding at 12 months<sup>2</sup></p>
+              
+                	<div class="bg-img"></div>
+                    
+                    <ul class="list">
+                        <li>Defined as any bleeding
+requiring medical intervention
+but not meeting the criteria
+for&nbsp;major bleeding.<sup>2</sup></li>
+<li>Minor bleeding with Brilinta
+does not generally require
+discontinuation.<sup>2,3</sup></li>
+                    </ul>
+             
+                  <div class="logo"></div>
+                  <div class="footnote"><p>Adapted from Wallentin et al. 2009<sup>2</sup></p>
+Significance was not tested because neither type of bleeding was a pre-specified endpoint in PLATO.<sup>2</sup><br />
+NB: There was no significant difference in overall major bleeding between Brilinta and clopidogrel.<sup>2</sup><br />
+There was a significant increase in Non-CABG major and non-procedural major bleeding.</div>
+               
+            </article>
+            <!-- slide 4 -->
+            <article class="contents slide4 hide">
+            	 <h1 class="white">STARTING PATIENTS<br />
+ON BRILINTA<sup>1</sup></h1>
+              
+                	<div class="bg-img"></div>
+                     <div class="grad-w">
+                     <p>No dose adjustment is
+required across ACS
+patient populations
+including:<sup>1</sup></p>
+                        <ul class="list">
+                          <li>age (18+)</li>
+<li>weight</li>
+<li>renal impairment</li>
+<li>mild hepatic impairment</li>
+<li>CYP2C19 or ABCB1
+genotype</li>
+                        </ul>
+                    </div>
+                  <div class="footnote"><ul class="list">
+<li><span>For patients who are unable to swallow<br />
+the tablets whole, Brilinta 90mg can<br />
+now be crushed to a fine powder and<br />
+mixed in water and drunk immediately.</span></li>
+<li><span>If a patient misses a dose of Brilinta,<br />
+they should take one 90 mg tablet<br />
+(their next dose) at its scheduled time.</span></li>
+</ul></div>
+            </article>
+         <ul class="subslide code hide">
+         	<li class="support"><i>SUPPORT</i></li> 
+            <li class="slide2b"><i>DYSPNOEA</i></li>
+            <li class="slide2">PATIENT<br />CARE</li> 
+            <li class="slide3b hide"><i>MINOR BLEEDING</i></li>
+            <li class="slide3 hide">PATIENT<br />CARE</li> 
+        </ul>
+        </div>
+        <!--References -->
+ 		<div class="popup">
+    		<div><span class="close"></span>
+                <h2 class="white">REFERENCE</h2>
+                <ul class="white set0 hide">
+ 					<li>BRILINTA<sup>&reg;</sup> (ticagrelor) Data Sheet. 25 March 2014.</li>
+                </ul>
+                <ul class="white set1 hide">
+                    <li>Wallentin L, et al. N Engl J Med 2009;361:1045–57.</li>
+ 					<li>BRILINTA<sup>&reg;</sup> (ticagrelor) Data Sheet. 25 March 2014.</li>
+                </ul>
+                 <ul class="white set2 hide">
+                    <li>Wallentin L, et al. N Engl J Med 2009;361:1045-1057.</li>
+                    <li>BRILINTA<sup>&reg;</sup> (ticagrelor) Data Sheet. 25 March 2014.</li>
+ 					<li>Storey RF, et al. Eur Heart J 2011;32:2945-2953.</li>
+                </ul>
+                <ul class="white set3 hide">
+                    <li>BRILINTA<sup>&reg;</sup> (ticagrelor) Consumer Medicine information<br />
+4 August 2014.</li>
+                    <li>Wallentin L, et al. N Engl J Med 2009;361:1045–57.</li>
+                    <li>BRILINTA<sup>&reg;</sup> (ticagrelor) Data Sheet. 25 March 2014.</li>
+                </ul>
+      		</div>
+		</div>
+        
+	</section>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/touchy.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script type="text/javascript">
+	$( function(){
+		var el = $('.subslide'), supp = $('.support'), cont = $('.contents'), bg = $('.slide-bg'),
+			s2 = $('.subslide .slide2, .subslide .slide2b'), 
+			s3 = $('.subslide .slide3, .subslide .slide3b'), ref = $('.controls > .ref'), 
+			h2 = $('.popup h2'), st0 = $('.set0'), st1 = $('.set1'), st2 = $('.set2'), st3 = $('.set3');
+		
+		$('.circles > li').each(function() {
+			var $this = $(this), 
+				c = $this.attr('class');
+			$this.on('tap', function(){
+				cont.hide();
+				s2.hide();
+				el.addClass('sg');
+				el.removeClass('up');
+				el.show();
+				bg.removeClass('s4-bg');
+				bg.removeClass('main-bg');
+				ref.addClass('hide');
+				h2.text('REFERENCE');
+				switch(c){
+					case 's1':
+						$('.slide1').show();
+					break;
+					case 's2':
+						$('.slide2').show();
+						s2.show();
+						h2.text('REFERENCES');
+						ref.removeClass('hide');
+						st1.show();
+						el.removeClass('sg').find('.slide2').addClass('active');;
+					break;
+					case 's3':
+						$('.slide3').show();
+						s3.show();
+						ref.removeClass('hide');
+						st0.show();
+						el.removeClass('sg').find('.slide3').addClass('active');						
+					break;
+					case 's4':
+						bg.addClass('s4-bg');
+						el.addClass('up');
+						ref.removeClass('hide');
+						st0.show();
+						$('.slide4').show();
+					break;
+				}
+			})
+        });
+		//sub
+		el.find('li').each(function() {
+			var $this = $(this), 
+				cl = $this.attr('class').split(' ')[0];
+			$this.on('tap', function(){
+				cont.hide();
+				$('.'+cl).show();
+				el.find('li').removeClass('active');
+				$this.addClass('active');
+				$('.popup ul').hide();
+				switch(cl){
+					case 'slide2':
+						st1.show();
+						bg.removeClass('s2-bg');
+					break;
+					case 'slide2b':
+						st2.show();
+						bg.addClass('s2-bg');
+					break;
+					case 'slide3':
+						h2.text('REFERENCE');
+						st0.show();
+					break;
+					case 'slide3b':
+						h2.text('REFERENCES');
+						st3.show();
+						
+					break;
+					case 'support':
+						document.location = 'veeva:gotoSlide(BrilintaOutcomes013.zip)';
+					break;
+				}
+			})
+		});
+	
+	})
+</script>
+</body>
+</html>

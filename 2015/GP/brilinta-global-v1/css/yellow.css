@@ -1,0 +1,273 @@
+
+.reveal .different1-cta {
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    top: 410px;
+    left: 135px;
+}
+
+.reveal .different2-cta {
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    top: 410px;
+    left: 335px;
+}
+
+.reveal .different3-cta {
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    top: 410px;
+    left: 528px;
+}
+
+.reveal .different4-cta {
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    top: 410px;
+    left: 725px;
+}
+
+.reveal .plato-cta {
+    position: absolute;    
+    width: 100px;
+    height: 100px;
+    left: 868px;
+    top: 101px;
+}
+
+.reveal .risk-cta {
+    position: absolute;    
+    height: 100px;
+    width: 100px;
+    left: 764px;
+    top: 101px;
+}
+
+.reveal .risk-plato-cta {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    left: 825px;
+    top: 80px;
+}
+
+#content .reveal .contra-link {
+    position: absolute;    
+    top: 65px;
+    left: 860px;
+    width: 120px;
+    height: 45px;
+}
+
+.reveal .brilinta1-cta {
+    position: absolute;
+    width: 159px;
+    height: 160px;
+    top: 220px;
+    left: 134px;
+}
+
+.reveal .brilinta2-cta {
+    position: absolute;
+    width: 159px;
+    height: 160px;
+    top: 220px;
+    left: 380px;
+}
+
+.reveal .brilinta3-cta {
+    position: absolute;
+    width: 159px;
+    height: 160px;
+    top: 220px;
+    left: 630px;
+}
+
+.reveal .brilinta4-cta {
+    position: absolute;
+    width: 159px;
+    height: 160px;
+    top: 457px;
+    left: 134px;
+}
+
+.reveal .brilinta5-cta {
+    position: absolute;
+    width: 159px;
+    height: 160px;
+    top: 457px;
+    left: 380px;
+}
+
+.reveal .brilinta6-cta {
+    position: absolute;
+    width: 159px;
+    height: 160px;
+    top: 457px;
+    left: 630px;
+}
+
+.reveal .toggle-cta {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 80px;
+    left: 825px;
+}
+
+
+/***********************/
+/*** 
+/*** Fragments
+/***
+/***********************/
+
+.reveal .frag-0-1a {
+    position: absolute;
+    width: 586px;
+    height: 241px;
+    background: url('../img/1024x768/yellow-0-1a.png') no-repeat 0 0;
+    background-size: cover;
+    left: 88px;
+    bottom: 192px;
+}
+
+.reveal .frag-0-1a .smoke-and-mirrors {
+    background-image: url('../img/1024x768/yellow-0-1c.png');
+}
+
+.reveal .frag-0-1a .numbers {
+    width: 80px;
+    height: 74px;
+    background-image: url('../img/1024x768/yellow-0-1b.png');
+    background-size: cover;
+    position: relative;
+    right: -595px;
+    top: -12px;
+    display: none;
+}
+
+.reveal .frag-1-1a {
+    width: 802px;
+    height: 85px;
+    top: 463px;
+    left: 36px;
+    background-image: url('../img/1024x768/yellow-1-1a.png');
+}
+
+.reveal .frag-1-1b {
+    width: 784px;
+    height: 203px;
+    top: 257px;
+    left: 37px;
+    background-image: url('../img/1024x768/yellow-1-1b.png');
+}
+
+.reveal .frag-2-0a {
+    position: absolute;
+    width: 227px;
+    height: 175px;
+    background: url('../img/1024x768/yellow-2-0a.png') no-repeat 0 0;
+    background-size: cover;
+    right: 725px;
+    top: 384px;
+}
+
+.reveal .frag-2-0a .smoke-and-mirrors {
+    background-image: url('../img/1024x768/yellow-2-0d.png');
+}
+
+.reveal .frag-2-0a .numbers {
+    width: 94px;
+    height: 91px;
+    background-image: url('../img/1024x768/yellow-2-0b.png');
+    background-size: cover;
+    position: relative;
+    right: -229px;
+    top: -26px;
+    display: none;
+}
+
+.reveal .frag-2-0a .summary {
+    width: 464px;
+    height: 16px;
+    background-image: url('../img/1024x768/yellow-2-0c.png');
+    background-size: cover;
+    position: relative;
+    left: -46px;
+    bottom: -220px;
+    display: none;
+}
+
+.reveal .frag-2-4a {
+    width: 112px;
+    height: 284px;
+    top: 284px;
+    left: 98px;
+    background-image: url('../img/1024x768/yellow-2-4a.png');
+}
+
+.reveal .frag-2-4b {
+    width: 562px;
+    height: 294px;
+    top: 274px;
+    left: 134px;
+    background-image: url('../img/1024x768/yellow-2-4b.png');
+}
+
+
+/*****************************/
+/***
+/*** fragments for retina
+/***
+/*****************************/
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .reveal .frag-0-1a {
+        background-image: url('../img/yellow-0-1a.png');
+    }
+
+    .reveal .frag-0-1a .smoke-and-mirrors {
+        background-image: url('../img/yellow-0-1c.png');
+    }
+
+    .reveal .frag-0-1a .numbers {
+        background-image: url('../img/yellow-0-1b.png');
+    }
+
+    .reveal .frag-1-1a {
+        background-image: url('../img/yellow-1-1a.png');
+    }
+
+    .reveal .frag-1-1b {
+        background-image: url('../img/yellow-1-1b.png');
+    }
+
+    .reveal .frag-2-0a {
+        background-image: url('../img/yellow-2-0a.png');
+    }
+
+    .reveal .frag-2-0a .smoke-and-mirrors {
+        background-image: url('../img/yellow-2-0d.png');
+    }
+
+    .reveal .frag-2-0a .numbers {
+        background-image: url('../img/yellow-2-0b.png');
+    }
+
+    .reveal .frag-2-0a .summary {
+        background-image: url('../img/yellow-2-0c.png');
+    }
+
+    .reveal .frag-2-4a {
+        background-image: url('../img/yellow-2-4a.png');
+    }
+
+    .reveal .frag-2-4b {
+        background-image: url('../img/yellow-2-4b.png');
+    }
+}

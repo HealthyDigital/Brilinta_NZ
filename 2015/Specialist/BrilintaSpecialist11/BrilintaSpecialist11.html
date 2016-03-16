@@ -1,0 +1,494 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="BRILINTA - Improved outcomes, start here">
+<title>BRILINTA - Improved outcomes, start here</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style type="text/css">
+	.s1-bg { background:url('img/1_background.png') 0 0 no-repeat; }
+	.s2-bg { background:url('img/overlay_l.png') 0 0 no-repeat; }
+	.s3-bg { background:url('img/video_background.png') 0 0 no-repeat; }
+	.slide1 .bg-img { width:730px; height:400px; background:url('img/45_graph.png') 0 8px no-repeat; position:relative; }
+		.slide1 h1 { width:83%; font-size:43px; line-height:38px;  }
+		.slide1.four h1 i { top:-58px; }
+		.slide1 .plato { top:50px; }
+		.slide1 .plato.risk { right: 105px; }
+		.slide1 .grad-w, .slide1 .footnote > span { position:absolute; }
+		.slide1 .grad-w { width:145px; top:257px; right:15px; padding-bottom:120px; padding-top:15px; }
+		.slide1 .footnote .s20 { color:#e76905; margin-bottom: 15px; }
+		.slide1 .footnote > span { font-size:12px; }
+		.slide1 .footnote > .key { width:180px; right:-175px;bottom:180px; }
+		.slide1 .footnote > .key2 { width:620px; bottom:95px; margin-left:28px; }
+		.slide1 .footnote > .key2 i { float:right; width:180px; }
+		.slide1 .footnote { bottom: 0; line-height:16px; }
+	
+	.slide2 .tb-wrap { width:800px; }
+		.slide2 .tb-wrap tr > th:first-child, .tb-wrap .trbg.al > td { text-align:center; width:auto; }
+		.slide2 .tb-wrap tr > td:first-child { width:180px; }
+		.slide2 .tb-wrap td, .slide2 .tb-wrap th, .slide2b .tb-wrap td, .slide2b .tb-wrap th { padding:10px 10px 9px; }
+		.slide2 .footnote { bottom: 130px;  }
+		.slide2 h1, .slide2b h1, .slide3 h1, .slide3b h1, .slide3c h1 { width:90%; }
+		
+	.slide2b p { font-size:22px; line-height:30px; margin-bottom:20px; }
+		.slide2b tr > th:first-child { text-align:left; }
+		.slide2b .tb-wrap th, .slide2b .tb-wrap td { font-size:15px; line-height:18px; }
+		.slide2b .tb-wrap { margin:25px 0 40px; }
+	
+	.slide3 .bg-img { width:88.5%; height:460px; background:url('img/plato_graphic.png') 0 0 no-repeat; margin-top:15px; position:relative; }
+		.slide3 .plato-logo { position:absolute; top:-35px; left:0; width:120px; height:110px; background:url('img/plato_logo.png') -8px 0 no-repeat; }
+		.slide3 .bg-img, .slide3 .plato-logo { background-size:100% auto; }
+		.slide3 .contents h1 { width:812px; }
+		.slide3 .footnote { bottom: 1px; line-height:16px; width:740px; }
+	
+	.slide3b h1 { font-size:45px; line-height:42px; }
+		.slide3b .cols { margin-top: 10px; }
+		.slide3b .cols > .col-1-2 { width:660px; height:400px; background:url('img/graph_11.png') 0 0 no-repeat;background-size:100% auto; }
+		.slide3b .cols > .col-2-2, .slide3c .cols > .col-2-2 { width:180px; height:250px; padding:15px; }
+		.slide3b .footnote { bottom: 18px; margin-left: 55px; }
+	.slide3c .cols { margin-top: 22px; }
+		.slide3c .cols > .col-2-2 { position:absolute; top:85px; right:10px;  }
+		.slide3c .cols > .col-1-2 { width:720px; height:450px; background:url('img/16_graph.png') 0 0 no-repeat;background-size:100% auto; }
+		.slide3c .grad-w p { margin-bottom:10px; }
+		.slide3c .s17 { position:absolute; top:10px; left:55px; }
+		.slide3c .footnote { bottom: 1px; margin-left: 55px; }
+		
+	.slide3d h1 { margin-bottom:10px; }
+		.slide3d .bg-img { width:700px; height:420px; background:url('img/51_graph.png') 0 20px no-repeat; }
+		.slide3d .footnote { bottom: 15px; margin-left: 55px; }
+		
+	.slide3e .bg-img { width:790px; height:250px; background:url('img/17_graph.png') 0 0 no-repeat; position:relative; }
+		.slide3e .key { position:absolute; width:200px; right:-96px; bottom:40px; color:#989898; font-size:13px; line-height:16px; }
+		.slide3e .key li { position:relative; }
+		.slide3e .tb-wrap { width:850px; margin-top:5px; }
+		.slide3e .key strong { position:absolute; left:-92px; top:2px; font-size:14px; }
+		.slide3e .tb-wrap tr > td:first-child { width: 110px; text-align:left; }
+		.slide3e .tb-wrap td { font-size:12px; line-height:16px; }
+		.slide3e .head { background:rgba(231, 105, 3, 0.7); }
+		.slide3e .head > td { color:#fff; border-top:none; border-bottom:none; }
+		.slide3e .diag { background:#fff; padding:0; width:120px; }
+		.slide3e .diag > span { display:block; width:110px; height:80px; margin:5px 0 0 9px; background:url('img/square_lines.png') 0 0 no-repeat; }
+		.slide3e .footnote { bottom: 8px; color:#e76905; font-size:18px; line-height:20px; }
+		
+	.s18 { font-size:18px; }
+	.s17 { font-size:17px; }
+	.s20 { font-size:20px; }
+	.slide2 .col-1-2, .slide3 .col-1-2, .slide-bg, .slide1 .bg-img, .slide1 .key li, .slide3d .bg-img, .slide3e .bg-img, 
+	.slide3e .diag > span { background-size:100% auto; }
+	.subslide.seven { top: 410px; right: -282px; }
+	
+</style>
+</head>
+<body>
+	<section class="slide-width">
+ 		<div class="slide-bg s1-bg">
+			<header>
+            	<ul class="controls">
+                	<li class="stopwatch or"></li>
+                	<li class="ref"><i>REF</i></li>
+                    <li class="pi"><i>PI</i></li>
+                </ul>
+          	</header>
+            <article class="contents four slide1 "><span class="plato risk"><i><strong>RISK</strong> BENEFIT</i></span> <span class="plato"><i>PLATO</i></span>
+                <h1><i>For A CONSISTENT CV<br />
+MORTALITY BENEFIT IN<br />
+REVASCULARISED NSTE-ACS<br />
+PATIENTS,* start and<br />
+continue with BRILINTA<sup>&dagger;1,2</sup></i></h1>
+<p class="s17">In the overall PLATO study, the primary composite endpoint of reduction in CV death, MI or stroke was met, <br />(9.8% for BRILINTA and 11.7% for clopidogrel ( ARR 1.9%,RRR 16% HR 0.84; 95% CI 0.77-0.92, p&lt;0.001).<sup>1</sup>  <br />Consistent results in the primary endpoint were observed among the NSTE-ACS subgroup<sup>2</sup></p>
+                <div class="bg-img"></div>
+                <div class="grad-w">A consistent
+reduction in CV
+mortality at 1 year
+vs.&nbsp;clopidogrel was
+shown in the overall
+PLATO study and
+the&nbsp;NSTE-ACS
+revasc&nbsp;sub group<sup>1,2</sup></div>
+                  <div class="logo"></div>
+                  <div class="footnote">
+                  <span class="key">ARR = absolute risk reduction
+RRR = relative risk reduction</span>
+                  <span class="key2"><i>Hazard ratio, 0.83;<br />
+(95% CI, 0.67-1.02); (p=0.07)<sup>2</sup></i>Hazard ratio: 0.79<br />
+(95% CI, 0.69-0.91); (p=0.001)<sup>1</sup> </span>
+					
+                  <p class="s20">The absolute benefits of BRILINTA increase over time<sup>1,2</sup></p>
+                  <p>*Mainly PCI<br />
+<sup>&dagger;</sup>When treated according to the PLATO regimen</p></div>
+            </article>
+            <!--slide 2 -->
+            <article class="contents slide2 hide"><span class="plato risk"><i><strong>RISK</strong> BENEFIT</i></span>
+            	<h1>Major bleeding<sup>&dagger;</sup> trends<br />
+were consistent with<br />
+the overall PLATO study<sup>2</sup> <span class="sub sgl">IN THE NSTE-ACS PCI SUB-GROUP</span></h1>
+   					<div class="tb-wrap code">
+                    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <th colspan="5" class="no-boder-l">NSTE-ACS WITH REVASCULARISATION</th>
+                          </tr>
+                          <tr class="trbg al">
+                            <td class="no-boder-l brw"></td>
+                            <td class="brw">&nbsp;&nbsp;&nbsp;N&nbsp;&nbsp;&nbsp;</td>
+                            <td class="brw">&nbsp;BRILINTA&nbsp;<br />KM* RATE</td>
+                            <td class="brw">CLOPIDOGREL<br />KM RATE</td>
+                            <td class="no-boder-r">HR<br />(95% CI)</td>
+                          </tr>
+                           <tr>
+                            <td class="no-boder-l bbw tdbg">Major bleeding</td>
+                            <td>4,983</td>
+                            <td>5.25</td>
+                            <td>4.68</td>
+                            <td class="no-boder-r">1.10 (0.84-1.44)</td>
+                          </tr>
+                           <tr>
+                            <td class="no-boder-l bbw tdbg">Major or minor <br />bleeding</td>
+                            <td>4,842</td>
+                            <td>7.76</td>
+                            <td>6.35</td>
+                            <td class="no-boder-r">1.22 (0.97-1.54)</td>
+                          </tr>
+                          <tr>
+                            <td class="no-boder-l bbw tdbg">Non-CABG <br />major bleeding</td>
+                            <td>5,270</td>
+                            <td>3.14</td>
+                            <td>2.38</td>
+                            <td class="no-boder-r">1.32 (0.92-1.90)</td>
+                          </tr>
+                          <tr>
+                            <td class="no-boder-l bbw tdbg">Fatal or life-threatening
+bleeding</td>
+                            <td>5,173</td>
+                            <td>2.25</td>
+                            <td>2.01</td>
+                            <td class="no-boder-r">1.18 (0.79-1.76)</td>
+                          </tr>
+                          <tr>
+                            <td class="no-boder-l bbw tdbg">Other major <br />bleeding</td>
+                            <td>5,178</td>
+                            <td>3.10</td>
+                            <td>2.85</td>
+                            <td class="no-boder-r">1.02 (0.70-1.45)</td>
+                          </tr>
+                        </table>
+                    </div>
+                      <div class="logo"></div>
+                      <div class="footnote">
+                      	<p><sup>&dagger;</sup>PLATO major bleed: Requires medical intervention to stop or treat bleeding<sup>2</sup><br />
+*Kaplan–Meier</p>
+                      </div>
+            </article> 
+            <!--slide 2b -->
+            <article class="contents two slide2b hide"><span class="plato risk"><i><strong>RISK</strong> BENEFIT</i></span>
+            	<h1>Dyspnoea was more<br />
+common vs. clopidogrel<sup>1-3</sup></h1>
+   					<div class="tb-wrap code">
+                    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <th class="no-boder-l">DYSPNOEA IN THE PLATO TRIAL</th>
+                            <th>BRILINTA<br />(n=9,235)</th>
+                            <th>Clopidogrel<br />(n=9,186)</th>
+                            <th class="no-boder-r">p VALUE</th>
+                          </tr>
+                           <tr>
+                            <td class="no-boder-l bbw tdbg">INCIDENCE OF DYSPNOEA<br />
+ADVERSE EVENTS (%)</td>
+                            <td>13.8</td>
+                            <td>7.8</td>
+                            <td class="no-boder-r">&lt;0.001</td>
+                          </tr>
+                           <tr>
+                            <td class="no-boder-l bbw tdbg">PATIENTS WHO DISCONTINUED<br />
+TREATMENT DUE TO DYSPNOEA (%)</td>
+                            <td>0.9</td>
+                            <td>0.1</td>
+                            <td class="no-boder-r">&lt;0.001</td>
+                          </tr>
+                          
+                        </table>
+                    </div>
+                   <p>BRILINTA-associated dyspnoea was mostly mild-to-moderate in intensity<sup>2</sup></p>
+<p>Most events were reported as a single episode occurring early after starting treatment<sup>2</sup></p>
+<p>Dyspnoea was reported as a serious adverse event in 0.14% of patients with BRILINTA<br />
+vs. 0.02% with clopidogrel<sup>2</sup></p>
+<p>Dyspnoea was not associated with new or worsening heart or lung disease<sup>2</sup></p>
+                      <div class="logo"></div>
+            </article> 
+            <!--slide 3 -->
+            <article class="contents slide3 hide">
+            	<span class="plato-logo"></span>
+            	<h1 class="single">PLATO trial design<sup>1-5</sup></h1>
+				<span class="plato"><i>PLATO</i></span>
+                <div class="bg-img"></div>
+                  <div class="logo"></div>
+                  <div class="footnote">
+                 <p>*STEMI patients intended for primary PCI were randomised; however, they may not have received PCI<br />
+&dagger; A loading dose of 300mg clopidogrel was permitted in patients not previously treated with clopidogrel, with an additional 300mg
+allowed at the discretion of the investigator</p>
+<p>&Dagger; The PLATO study expanded the definition of major bleeding to be more inclusive compared with previous studies in ACS patients
+The primary safety endpoint was the first occurrence of any major bleeding event.</p>
+Major fatal or life-threatening bleed: Clinically apparent with &gt;50g/L decrease in haemoglobin or &ge;4 red cell units transfused; or
+fatal;&nbsp;or intracranial; or intrapericardial with cardiac tamponade; or with hypovolaemic shock or severe hypotension requiring
+pressors or surgery.<sup>1</sup> Major other: Clinically apparent with 30–50g/L decrease in haemoglobin or 2–3 red cell units transfused; or
+significantly disabling.<sup>1</sup> Major bleed: Requires medication intervention to stop or treat bleeding<sup>1</sup></div>
+            </article>
+             <!--slide 3b -->
+            <article class="contents slide3b hide"> 
+            	<h1>more cv events* can be avoided
+    using BRILINTA instead of
+    clopidogrel in acs patients<sup>&dagger;</sup></h1>
+    <span class="plato"><i>PLATO</i></span>
+    <p class="pad-l s17">BRILINTA reduces the risk of recurrent CV events vs.<br />
+    clopidogrel at 30 days and up to 12 months<sup>1</sup></p>
+                    <div class="cols">
+                        <div class="col-1-2"></div>
+                        <div class="col-2-2 grad-w">* The primary endpoint,<br />
+    a composite of CV death,<br />
+    MI or stroke, at 1 year<br />
+    was 9.8% for BRILINTA<br />
+    and 11.7% for clopidogrel<br />
+    (ARR 1.9%, RRR 16% HR<br />
+    0.84; 95% CI 0.77-0.92,
+    p<0.001)<sup>1</sup></div>
+                    </div>
+                    
+                      <div class="logo"></div>
+                      <p class="footnote">The reduction in CV events continued to increase throughout the 12-month study period<sup>1</sup><br />
+    ARR = absolute risk reduction<br />
+    RRR = relative risk reduction<br />
+    NNT = number needed to treat<br />
+    <sup>&dagger;</sup>When treated according to the PLATO regimen</p>
+                
+            </article>
+             <!--slide 3c -->
+            <article class="contents four slide3c hide"> 
+            	<h1><i>No SIGNIFICANT increase in
+overall&nbsp;total major and fatal
+bleeding despite improved
+efficacy vs. clopidogrel<sup>1,2</sup></i></h1>
+    <span class="plato"><i>PLATO</i></span>
+   
+                    <div class="cols">
+                        <div class="col-1-2">
+                        	 <p class="s17">Primary safety endpoint at 12 months: PLATO total major bleeding</p>
+                        </div>
+                        <div class="col-2-2 grad-w"><p>In the PLATO study,<br />
+BRILINTA demonstrated<br />
+no significant increase in<br />
+overall major bleeding or<br />
+fatal bleeding<sup>1</sup> vs.<br />
+clopidogrel.<br /></p>
+Non-CABG-related major<br />
+bleeding was higher with<br />
+BRILINTA than with<br />
+clopidogrel (4.5% vs.<br />
+3.8%, p=0.03)</div>
+                    </div>
+                    
+                      <div class="logo"></div>
+                      <div class="footnote">Total major bleeding is a primary safety endpoint of the PLATO study and was 11.6% with BRILINTA<br />
+vs. 11.2% with clopidogrel (0.4% ARR; 4% RRR; HR 1.04; 95% CI 0.95-1.13; p=0.43)<br />
+ARR = absolute risk reduction<br />
+RRR = relative risk reduction<br />
+HR = hazard ratio</div>
+            </article>
+             <!--slide 3d -->
+            <article class="contents slide3d hide"> 
+            	<h1>CV MORTALITY BENEFITS
+<br />FOR CABG PATIENTS WERE
+<br />CONSISTENT WITH OVERALL PLATO<sup>1</sup></h1>
+<p>The primary efficacy endpoint (composite of death from vascular causes, MI, or<br />
+stroke at 1 year) from CABG and onwards was 10.6% for BRILINTA vs. 13.1% for<br />
+clopidogrel (HR: 0.84; 95% CI: 0.60 to 1.16; p=0,29)<sup>1</sup></p>
+   
+                   <div class="bg-img"></div>
+                    
+                      <div class="logo"></div>
+                      <div class="footnote">HR: 0.52 (95% CI = 0.32-0.85), p &lt; 0.001<br />
+ARR = absolute risk reduction<br />
+RRR = relative risk reduction</div>
+                
+            </article>
+             <!--slide 3e -->
+            <article class="contents slide3e hide">
+            	<h1>REDUCTION IN STENT
+THROMBOSIS&nbsp;VS. CLOPIDOGREL
+OBSERVED&nbsp;IN PLATO<sup>1</sup></h1>
+				<p class="s18">Incidence of stent thrombosis (%)<sup>1</sup></p>
+                <div class="bg-img">
+                	<ul class="key">
+                    	<li>Hazard ratio: 0.67<br />(95% CI, 0.50-0.91); (p=0.009)</li>
+
+<li>ARR = absolute risk reduction</li>
+<li><strong class="code">NNT=167 </strong>RRR = relative risk reduction</li>
+                    </ul>
+                </div>
+                <div class="tb-wrap code">
+                    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <th colspan="7" class="no-boder-l no-boder-r">THE INCIDENCE OF DEFINITE STENT THROMBOSIS BY SUBGROUP AND TREATMENT<sup>2</sup></th>
+                          </tr>
+                          <tr class="head">
+                            <td class="no-boder-l brw">VARIABLE</td>
+                            <td class="brw">HAZARD&nbsp;RATIO
+<br />(95% CI)</td>
+                            <td class="brw">TOTAL
+<br />EVENTS</td>
+                            <td class="brw">KM%&nbsp;AT&nbsp;MONTH&nbsp;12
+BRILINTA</td>
+                            <td class="brw">KM%&nbsp;AT&nbsp;MONTH&nbsp;12
+CLOPIDROGEL</td>
+                            <td class="brw">&nbsp;HAZARD&nbsp;RATIO&nbsp;<br />(95% CI)</td>
+                            <td class="no-boder-r">p VALUE<br /> (INTERACTION)</td>
+                          </tr>
+                           <tr>
+                            <td class="no-boder-l bbw tdbg ">OVERALL</td>
+                            <td rowspan="3" class="diag no-boder-r"><span></span></td>
+                            <td class="no-boder-l">176</td>
+                            <td>1.4</td>
+                            <td>1.9</td>
+                            <td>0.67 (0.50-0.91)</td>
+                            <td class="no-boder-r">-</td>
+                          </tr>
+                          <tr>
+                            <td class="no-boder-l bbw tdbg">STEMI</td>
+                            <td class="no-boder-l">114</td>
+                            <td>1.6</td>
+                            <td>2.4</td>
+                            <td>0.66 (0.45-0.95)</td>
+                            <td class="no-boder-r">0.81</td>
+                          </tr>
+                          <tr>
+                            <td class="no-boder-l tdbg">NSTEMI</td>
+                            <td class="no-boder-l">62</td>
+                            <td>1.1</td>
+                            <td>1.4</td>
+                            <td>0.71 (0.43-1.17)</td>
+                            <td class="no-boder-r">-</td>
+                          </tr>
+                        </table>
+                 </div>
+                <div class="logo"></div>
+                  <div class="footnote">
+                  BRILINTA reduces the incidence of stent thrombosis vs clopidogrel in ACS patients with<br />
+consistent benefit across STEMI and NSTEMI patients
+                  </div>
+            	
+            </article>
+             
+            
+            <ul class="subslide seven">
+            	<li><span class="slide2b">Dyspnoea</span></li>
+            	<li><span class="slide3e">Stent thrombosis</span></li>
+                <li class="sm"><span class="slide3">PLATO design</span></li> 
+                <li class="sm"><span class="slide3d">CABG</span></li>
+                <li class="sm"><span class="slide2">BLEEDING</span>
+                	<ul>
+                    	<li><span class="slide3c">Overall bleeding</span></li>
+                    </ul>
+                </li>
+                <li class="sm"><span class="slide3b">Primary endpoint</span></li>
+            	<li class="active"><span class="slide1">PLATO and NSTE-ACS</span></li>
+            </ul>
+   		</div>
+        
+        <!--References -->
+ 		<div class="popup">
+    		<div><span class="close"></span>
+                <h2 class="white">REFERENCES</h2>
+                <ul class="white ref1">
+                    <li>Wallentin L, et al. N Engl J Med 2009; 361: 1045–57.</li>
+                    <li>Lindholm D, et al. Eur Heart J 2014; 35(31): 2083-2093.</li>
+                </ul>
+                <ul class="white ref2b hide">
+                    <li>Wallentin L, et al. N Engl J Med 2009;361:1045-1057..</li>
+                    <li>BRILINTA<sup>&reg;</sup> (ticagrelor) Data Sheet. 25 March 2014.</li>
+                    <li>Storey RF, et al. Eur Heart J 2011;32:2945-2953.</li>
+                </ul>
+                 <ul class="white ref3 hide">
+                    <li>BRILINTA<sup>&reg;</sup> (ticagrelor) Data Sheet. 25 March 2014.</li>
+                    <li>Cannon CP, et al. Lancet 2010;375:283-293.</li>
+                    <li>James S, et al. Am Heart J 2009;157:599-605.</li>
+                    <li>James SK, et al. BMJ 2011;342:d3527.</li>
+                    <li>Wallentin L, et al. N Engl J Med 2009;361:1045-1057<br />(supplementary information).</li>
+                </ul>
+                <ul class="white ref3b hide">
+                	<li>Wallentin L, et al. N Engl J Med 2009; 361: 1045–57.</li>
+                    <li>Lindholm D, et al. Eur Heart J 2014; 35(31): 2083-2093.</li>
+                </ul>
+                <ul class="white ref3d hide">
+                	<li>Held C, et al. J Am Coll Cardiol 2011; 57: 672-684.</li>
+                </ul>
+                <ul class="white ref3e hide">
+                	<li>Wallentin L, et al. N Engl J Med 2009; 361: 1045-57.</li>
+                    <li>Steg PG, et al. Circulation 2013; 128(10): 1055-1065.</li>
+                </ul>
+      		</div>
+		</div>
+	</section>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/touchy.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script type="text/javascript">
+	$( function(){
+		var li = $('.subslide li'), h2 = $('.popup h2'), s1bg = $('.slide-bg')
+			ref1 = $('.ref1'), ref2 = $('.ref2'), ref2b = $('.ref2b'), ref3 = $('.ref3'), ref3b = $('.ref3b'), ref3d = $('.ref3d'), ref3e = $('.ref3e');
+		li.find('span').each(function() {
+			var $this = $(this);
+				$this.on('tap', function(){
+					var cl = $this.attr('class');
+						$('.contents').hide();
+						li.removeClass('active');
+						$this.parent().addClass('active');
+						$('.subslide li:not(".active")').removeClass('slide');
+						$this.parent().toggleClass('slide');
+						$('.popup ul').hide();
+						h2.text('REFERENCES');
+						s1bg.removeClass('s1-bg s2-bg s3-bg');
+					
+						$('.'+cl).show();
+					switch(cl){
+						case 'slide1':
+							s1bg.addClass('s1-bg');
+							ref1.show();
+						break;
+						case 'slide2':
+							ref1.show();
+						break;
+						case 'slide2b':
+							s1bg.addClass('s2-bg');
+							ref2b.show();
+						break;
+						case 'slide3':
+							ref3.show();
+						break;
+						case 'slide3b':
+							ref3b.show();
+						break;
+						case 'slide3c':
+							ref3b.show();
+						break;
+						case 'slide3d':
+							h2.text('REFERENCE');
+							s1bg.addClass('s3-bg');
+							ref3d.show();
+						break;
+						case 'slide3e':
+							s1bg.addClass('s2-bg');
+							ref3e.show();
+						break;
+					}
+				})
+		});
+		
+		$('.plato:not(".risk")').on('tap', function(){
+			$('.slide3').trigger('tap');
+		})
+		
+	})
+</script>
+</body>
+</html>
