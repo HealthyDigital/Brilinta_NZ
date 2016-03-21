@@ -1,0 +1,136 @@
+/* CSS Document reset */
+* { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); } html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,capxion,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcapxion,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}body {line-height: 1;}blockquote,q {quotes: none;}blockquote:before,blockquote:after,q:before,q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}small,sub,sup {font-size: .60em; }sub {vertical-align: sub;}sup {vertical-align: super; }sub,sup{ line-height:10px; }
+/* ============= custom fonts   ============= */
+@font-face {
+	font-family: 'HelveNeuLig';
+	src: url('../fonts/HelveNeuLig.woff') format('woff'),
+	url('../fonts/HelveNeuLig.svg#HelveNeuLig') format('svg'); }
+@font-face {
+	font-family: 'HelveNeuLigCon';
+	src: url('../fonts/HelveNeuLigCon.woff') format('woff'),
+	url('../fonts/HelveNeuLigCon.svg#HelveNeuLigCon') format('svg'); }
+@font-face {
+	font-family: 'Helvetica';
+	src: url('../fonts/Helve.woff') format('woff'),
+	url('../fonts/Helve.svg#LMBuff') format('svg'); }
+@font-face {
+	font-family: 'HelveNeuBol';
+	src: url('../fonts/HelveNeuBol.woff') format('woff'),
+	url('../fonts/HelveNeuBol.svg#HelveNeuBol') format('svg'); }
+@font-face {
+	font-family: 'HelveNeuRom';
+	src: url('../fonts/HelveNeuRom.woff') format('woff'),
+	url('../fonts/HelveNeuRom.svg#HelveNeuRom') format('svg'); }
+@font-face {
+	font-family: 'CodeBold';
+	src: url('../fonts/Code-Bold.woff') format('woff'),
+	url('../fonts/Code-Bold.svg#CodeBold') format('svg'); }
+@font-face {
+	font-family: 'CodeProLight';
+	src: url('../fonts/Code-Pro-Light.woff') format('woff'),
+	url('../fonts/Code-Pro-Light.svg#CodeProLight') format('svg'); }
+@font-face {
+	font-family: 'CodePro';
+	src: url('../fonts/Code-Pro.woff') format('woff'),
+	url('../fonts/Code-Pro.svg#CodePro') format('svg'); }
+@font-face {
+	font-family: 'CodeProLC';
+	src: url('../fonts/Code-Pro-LC.woff') format('woff'),
+	url('../fonts/Code-Pro-LC.svg#CodeProLC') format('svg'); }
+/*  =============  */
+
+body { font-family:"HelveNeuLig", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 17px;color:#646363; }
+.container {
+	font-family:inherit;
+	width: 1024px;
+	height:768px;
+	position:relative;
+	overflow:hidden; 
+	background-image:url('../img/bg-grey.png'); background-size:100% auto; }
+	
+.slide { padding:62px 65px 20px; }
+
+h1 { font-size: 34px; line-height:38px; margin-bottom:30px; color:#fff;}
+	h1 > span { display:inline-block; padding:8px 10px 2px; margin-bottom:5px; background: #7d467e;  }
+	h1 sup { position:relative; left:-5px; top:0px; }
+	h4 { font-size:26px; line-height:34px; } 
+h2 { font-size: 27px; line-height:28px; margin-bottom:20px; }
+h1, h2, h3 { font-family: 'CodePro'; font-weight: normal; }
+h2, h3, h4 { color:#e76905; }
+
+ul { list-style:none;}
+	.list { list-style:disc; margin-left:22px; }
+	.list li { margin-bottom:10px; }
+ol { margin-left: 25px }
+em { font-style:italic;}
+a { text-decoration:none; color:inherit; }
+strong { font-weight:normal; }
+.overlay h3, .white { color:#ffffff; }
+.yellow { color:#f1c72f; }
+.contents .purple { color:#67116f; }
+.code { font-family: 'CodeProLC'; }
+.code-l, h1 i, h1 sup { font-family: 'CodeProLight'; }
+p, h4 { font-family: 'HelveNeuLig'; }
+p { color:#646363; font-size:19px; line-height:23px; }
+.disabled { opacity:0.4; }
+
+
+/*header { height: 42px; }
+.toolbox header {width:950px;}*/
+.contents { height:682px; margin:0 auto; position:relative; }
+
+/*.controls { float:right; }
+	.controls > li, .play:after, .close.sub { background-image:url('../img/icons.png'); background-repeat:no-repeat; }
+	.controls > li { float:left; width:30px; height:30px; border:1px solid #c15f19; margin-right:20px; background-position:0 6px; }
+	
+	
+.cols { position:relative; }
+	.cols > div { float:left; height:inherit; }
+	.cols > div { height:inherit; }
+, .footnote, .overlay > div, .close, .video, .play, .play:after, .abs, .arrow, .arrow:after */
+.controls li, .b-links { -webkit-border-radius:500px; border-radius:500px; background:rgba(193, 193, 193, 0.8); }
+.logo, .controls, .overlay, .b-links { position:absolute; }
+	.logo { right:20px; bottom:20px; width:150px; height:44px; background:url('../img/logo.png') 0 2px no-repeat; background-size:100% auto; }
+	.logo.white { background-position-y:-50px; }
+	.controls { right:20px; bottom:93px; width:32px; }
+		.controls li { font-size:15px; line-height:30px; color:#ffffff; text-align:center; width:inherit;  height:32px; margin-bottom:18px;  }
+.b-links { left:65px; bottom:20px; font-family: 'HelveNeuBol'; font-size:12px; line-height:74px; width:74px; height:74px; letter-spacing:-0.025em; color:#fff; text-align:center; }
+.b-links.wallentin { left:150px; }
+.overlay { color:#fff; width:84%; padding:20px 20px 25px; bottom:0; left:65px; background:url('../img/bg_overlay.png') 0 -1615px no-repeat; font-size:14px; line-height:17px; }
+	/*.overlay.r { background-position-y:-1670px; }*/
+	.overlay h3 { color:inherit; font-size:25px; line-height:30px; margin-bottom:3px; }
+	.overlay li { margin-bottom:3px; }
+	.overlay .notes { line-height:20px; }
+
+.overlay, .logo { background-size:100% auto;  }
+
+/*.video { width:100%; height:610px; left:1025px; top:165px; background:rgba(20, 5, 22, 0.7); -webkit-animation-duration:0.45s; display:none; z-index: 20; }
+	.video .close { top:15px; right: 40px; z-index: 25;}
+	.video > div { width:880px; margin:50px auto 0; background:rgba(0, 0, 0, 0.9);}
+	.play { font-size:14px; line-height:14px; right:0; top:120px; width:65px; padding:9px 32px 8px 5px; border:2px solid rgba(114,114,114, 0.4); text-align:left; background:rgba(255, 255, 255, 0.15); }
+	.play.twolines{padding: 3px 32px 2px 5px;}
+	.toolbox .play {border:1px solid #f1c72f; background:none; }
+	.play:after { content:''; width:34px; height:34px; top:0px; right:0; background-position-y:-160px; }
+.switch { font-size:14px; line-height:14px; width:108px; right: 9px; top:175px; color:#727272; border:2px solid rgba(114,114,114, 0.5); text-align:center; padding:5px 2px 3px; }
+.hide { display:none; }
+.abs { z-index:5; }
+td { padding:6px 10px; }
+.tbl tr > th { color:#fff; padding:0; }
+	.tbl th > span, .tbl .header > td { font-family: 'CodePro';  }
+	.tbl th > span { float:left; width:24.6%; margin-left:0.53%; padding:18px 0 12px; background:#db5f05; }
+	.tbl th > span:first-child { margin-left:0; opacity:0; }
+	.tbl th > span:nth-child(3) {background:#618eb5; }
+	.tbl th > span:last-child { background:#aeb645; }
+	.tbl tr > td { width:25%; height:55px; background:rgba(255,255,255, 0.4); color:#727272; padding:0 10px; border-bottom:1px dotted rgba(114,114,114, 0.7); text-align:center; vertical-align:middle; line-height:20px;  }
+	.tbl .header > td { padding-top:5px; height:51px; }
+	.tbl tr > td:first-child { text-align:left; }
+*/
+.close { width:30px; height:30px; right:60px; top:10px; background: rgba(255, 255, 255, 0.15); border:1px solid #fff; color:#fff; text-align:center; font-size:18px; }
+	.close > i { display:inline-block; vertical-align:-6px; }
+	.close.sub { border-color:#c15f19; top:-42px; right:0; z-index:20; }
+.feature { padding:10px; margin-top:22px; background-color: rgba(255, 255, 255, 0.5); position:relative; }
+	.feature.nbg { background-color:transparent; }
+	.feature img { width:100%; height:auto; }
+
+.footnote { font-family:'HelveNeuLigCon'; color:#646363; font-size:15px; line-height:16px; }
+	.footnote p { margin-bottom:2px;font-family:inherit; }
