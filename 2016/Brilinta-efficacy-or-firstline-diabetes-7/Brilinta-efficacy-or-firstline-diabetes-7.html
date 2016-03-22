@@ -17,27 +17,30 @@
 	/* ==== YOUR CSS HERE ===== */
 /*Alistair Added in*/
 
-.platoTitle
-{
-    font-size: 17px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-.platoList
-{
-    width:710px; 
-    font-size:20px; 
-    line-height: 25px;
-    margin-bottom: 20px;
-}
+
 table, th, td {
     border: 1px solid white;
     height:50px;
-    width:100px;
     color: white;
-}
 
-    /*END*/
+}
+.tdFWidth
+{
+    width:350px;
+}
+.bText
+{
+    position: absolute;
+    margin-top: 80px;
+    font-size: 20px;
+}
+.dText
+{
+    position: absolute;
+    margin-top: 150px;
+    font-size: 20px;
+}
+/*END*/
 
 
 
@@ -74,51 +77,37 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
  				
 
                 <h1 style="font-size:32px;">
-                	<span><i>THERE WERE NO SIGNIFICANT DIFFERENCES IN BLEEDING</i></span>
+                	<span><i>DYSPNOEA WAS MORE COMMON</i></span>
                 	<br />
-                	<span>TRENDS FOR PATIENTS WITH DIABETES VS. NO DIABETES<sup> 1</sup></span>
+                	<span>VS. CLOPIDOGREL<sup> 1-3</sup></span>
                 </h1>
 
-                <p class="platoTitle">PLATO safety endpoints: bleeding<sup>1</sup></p>
-                <ul>
-                    <li class="platoList">Interaction tests were not significant, irrespective of bleeding type and definition(i.e. PLATO major, fatal or life-threatening or TIMI major).<sup> 1</sup></li>
-                    <li class="platoList">A sub analysis of 4,662 patients from PLATO.<sup> 1</sup></li>
-                    <li class="platoList">The majority (96%) of patients with diabetes had type 2 diabetes.<sup> 1</sup></li>
-                </ul>
 
                 <table style="width:100%">
                   <tr style="background-color:orange;">
-                    <td></td>
-                    <td>N</td> 
-                    <td>Overall % (n)</td>
-                     <td>BRILINTA 90MG % (n)</td>
-                    <td>CLOPIDOGREL % (n)</td> 
-                    <td>HAZARD RATION (95% CI)</td>
-                    <td>P VALUE (INTERACTION)</td>
+                    <td class="tdFWidth"  >DYSPNOEA IN THE PLATO TRIAL</td>
+                    <td>BRILINTA (N = 9,235)/td> 
+                    <td>CLOPIDOGREL (N = 9,186)</td>
+                     <td>P VALUE</td>
+ 
                   </tr>
-                  <tr style="background-color:lightgrey;">
-                    <td colspan="7">Major bleeding, PLATO defined</td>
-                  </tr>
+
                   <tr>
-                    <td style="background-color:lightgrey;">No diabetes</td>
-                    <td style="background-color:#E6E6E6; color:black;">13,798</td> 
-                    <td style="background-color:#E6E6E6; color:black;">10.4 (1,298)</td>
-                     <td style="background-color:#E6E6E6; color:black;"> 10.8 (674)</td>
-                    <td style="background-color:#E6E6E6; color:black;">10.0 (624)</td> 
-                    <td style="background-color:#E6E6E6; color:black;">1.08 (0.97, 1.19)</td>
-                    <td style="background-color:#E6E6E6; color:black;">0.21</td>
+                    <td class="tdFWidth" style="background-color:lightgrey;">Incidence of dyspnoea adverse events (%)</td>
+                    <td style="background-color:#E6E6E6; color:black;">13.8</td> 
+                    <td style="background-color:#E6E6E6; color:black;">7.8</td>
+                     <td style="background-color:#E6E6E6; color:black;">< 0.001</td>
                   </tr>
                    <tr>
-                    <td style="background-color:lightgrey;">Diabetes</td>
-                    <td style="background-color:#E6E6E6; color:black;">4,621</td> 
-                    <td style="background-color:#E6E6E6; color:black;">14.4 (592)</td>
-                     <td style="background-color:#E6E6E6; color:black;">14.1 (287)</td>
-                    <td style="background-color:#E6E6E6; color:black;">14.8 (305)</td> 
-                    <td style="background-color:#E6E6E6; color:black;">0.95 (0.81,1.12)</td>
-                    <td style="background-color:#E6E6E6; color:black;">0.21</td>
+                    <td class="tdFWidth"  style="background-color:lightgrey;">Patients who discontinued treatment due to dyspnoea (%)</td>
+                    <td style="background-color:#E6E6E6; color:black;">0.9</td> 
+                    <td style="background-color:#E6E6E6; color:black;">0.1</td>
+                     <td style="background-color:#E6E6E6; color:black;">< 0.001</td>
                   </tr>
                 </table>
 
+                <h3 class="bText">BRILINTA-associated dyspnoea was mostly mild-to-moderate in intensity.<sup> 2</sup></h3>
+                <h3 class="dText">Dyspnoea was not associated with new or worsening heart or lung disease.<sup> 2</sup></h3>
 
             	 <!--END-->
 
@@ -152,9 +141,11 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
             <!--Alistair Added In-->
 
         	<div class="refFirst hide">
-                <h3>REFERENCE</h3>
+                <h3>REFERENCES</h3>
                 <ol>
-                    <li>James S et al. Eur Heart J 2010l 31: 3006-3016.</li>
+                    <li>Wallentin L, et al. N Engl J Med 2009;361:1045-1057.</li>
+                    <li>BRILINTA&reg; (ticagrelor) Data Sheet. 18 November 2015.</li>
+                    <li>Storey RF, et al. Eur Heart J 2011;32:2945-2953.</li>
                 </ol>
             </div>
 
@@ -211,16 +202,13 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
 
 		});
 
-		$(".platoBox").on('tap', function(){
+		$(".dyspnoeaBox").on('tap', function(){
 
-			alert("Plato Clicked");
+			alert("dyspnoeaBox Clicked");
 		});
 
 		
-		$(".diabetesBox").on('tap', function(){
 
-			alert("diabetesBox Clicked");
-		});
 
 		/*END*/
 
