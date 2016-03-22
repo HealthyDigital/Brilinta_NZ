@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no">
@@ -10,52 +11,34 @@
 
 
 <link rel="stylesheet" href="./css/swiper.min.css">
+
 <style type="text/css">
 
 	/* ==== YOUR CSS HERE ===== */
 /*Alistair Added in*/
-	.container{
-		/*background-image:url('img/patient_picture.jpg'); background-size:100% auto;*/
-	}
-	.imageInContent
-	{
-		background-image: url('img/mortality.png');
-		background-size: 100% auto;
-		background-repeat: no-repeat;
-		width: 850px;
-		height:420px;
-		position:absolute;
-		margin-top: 110px;
-	}
-	.brilintaOrange
-	{
-		position: absolute;
-		margin-left: 450px;
-		margin-top: 370px;
-	}
-	.brilintaInfo
-	{
-		color: white;
-		width: 380px;
-		font-size: 27px;
-		line-height: 35px;
-		position: absolute;
-		margin-left: 450px;
-		margin-top:400px;
-	}
-	.textBelowGraph
-	{
-		position: absolute;
-		z-index: 1;
-		margin-top:410px;
-		width: 890px;
-		font-size: 16px;
-	}
 
-            	/*<h2 class="brilintaOrange">Use Brilinta for 12 months</h2>
-            	<div class="brilintaInfo">At one year, patients undergoing primary PCI remain at high risk of major cardiac events<sup>1</sup></div>*/
+.platoTitle
+{
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.platoList
+{
+    width:710px; 
+    font-size:20px; 
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid white;
+    height:50px;
+    width:100px;
+    color: white;
+}
 
     /*END*/
+
 
 
 </style> 
@@ -85,19 +68,57 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
 
 
                 <!--===== YOUR ELEMENTS/CONTENTS HERE =======-->
-
-
-                
+              
  				<!--Alistair Added In-->
-            
 
-				<div class="imageInContent"></div>
-                <h1>
-                	<span><i>DIABETES IS A SIGNIFICANT INDEPENDENT RISK</i></span>
+ 				
+
+                <h1 style="font-size:32px;">
+                	<span><i>THERE WERE NO SIGNIFICANT DIFFERENCES IN BLEEDING</i></span>
                 	<br />
-                	<span>FACTOR FOR MORTALITY IN ACS PATIENTS</span>
+                	<span>TRENDS FOR PATIENTS WITH DIABETES VS. NO DIABETES<sup> 1</sup></span>
                 </h1>
-            	<p class="textBelowGraph">In a subgroup analysis of 11 independent TIMI study group clinical trials (N=62,036), it was shown that ACS patients with diabetes (n=10,613,17.%) had higher all cause mortality at 30 days and 1 year compared to ACS patients without diabetes.<sup>1</sup></p>
+
+                <p class="platoTitle">PLATO safety endpoints: bleeding<sup>1</sup></p>
+                <ul>
+                    <li class="platoList">Interaction tests were not significant, irrespective of bleeding type and definition(i.e. PLATO major, fatal or life-threatening or TIMI major).<sup> 1</sup></li>
+                    <li class="platoList">A sub analysis of 4,662 patients from PLATO.<sup> 1</sup></li>
+                    <li class="platoList">The majority (96%) of patients with diabetes had type 2 diabetes.<sup> 1</sup></li>
+                </ul>
+
+                <table style="width:100%">
+                  <tr style="background-color:orange;">
+                    <td></td>
+                    <td>N</td> 
+                    <td>Overall % (n)</td>
+                     <td>BRILINTA 90MG % (n)</td>
+                    <td>CLOPIDOGREL % (n)</td> 
+                    <td>HAZARD RATION (95% CI)</td>
+                    <td>P VALUE (INTERACTION)</td>
+                  </tr>
+                  <tr style="background-color:lightgrey;">
+                    <td colspan="7">Major bleeding, PLATO defined</td>
+                  </tr>
+                  <tr>
+                    <td style="background-color:lightgrey;">No diabetes</td>
+                    <td style="background-color:#E6E6E6; color:black;">13,798</td> 
+                    <td style="background-color:#E6E6E6; color:black;">10.4 (1,298)</td>
+                     <td style="background-color:#E6E6E6; color:black;"> 10.8 (674)</td>
+                    <td style="background-color:#E6E6E6; color:black;">10.0 (624)</td> 
+                    <td style="background-color:#E6E6E6; color:black;">1.08 (0.97, 1.19)</td>
+                    <td style="background-color:#E6E6E6; color:black;">0.21</td>
+                  </tr>
+                   <tr>
+                    <td style="background-color:lightgrey;">Diabetes</td>
+                    <td style="background-color:#E6E6E6; color:black;">4,621</td> 
+                    <td style="background-color:#E6E6E6; color:black;">14.4 (592)</td>
+                     <td style="background-color:#E6E6E6; color:black;">14.1 (287)</td>
+                    <td style="background-color:#E6E6E6; color:black;">14.8 (305)</td> 
+                    <td style="background-color:#E6E6E6; color:black;">0.95 (0.81,1.12)</td>
+                    <td style="background-color:#E6E6E6; color:black;">0.21</td>
+                  </tr>
+                </table>
+
 
             	 <!--END-->
 
@@ -131,21 +152,23 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
             <!--Alistair Added In-->
 
         	<div class="refFirst hide">
-                <h3>REFERENCE:</h3>
+                <h3>REFERENCE</h3>
                 <ol>
-                    <li>Donahoe SM et al. JAMA 2007; 298: 765-775.</li>
+                    <li>James S et al. Eur Heart J 2010l 31: 3006-3016.</li>
                 </ol>
             </div>
 
             <div class="notesFirst hide">
             	<h3>NOTES</h3>
-                This analysis included 55 countries, 62,036 patients; 46,577 with STEMI, 15,459 with UA/INSTEMI; 17% (10,613) with diabetes.<sup>1</sup><br />
-                Primary endpoint: post-ACS mortality at 30 days and 1 year in patients with or without diabetes.<sup>1</sup>
-                <br />
-				DM = Diabetes Mellitus<br />
-				TIMI = Thrombolysis in Myorcardial Infraction<br />
-				STEMI = ST-segment Elevation Myocardial Infraction<br />
-				UA/NSTEMI = Unstable Angine/Non ST-segment Elevation Myorcardial Infraction
+            	The reduction in CV events continued to increase throughout the 12-month study period<sup>1</sup>
+            	<br />
+            	ARR = absolute risk reduction
+            	<br />
+            	RRR = relative risk reduction
+            	<br />
+            	NNT = number need to treat
+            	<br />
+            	† When treated according to the PLATO regimen
             </div>
             <!--END-->
            
@@ -160,6 +183,7 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
 	$( function(){
 
 /*Alistair Added in*/
+
 		$(".controls > [data-control=v]").on('tap', function(){
 
 		});
@@ -170,10 +194,10 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
 
 		});
 		$(".controls > [data-control=n]").on('tap', function(){
-			$('.slide').css("display","none");
+			/*$('.slide').css("display","none");
 			$(".overlay").toggleClass('hide show');
 			$(".notesFirst").toggleClass('hide show');
-			$('.ref').css("display","none");
+			$('.ref').css("display","none");*/
 
 		});
 		$(".controls > [data-control=pi]").on('tap', function(){
@@ -185,6 +209,17 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
 			$(".overlay").toggleClass('hide show');
 			$(".refFirst").toggleClass('hide show');
 
+		});
+
+		$(".platoBox").on('tap', function(){
+
+			alert("Plato Clicked");
+		});
+
+		
+		$(".diabetesBox").on('tap', function(){
+
+			alert("diabetesBox Clicked");
 		});
 
 		/*END*/

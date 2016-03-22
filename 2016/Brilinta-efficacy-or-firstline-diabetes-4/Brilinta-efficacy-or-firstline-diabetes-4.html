@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no">
@@ -10,51 +11,28 @@
 
 
 <link rel="stylesheet" href="./css/swiper.min.css">
+
 <style type="text/css">
 
 	/* ==== YOUR CSS HERE ===== */
 /*Alistair Added in*/
-	.container{
-		/*background-image:url('img/patient_picture.jpg'); background-size:100% auto;*/
-	}
-	.imageInContent
+	.graphImage
 	{
-		background-image: url('img/mortality.png');
-		background-size: 100% auto;
+		background: url('img/reduction_graph.png');
+		background-size: 100%;
 		background-repeat: no-repeat;
-		width: 850px;
-		height:420px;
-		position:absolute;
-		margin-top: 110px;
-	}
-	.brilintaOrange
-	{
 		position: absolute;
-		margin-left: 450px;
-		margin-top: 370px;
+		margin-top:200px;
+		width:750px;
+		height: 360px;
+		margin-left:70px;
 	}
-	.brilintaInfo
-	{
-		color: white;
-		width: 380px;
-		font-size: 27px;
-		line-height: 35px;
-		position: absolute;
-		margin-left: 450px;
-		margin-top:400px;
-	}
-	.textBelowGraph
-	{
-		position: absolute;
-		z-index: 1;
-		margin-top:410px;
-		width: 890px;
-		font-size: 16px;
-	}
-
-            	/*<h2 class="brilintaOrange">Use Brilinta for 12 months</h2>
-            	<div class="brilintaInfo">At one year, patients undergoing primary PCI remain at high risk of major cardiac events<sup>1</sup></div>*/
-
+    .textUnderGraph
+    {
+        position: absolute;
+        margin-top: 400px;
+        font-size: 15px;
+    }
     /*END*/
 
 
@@ -85,19 +63,19 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
 
 
                 <!--===== YOUR ELEMENTS/CONTENTS HERE =======-->
-
-
-                
+              
  				<!--Alistair Added In-->
-            
 
-				<div class="imageInContent"></div>
+ 				<div class="graphImage"></div>
+
                 <h1>
-                	<span><i>DIABETES IS A SIGNIFICANT INDEPENDENT RISK</i></span>
+                	<span><i>GIVE DIABETES PATIENTS THEIR</i></span>
                 	<br />
-                	<span>FACTOR FOR MORTALITY IN ACS PATIENTS</span>
+                	<span>BEST CHANCE WITH 12 MONTHS BRILINTA<sup>1-3</sup></span>
                 </h1>
-            	<p class="textBelowGraph">In a subgroup analysis of 11 independent TIMI study group clinical trials (N=62,036), it was shown that ACS patients with diabetes (n=10,613,17.%) had higher all cause mortality at 30 days and 1 year compared to ACS patients without diabetes.<sup>1</sup></p>
+                <p>Compared with BRILINTA, Diabetes patients on clopidogrel have a 14.58% relative increase in CV death at 12 months (16.2% vs 14.1%).<sup>2</sup></p>
+
+                <p class="textUnderGraph">Significance not evaluated. Adapted from James et al 2010.<sup>3</sup></p>
 
             	 <!--END-->
 
@@ -131,21 +109,25 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
             <!--Alistair Added In-->
 
         	<div class="refFirst hide">
-                <h3>REFERENCE:</h3>
+                <h3>REFERENCES</h3>
                 <ol>
-                    <li>Donahoe SM et al. JAMA 2007; 298: 765-775.</li>
+                    <li>Wallentine L, et al. N Engl J Med 2009; 361: 1045-57.</li>
+                    <li>James S, et al. BMG 2011;342:d3527 doi:10.1136/bmj.d3527</li>
+                    <li>James S, et al. EHJ 2010;31:3006-3016.</li>
                 </ol>
             </div>
 
             <div class="notesFirst hide">
             	<h3>NOTES</h3>
-                This analysis included 55 countries, 62,036 patients; 46,577 with STEMI, 15,459 with UA/INSTEMI; 17% (10,613) with diabetes.<sup>1</sup><br />
-                Primary endpoint: post-ACS mortality at 30 days and 1 year in patients with or without diabetes.<sup>1</sup>
-                <br />
-				DM = Diabetes Mellitus<br />
-				TIMI = Thrombolysis in Myorcardial Infraction<br />
-				STEMI = ST-segment Elevation Myocardial Infraction<br />
-				UA/NSTEMI = Unstable Angine/Non ST-segment Elevation Myorcardial Infraction
+            	The reduction in CV events continued to increase throughout the 12-month study period<sup>1</sup>
+            	<br />
+            	ARR = absolute risk reduction
+            	<br />
+            	RRR = relative risk reduction
+            	<br />
+            	NNT = number need to treat
+            	<br />
+            	† When treated according to the PLATO regimen
             </div>
             <!--END-->
            
@@ -185,6 +167,17 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
 			$(".overlay").toggleClass('hide show');
 			$(".refFirst").toggleClass('hide show');
 
+		});
+
+		$(".platoBox").on('tap', function(){
+
+			alert("Plato Clicked");
+		});
+
+		
+		$(".diabetesBox").on('tap', function(){
+
+			alert("diabetesBox Clicked");
 		});
 
 		/*END*/
