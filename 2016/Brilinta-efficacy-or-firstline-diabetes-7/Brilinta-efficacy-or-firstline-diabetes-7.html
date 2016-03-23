@@ -32,13 +32,36 @@ table, th, td {
 {
     position: absolute;
     margin-top: 80px;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'HelveNeuLig';
 }
 .dText
 {
     position: absolute;
     margin-top: 150px;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'HelveNeuLig';
+}
+.topTDS
+{
+    font-family: 'CodePro';
+    color: white;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+.valueInTD
+{
+    text-align: center;
+    margin: 0 auto;
+}
+.tdTextStart
+{
+    font-family: 'HelveNeuLig';
+    color:white;
+    font-size: 15px;
+    width:280px;
+    margin-left:10px;
 }
 /*END*/
 
@@ -53,7 +76,7 @@ table, th, td {
                 <li data-control="v">V</li>
                 <li data-control="p">P</li>
                 <li data-control="g">G</li>
-                <li data-control="n">N</li>
+                <li data-control="n" class="disabled">N</li>
                 <li data-control="pi">PI</li>
                 <li data-control="r">R</li>
             </ul>
@@ -84,25 +107,25 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
 
 
                 <table style="width:100%">
-                  <tr style="background-color:orange;">
-                    <td class="tdFWidth"  >DYSPNOEA IN THE PLATO TRIAL</td>
-                    <td>BRILINTA (N = 9,235)/td> 
-                    <td>CLOPIDOGREL (N = 9,186)</td>
-                     <td>P VALUE</td>
+                  <tr style="background-color:rgb(204,105,27);">
+                    <td class="tdFWidth"><p style="color: white; font-family: 'CodePro'; position: absolute; margin-left: 10px; margin-top:10px;">DYSPNOEA IN THE PLATO TRIAL</p></td>
+                    <td><p class="topTDS">BRILINTA (N = 9,235)</p></td> 
+                    <td><p class="topTDS" style="margin-left: 50px;">CLOPIDOGREL (N = 9,186)</p></td>
+                    <td><p class="topTDS" style="position: absolute; margin-top:15px; margin-left:5px;">P VALUE</p></td>
  
                   </tr>
 
                   <tr>
-                    <td class="tdFWidth" style="background-color:lightgrey;">Incidence of dyspnoea adverse events (%)</td>
-                    <td style="background-color:#E6E6E6; color:black;">13.8</td> 
-                    <td style="background-color:#E6E6E6; color:black;">7.8</td>
-                     <td style="background-color:#E6E6E6; color:black;">< 0.001</td>
+                    <td class="tdFWidth" style="background-color:rgb(164,164,164);"><p class="tdTextStart">Incidence of dyspnoea adverse events (%)</p></td>
+                    <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">13.8</p></td> 
+                    <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">7.8</p></td>
+                     <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">< 0.001</p></td>
                   </tr>
                    <tr>
-                    <td class="tdFWidth"  style="background-color:lightgrey;">Patients who discontinued treatment due to dyspnoea (%)</td>
-                    <td style="background-color:#E6E6E6; color:black;">0.9</td> 
-                    <td style="background-color:#E6E6E6; color:black;">0.1</td>
-                     <td style="background-color:#E6E6E6; color:black;">< 0.001</td>
+                    <td class="tdFWidth"  style="background-color:rgb(164,164,164);"><p class="tdTextStart">Patients who discontinued treatment due to dyspnoea (%)</p></td>
+                    <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">0.9</p></td> 
+                    <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">0.1</p></td>
+                     <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">< 0.001</p></td>
                   </tr>
                 </table>
 

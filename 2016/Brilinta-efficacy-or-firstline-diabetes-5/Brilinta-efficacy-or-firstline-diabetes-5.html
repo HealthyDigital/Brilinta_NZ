@@ -29,15 +29,56 @@
     font-size:20px; 
     line-height: 25px;
     margin-bottom: 20px;
+    margin-left: 30px;
+}
+.liPoints
+{
+   background:url('./img/small_bullet.png');
+   background-size: 100%;
+   background-repeat: no-repeat;
+   width: 20px;
+   height: 20px;
+   position: absolute;
+}
+.liPoints2
+{
+   background:url('./img/small_bullet.png');
+   background-size: 100%;
+   background-repeat: no-repeat;
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   margin-top: 70px;
+}
+.liPoints3
+{
+   background:url('./img/small_bullet.png');
+   background-size: 100%;
+   background-repeat: no-repeat;
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   margin-top: 120px;
 }
 table, th, td {
     border: 1px solid white;
     height:50px;
-    width:100px;
     color: white;
+     text-align:center;
 }
+.topTdAttributes > p
+{
+    font-family:CodePro; 
+    text-align:center;
+    margin-top:15px;
+    margin-left: 35px;
+    position: absolute;
+    color: white;
+    font-size: 13px;
 
+}
     /*END*/
+
 
 
 
@@ -50,7 +91,7 @@ table, th, td {
                 <li data-control="v">V</li>
                 <li data-control="p">P</li>
                 <li data-control="g">G</li>
-                <li data-control="n">N</li>
+                <li data-control="n" class="disabled">N</li>
                 <li data-control="pi">PI</li>
                 <li data-control="r">R</li>
             </ul>
@@ -80,6 +121,9 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
                 </h1>
 
                 <p class="platoTitle">PLATO safety endpoints: bleeding<sup>1</sup></p>
+                <div class="liPoints"></div>
+                <div class="liPoints2"></div>
+                <div class="liPoints3"></div>
                 <ul>
                     <li class="platoList">Interaction tests were not significant, irrespective of bleeding type and definition(i.e. PLATO major, fatal or life-threatening or TIMI major).<sup> 1</sup></li>
                     <li class="platoList">A sub analysis of 4,662 patients from PLATO.<sup> 1</sup></li>
@@ -87,20 +131,20 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
                 </ul>
 
                 <table style="width:100%">
-                  <tr style="background-color:orange;">
+                  <tr style="background-color:rgb(204,105,27);">
                     <td></td>
-                    <td>N</td> 
-                    <td>Overall % (n)</td>
-                     <td>BRILINTA 90MG % (n)</td>
-                    <td>CLOPIDOGREL % (n)</td> 
-                    <td>HAZARD RATION (95% CI)</td>
-                    <td>P VALUE (INTERACTION)</td>
+                    <td class="topTdAttributes" style="width:90px;"><p>N</p></td> 
+                    <td class="topTdAttributes" style="width: 125px;"><p style="margin-left: 20px; margin-top: 5px; width: 80px;">Overall % (n)</p></td>
+                     <td class="topTdAttributes"style="width: 125px;" ><p style="margin-left: 10px; margin-top: 5px; width: 100px;">BRILINTA 90MG % (n)</p></td>
+                    <td class="topTdAttributes" style="width:120px;"><p style="margin-left: 10px; margin-top: 5px; width: 100px;">CLOPIDOGREL % (n)</p></td> 
+                    <td class="topTdAttributes" style="width:150px;"><p style="margin-left: 10px; margin-top: 5px; width: 120px;">HAZARD RATION (95% CI)</p></td>
+                    <td class="topTdAttributes"><p style="margin-left: 35px; margin-top: 5px; width: 100px;">P VALUE (INTERACTION)</p></td>
                   </tr>
-                  <tr style="background-color:lightgrey;">
-                    <td colspan="7">Major bleeding, PLATO defined</td>
+                  <tr style="background-color:rgb(164,164,164);">
+                    <td colspan="7"><p  style="font-family: 'HelveNeuLig'; color: white; margin-top:10px; margin-left:-600px;">Major bleeding, PLATO defined</p></td>
                   </tr>
                   <tr>
-                    <td style="background-color:lightgrey;">No diabetes</td>
+                    <td style="background-color:rgb(164,164,164); width:100px;"><p style="font-family: 'HelveNeuLig'; color: white; margin-top: 15px; margin-left: 10px; font-size: 16px;">No diabetes</p></td>
                     <td style="background-color:#E6E6E6; color:black;">13,798</td> 
                     <td style="background-color:#E6E6E6; color:black;">10.4 (1,298)</td>
                      <td style="background-color:#E6E6E6; color:black;"> 10.8 (674)</td>
@@ -109,7 +153,7 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
                     <td style="background-color:#E6E6E6; color:black;">0.21</td>
                   </tr>
                    <tr>
-                    <td style="background-color:lightgrey;">Diabetes</td>
+                    <td style="background-color:rgb(164,164,164);"><p style="font-family: 'HelveNeuLig'; color: white; margin-top: 15px; margin-left: -10px; font-size: 16px;">Diabetes</p></td>
                     <td style="background-color:#E6E6E6; color:black;">4,621</td> 
                     <td style="background-color:#E6E6E6; color:black;">14.4 (592)</td>
                      <td style="background-color:#E6E6E6; color:black;">14.1 (287)</td>

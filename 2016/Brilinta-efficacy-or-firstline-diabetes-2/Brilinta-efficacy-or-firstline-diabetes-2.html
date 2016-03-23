@@ -21,44 +21,84 @@
 
 	.platoBox
 	{
-		width: 250px;
-		height: 250px;
+		width: 570px;
+		height: 570px;
 		position: absolute;
-		margin-left: 150px;
-		margin-top: 50px;
-		background-color: orange;
+		margin-left: 0px;
+		margin-top: -110px;
+		background: url('./img/orange.png');
+		transform: scale(0.48);
+		background-repeat: no-repeat;
 	}
 
 	.diabetesBox
 	{
-		width: 250px;
-		height: 250px;
+		width: 570px;
+		height: 570px;
 		position: absolute;
-		margin-left: 500px;
-		margin-top: 50px;
-		background-color: yellow;
+		margin-left: 350px;
+		margin-top: -110px;
+		background: url('./img/yellow.png');
+		transform: scale(0.48);
+		background-repeat: no-repeat;
 	}
-/*@import "compass/css3/background-size";*/
-/*$color-green: #aaa;
-	.platoBox{
-		  background: $color-green; /*fallback*/
-		  background:
-		    linear-gradient(45deg,  transparent 20px, $color-green 20px),
-		    linear-gradient(90deg, transparent -100px, $color-green 20px),
-		    linear-gradient(90deg, transparent -100px, $color-green 20px),
-		    linear-gradient(315deg, transparent 20px, $color-green 20px);
-		  background-position:
-		    bottom left,
-		    top left,
-		    top right,
-		    bottom right;
-		  background-size: 50% 50%;
-		  background-repeat:no-repeat;
-		  padding: 20px;
 
+	.fTitle
+	{
+		color: white;
+		margin-top:50px;
+		position: absolute;
+		margin-left:30px;
+		font-size: 45px;
+		width:500px;
+		line-height: 40px;
+		text-align: center;
+	}
+	.arrowImage
+	{
+		color: white;
+		position: absolute;
+		margin-top: 200px;
+		margin-left:250px;
+		font-size: 55px;
+	}
 
-
-/*	}*/
+	.sTitle
+	{
+		color: white;
+		font-size: 95px;
+		position: absolute;
+		margin-top: 320px;
+		margin-left: 220px;
+		font-family: 'CodePro';
+	}
+	.tTitle
+	{
+		color: white;
+		position: absolute;
+		margin-top: 420px;
+		font-size: 55px;
+		margin-left: 60px;
+	}
+	.tdTitle
+	{
+		color: white;
+		position: absolute;
+		margin-top: 420px;
+		font-size: 52px;
+		margin-left: 20px;
+		text-align: center;
+		line-height: 45px;
+	}
+	.boxInfo
+	{
+		width: 800px;
+		height: 350px;
+	}
+	.boxInfo > li
+	{
+		
+	}
     /*END*/
 
 
@@ -96,11 +136,22 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
                 	<br />
                 	<span>BEST CHANCE WITH 12 MONTHS BRILINTA<sup>1,2</sup></span>
                 </h1>
-                <h4>Compared with clopidogrel, ACS patients on BRILINTA showed a reduction in relative risk of CV death in the overall PLATO group and the diabetes sub-group for up to 12 months.</h4>
+                <h4 style="width:750px; margin: 0 auto;">Compared with clopidogrel, ACS patients on BRILINTA showed a reduction in relative risk of CV death in the overall PLATO group and the diabetes sub-group for up to 12 months.</h4>
 
-                <div class="platoBox"></div>
-                <div class="diabetesBox"></div>
-
+                <ul class="boxInfo">
+	                <li class="platoBox">
+	                	<p class="fTitle">BRILINTA REDUCES RELATIVE RISK</p>
+	                	<span class="arrowImage"><</span>
+	                	<p class="sTitle">16%</p>
+	                	<p class="tTitle">PLATO 12 months</p>
+	                </li>
+	                <li class="diabetesBox">
+	                	<p class="fTitle">BRILINTA REDUCES RELATIVE RISK</p>
+	                	<span class="arrowImage"><</span>
+	                	<p class="sTitle">13%</p>
+	                	<p class="tdTitle">DIABETES sub-group 12 months</p>
+	                </li>
+				</ul>
             	 <!--END-->
 
             </article>
