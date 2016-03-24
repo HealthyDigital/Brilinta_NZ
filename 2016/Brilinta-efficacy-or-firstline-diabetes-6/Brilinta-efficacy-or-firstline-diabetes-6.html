@@ -71,6 +71,56 @@
 {
     padding: 40px 40px 40px 60px;
 }
+
+
+table, th, td {
+    border: 1px solid white;
+    height:50px;
+    color: white;
+
+}
+.tdFWidth
+{
+    width:350px;
+}
+.bText
+{
+    position: absolute;
+    margin-top: 80px;
+    font-size: 25px;
+    font-family: 'HelveNeuLig';
+}
+.dText
+{
+    position: absolute;
+    margin-top: 150px;
+    font-size: 25px;
+    font-family: 'HelveNeuLig';
+}
+.topTDS
+{
+    font-family: 'CodePro';
+    color: white;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+.valueInTD
+{
+    text-align: center;
+    margin: 0 auto;
+}
+.tdTextStart
+{
+    font-family: 'HelveNeuLig';
+    color:white;
+    font-size: 15px;
+    width:280px;
+    margin
+
+
+
+
     /*END*/
 
 
@@ -118,17 +168,49 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
                 	<span>VS. CLOPIDOGREL<sup> 1-3</sup></span>
                 </h1>
 
-                <h4>Dyspnoea reported as a serious adverse event vs. clopidogrel.<sup>2</sup></h4>
+                <div class="mainMenu">
+                    <h4>Dyspnoea reported as a serious adverse event vs. clopidogrel.<sup>2</sup></h4>
 
-                <div class="dyspnoeaBox">
-                    <div class="containerDyspnoeaBox">
-                        <p class="fTitle">Dyspnoea</p>
-                        <p class="arrowTitle"><</p>
-                        <p class="tTitle">0.12<sup style="font-size:60px;">%</sup></p>
+                    <div class="dyspnoeaBox">
+                        <div class="containerDyspnoeaBox">
+                            <p class="fTitle">Dyspnoea</p>
+                            <p class="arrowTitle"><</p>
+                            <p class="tTitle">0.12<sup style="font-size:60px;">%</sup></p>
+                        </div>
                     </div>
+
+                    <h3 class="belowBoxText">Most events reported as a single episode occuring early after starting treatment.<sup> 2</sup></h3>
                 </div>
 
-                <h3 class="belowBoxText">Most events reported as a single episode occuring early after starting treatment.<sup> 2</sup></h3>
+
+                <div class="dyspnoeaBoxData" style="display:none;">
+                     <table style="width:100%">
+                      <tr style="background-color:rgb(204,105,27);">
+                        <td class="tdFWidth"><p style="color: white; font-family: 'CodePro'; position: absolute; margin-left: 10px; margin-top:10px;">DYSPNOEA IN THE PLATO TRIAL</p></td>
+                        <td><p class="topTDS">BRILINTA (N = 9,235)</p></td> 
+                        <td><p class="topTDS" style="margin-left: 50px;">CLOPIDOGREL (N = 9,186)</p></td>
+                        <td><p class="topTDS" style="position: absolute; margin-top:15px; margin-left:5px;">P VALUE</p></td>
+     
+                      </tr>
+
+                      <tr>
+                        <td class="tdFWidth" style="background-color:rgb(164,164,164);"><p class="tdTextStart">Incidence of dyspnoea adverse events (%)</p></td>
+                        <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">13.8</p></td> 
+                        <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">7.8</p></td>
+                         <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">< 0.001</p></td>
+                      </tr>
+                       <tr>
+                        <td class="tdFWidth"  style="background-color:rgb(164,164,164);"><p class="tdTextStart">Patients who discontinued treatment due to dyspnoea (%)</p></td>
+                        <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">0.9</p></td> 
+                        <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">0.1</p></td>
+                         <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">< 0.001</p></td>
+                      </tr>
+                    </table>
+
+                    <h3 class="bText">BRILINTA-associated dyspnoea was mostly mild-to-moderate in intensity.<sup> 2</sup></h3>
+                    <h3 class="dText">Dyspnoea was not associated with new or worsening heart or lung disease.<sup> 2</sup></h3>
+                </div>
+
             	 <!--END-->
 
             </article>
@@ -224,7 +306,9 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
 
 		$(".dyspnoeaBox").on('tap', function(){
 
-			alert("dyspnoeaBox Clicked");
+			$(".dyspnoeaBoxData").css("display","block");
+            $(".mainMenu").css("display","none");
+
 		});
 
 		

@@ -17,8 +17,34 @@
 	/* ==== YOUR CSS HERE ===== */
 /*Alistair Added in*/
 
-
-
+	.graphImage
+	{
+        background: url('img/risk_graph.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        margin-top: 10px;
+        width: 800px;
+        height: 400px;
+        margin-left: 30px;
+	}
+	.graphImage2
+	{
+		background: url('img/reduction_graph.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		position: absolute;
+		margin-top:10px;
+		width:800px;
+		height: 360px;
+		margin-left:70px;
+	}
+    .textUnderGraph
+    {
+        position: absolute;
+        margin-top: 400px;
+        font-size: 15px;
+    }
 	.platoBox
 	{
 		width: 570px;
@@ -148,26 +174,40 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
                 	<br />
                 	<span>BEST CHANCE WITH 12 MONTHS BRILINTA<sup style="font-family:'CodePro-Light';">1,2</sup></span>
                 </h1>
-                <h4 style="width:750px; margin: 0 auto;">Compared with clopidogrel, ACS patients on BRILINTA showed a reduction in relative risk of CV death in the overall PLATO group and the diabetes sub-group for up to 12 months.</h4>
 
-                <ul class="boxInfo">
-	                <li class="platoBox">
-	                	<div class="platoContainer">
-		                	<p class="fTitle">BRILINTA REDUCES RELATIVE RISK</p>
-		                	<span class="arrowImage"><</span>
-		                	<p class="sTitle">16<sup>%</sup></p>
-		                	<p class="tTitle">PLATO 12 months</p>
-	                	</div>
-	                </li>
-	                <li class="diabetesBox">
-	                	<div class="diabetesContainer">
-		                	<p class="fTitle">BRILINTA REDUCES RELATIVE RISK</p>
-		                	<span class="arrowImage"><</span>
-		                	<p class="sTitle">13<sup>%</sup></p>
-		                	<p class="tdTitle">DIABETES sub-group 12 months</p>
+                <div class="diabetestLink" style="display:none">
+                		<div class="graphImage2"></div>
+                	<p class="textUnderGraph">Significance not evaluated. Adapted from James et al 2010.<sup>3</sup></p>
+                </div>
+                
+                <div class="platoLink" style="display:none">
+					<p>Compared with BRILINTA, ACS patients on clopidogrel have a 19.4% relative increase in the primary endpoint, a composite of CV death, MI or stroke, at 12 months (11.7% vs 9.8%; p < 0.001).<sup>1</sup></p>
+
+					<div class="graphImage"></div>
+				</div>
+				<div class="mainMenu">
+	                <h4 style="width:750px; margin: 0 auto;">Compared with clopidogrel, ACS patients on BRILINTA showed a reduction in relative risk of CV death in the overall PLATO group and the diabetes sub-group for up to 12 months.</h4>
+
+	                <ul class="boxInfo">
+		                <li class="platoBox">
+		                	<div class="platoContainer">
+			                	<p class="fTitle">BRILINTA REDUCES RELATIVE RISK</p>
+			                	<span class="arrowImage"><</span>
+			                	<p class="sTitle">16<sup>%</sup></p>
+			                	<p class="tTitle">PLATO 12 months</p>
 		                	</div>
-	                </li>
-				</ul>
+		                </li>
+		                <li class="diabetesBox">
+		                	<div class="diabetesContainer">
+			                	<p class="fTitle">BRILINTA REDUCES RELATIVE RISK</p>
+			                	<span class="arrowImage"><</span>
+			                	<p class="sTitle">13<sup>%</sup></p>
+			                	<p class="tdTitle">DIABETES sub-group 12 months</p>
+			                	</div>
+		                </li>
+					</ul>
+				</div>
+
             	 <!--END-->
 
             </article>
@@ -262,13 +302,17 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
 
 		$(".platoBox").on('tap', function(){
 
-			alert("Plato Clicked");
+			$(".platoLink").css("display","block");
+			$(".diabetestLink").css("display","none");
+			$(".mainMenu").css("display","none");
 		});
 
 
 		$(".diabetesBox").on('tap', function(){
 
-			alert("diabetesBox Clicked");
+			$(".platoLink").css("display","none");
+			$(".diabetestLink").css("display","block");
+			$(".mainMenu").css("display","none");
 		});
 
 		/*END*/
