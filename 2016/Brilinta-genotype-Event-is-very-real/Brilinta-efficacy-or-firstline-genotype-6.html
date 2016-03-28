@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="BRILINTA - Efficacy or Firstline">
+<title>BRILINTA - Efficacy or Firstline</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+<link rel="stylesheet" href="./css/swiper.min.css">
+
+<style type="text/css">
+
+	/* ==== YOUR CSS HERE ===== */
+/*Alistair Added in*/
+
+
+.container{
+	background:url('./img/patient_picture.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.brilOrange
+{
+	position: absolute;
+	margin-top: 390px;
+	margin-left: 420px;
+	width:400px;
+	font-size: 23px;
+}
+.belowOrangeText
+{
+	color: white;
+	width:270px;
+	position: absolute;
+	margin-top:420px;
+	margin-left:420px;
+    font-family: 'HelveNeuLig';
+}
+.graphImage
+{
+    background: url('./img/risk_graph.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 800px;
+    height:430px;
+    margin-left:50px;
+}
+/*END*/
+
+
+
+</style> 
+</head>
+<body>
+	<section class="container">
+ 		<div class="slide">
+       		<ul class="controls">
+                <li data-control="v">V</li>
+                <li data-control="p">P</li>
+                <li data-control="g">G</li>
+                <li data-control="n">N</li>
+                <li data-control="pi">PI</li>
+                <li data-control="r">R</li>
+            </ul>
+
+
+
+            <article class="contents">
+            	<!--<h1> 
+                	<span><i>Give ACS patients their</i></span> 
+                	<span>best chance with 12 months Brilinta <sup>*1</sup></span> 
+             	</h1>
+                <h4>Compared with clopidogrel, ACS patients on BRILINTA showed a<br />
+consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4>-->
+
+
+
+                <!--===== YOUR ELEMENTS/CONTENTS HERE =======-->
+              
+ 				<!--Alistair Added In-->
+
+ 				
+
+                <h1>
+                	<span><i>THE RISK OF A SECOND</i></span>
+                	<br />
+                	<span>EVENT IS VERY REAL</span>
+                </h1>
+
+                <div class="mainMenu">
+                    <h2 class="brilOrange">Use Brilinta for 12 months</h2>
+                    <p class="belowOrangeText">At one year, patients undergoing primary PCI remain at high risk of major cardiac events<sup>1</sup></p>
+                </div>
+
+                <div class="graphImage" style="display:none;"></div>
+
+            	 <!--END-->
+
+            </article>
+            
+           <span class="logo"></span>
+           <span class="b-links plato">PLATO</span>
+           <span class="b-links wallentin">WALLENTIN</span>
+         
+   		</div><!-- end .slide -->
+        <!--overlay -->
+        <aside class="overlay hide"> 
+        	<!-- references -->
+        	<div class="ref hide">
+                <h3>REFERENCE:</h3>
+                <ol>
+                    <li>Stone GW et al. N Engl J Med 2011; 364:326–355.</li>
+                </ol>
+            </div>
+            <!-- Note -->
+            <div class="notes hide">
+            	<h3>NOTES</h3>
+                The reduction in CV events continued to increase throughout the 12-month study period<sup>1</sup><br />
+				ARR = absolute risk reduction<br />
+				RRR = relative risk reduction<br />
+				NNT = number needed to treat<br />
+				† When treated according to the PLATO regimen
+            </div>
+
+
+            <!--Alistair Added In-->
+
+        	<div class="refFirst hide">
+                <h3>REFERENCES</h3>
+                <ol>
+                    <li>Caggegi A, et al. Am J Cardiol 2011: 108:355-9.</li>
+                </ol>
+            </div>
+
+            <div class="notesFirst hide">
+            	<h3>NOTES</h3>
+            	Data represent the PCI population in an analysis of 1-year clinical outcomes in patients with ACS undergoing pCI or CABG.
+            	<br />
+            	Major cardiac events were defined as a composite of death, myocardial infraction, or target lesion revascularisation.
+            	<br />
+            	Adapted from Caggegi A, et al. Am J Cardiol 2011: 108:355-9.
+            </div>
+            <!--END-->
+           
+       	</aside>
+	</section>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/touchy.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+
+<script type="text/javascript">
+	$( function(){
+
+/*Alistair Added in*/
+
+    $(".belowOrangeText").click(function() {
+           $(".container").css("background","transparent");
+           $(".brilOrange").css("display","none");
+           $(".graphImage").css("display","block");
+        });
+    
+		$(".controls > [data-control=v]").on('tap', function(){
+
+		});
+		$(".controls > [data-control=p]").on('tap', function(){
+
+		});
+		$(".controls > [data-control=g]").on('tap', function(){
+
+		});
+		$(".controls > [data-control=n]").on('tap', function(){
+			$('.slide').css("display","none");
+			$(".overlay").toggleClass('hide show');
+			$(".notesFirst").toggleClass('hide show');
+			$('.ref').css("display","none");
+
+		});
+		$(".controls > [data-control=pi]").on('tap', function(){
+
+
+		});
+		$(".controls > [data-control=r]").on('tap', function(){
+			$('.slide').css("display","none");
+			$(".overlay").toggleClass('hide show');
+			$(".refFirst").toggleClass('hide show');
+
+		});
+
+		$(".dyspnoeaBox").on('tap', function(){
+
+			alert("dyspnoeaBox Clicked");
+		});
+
+		
+
+
+		/*END*/
+
+		/* ==== YOUR SCRIPT HERE ===== */
+		
+	});
+
+</script>
+</body>
+</html>
