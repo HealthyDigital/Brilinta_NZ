@@ -75,13 +75,13 @@
 
 table, th, td {
     border: 1px solid white;
-    height:50px;
+    /*height:50px;*/
     color: white;
 
 }
 .tdFWidth
 {
-    width:350px;
+    width:400px;
 }
 .bText
 {
@@ -104,6 +104,7 @@ table, th, td {
     width: 100px;
     text-align: center;
     margin: 0 auto;
+    padding:5px;
 }
 .valueInTD
 {
@@ -113,15 +114,23 @@ table, th, td {
 .tdTextStart
 {
     font-family: 'HelveNeuLig';
-    color:white;
-    font-size: 15px;
-    width:280px;
-    margin
+    color: white;
+    font-size: 18px;
+    width: 330px;
+    margin-top: 10px;
+    margin-left:10px;
+    margin-bottom: 10px;
 
 }
 
 
     /*END*/
+
+
+
+
+
+
 
 
 </style> 
@@ -175,18 +184,18 @@ table, th, td {
                         <td class="tdFWidth"><p style="color: white; font-family: 'CodePro'; position: absolute; margin-left: 10px; margin-top:10px;">DYSPNOEA IN THE PLATO TRIAL</p></td>
                         <td><p class="topTDS">BRILINTA (N = 9,235)</p></td> 
                         <td><p class="topTDS" style="margin-left: 50px;">CLOPIDOGREL (N = 9,186)</p></td>
-                        <td><p class="topTDS" style="position: absolute; margin-top:15px; margin-left:5px;">P VALUE</p></td>
+                        <td><p class="topTDS" style="position: absolute; margin-top:5px; margin-left:-5px;">P VALUE</p></td>
      
                       </tr>
 
                       <tr>
-                        <td class="tdFWidth" style="background-color:rgb(164,164,164);"><p class="tdTextStart">Incidence of dyspnoea adverse events (%)</p></td>
+                        <td class="tdFWidth" style="background-color:rgb(164,164,164); height:50px;"><p class="tdTextStart">Incidence of dyspnoea adverse events (%)</p></td>
                         <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">13.8</p></td> 
                         <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">7.8</p></td>
                          <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">< 0.001</p></td>
                       </tr>
                        <tr>
-                        <td class="tdFWidth"  style="background-color:rgb(164,164,164);"><p class="tdTextStart">Patients who discontinued treatment due to dyspnoea (%)</p></td>
+                        <td class="tdFWidth"  style="background-color:rgb(164,164,164); height:50px;"><p class="tdTextStart">Patients who discontinued treatment due to dyspnoea (%)</p></td>
                         <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">0.9</p></td> 
                         <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">0.1</p></td>
                          <td style="background-color:#E6E6E6; color:black;"><p class="valueInTD">< 0.001</p></td>
@@ -263,17 +272,15 @@ table, th, td {
 
 /*Alistair Added in*/
 
-
-
 		$(".dyspnoeaBox").on('tap', function(){
 
-			$(".dyspnoeaBoxData").css("display","block");
+            $(".dyspnoeaBoxData").css("display","block");
             $(".mainMenu").css("display","none");
             
 
-		});
+        });
 
-		$(".dyspnoeaBoxData").on('tap', function(){
+        $(".dyspnoeaBoxData").on('tap', function(){
             $(".dyspnoeaBoxData").css("display","none");
             $(".mainMenu").css("display","block");
         });
