@@ -128,10 +128,18 @@
 		width: 800px;
 		height: 350px;
 	}
-	.boxInfo > li
-	{
-		
-	}
+	.diabetestLink, 
+	.platoLink , 
+	.box-1 .mainMenu, 
+	.box-2 .mainMenu, 
+	.box-1 .diabetestLink, 
+	.box-2  .platoLink,
+	.box-1 .cabg,
+	.box-2 .acs { display: none; }
+	.box-1  .platoLink, 
+	.box-2  .diabetestLink  { display: block; }
+	.box-1 .acs, .box-2 .cabg { display: inline; } 
+	em { font-style: normal; font-weight: bold; } 
     /*END*/
 
 
@@ -152,14 +160,6 @@
 
 
             <article class="contents">
-            	<!--<h1> 
-                	<span><i>Give ACS patients their</i></span> 
-                	<span>best chance with 12 months Brilinta <sup>*1</sup></span> 
-             	</h1>
-                <h4>Compared with clopidogrel, ACS patients on BRILINTA showed a<br />
-consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4>-->
-
-
 
                 <!--===== YOUR ELEMENTS/CONTENTS HERE =======-->
               
@@ -172,12 +172,12 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
 
 
 
-                <div class="diabetestLink" style="display:none">
+                <div class="diabetestLink">
                 		<div class="graphImage2"></div>
                 		<p style="position: absolute; margin-top:410px;">Compared with BRILINTA, NSTE-ACS patients on clopidogrel have a 43.7% relative increase in CV death at 12 months (2.3% vs 1.6%; p=0.001).</p>
                 </div>
                 
-                <div class="platoLink" style="display:none">
+                <div class="platoLink">
 					<div class="graphImage"></div>
 					<p style="position: absolute; margin-top:410px;">Compared with BRILINTA, ACS patients on clopidogrel have a 27.5% relative increase in CV death at 12 months (5.1% vs 4%); p=0.001.<sup>1</sup></p>
 				</div>
@@ -271,47 +271,17 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
 	$( function(){
 
 /*Alistair Added in*/
-		$(".controls > [data-control=v]").on('tap', function(){
 
-		});
-		$(".controls > [data-control=p]").on('tap', function(){
+		var contents = $('.contents');
+		$('.boxInfo > li').on('tap', function(){
 
-		});
-		$(".controls > [data-control=g]").on('tap', function(){
-
-		});
-		$(".controls > [data-control=n]").on('tap', function(){
-			$('.slide').css("display","none");
-			$(".overlay").toggleClass('hide show');
-			$(".notesFirst").toggleClass('hide show');
-			$('.ref').css("display","none");
-
-		});
-		$(".controls > [data-control=pi]").on('tap', function(){
-
-
-		});
-		$(".controls > [data-control=r]").on('tap', function(){
-			$('.slide').css("display","none");
-			$(".overlay").toggleClass('hide show');
-			$(".refFirst").toggleClass('hide show');
-
+			contents.removeClass('box-1 box-2');
+			contents.addClass('box-'+($(this).index()+1));
 		});
 
-		$(".platoBox").on('tap', function(){
-
-			$(".platoLink").css("display","block");
-			$(".diabetestLink").css("display","none");
-			$(".mainMenu").css("display","none");
-		});
-
-
-		$(".diabetesBox").on('tap', function(){
-
-			$(".platoLink").css("display","none");
-			$(".diabetestLink").css("display","block");
-			$(".mainMenu").css("display","none");
-		});
+		$('.diabetestLink, .platoLink').on('tap', function(){
+			contents.removeClass('box-1 box-2');
+		})
 
 		/*END*/
 

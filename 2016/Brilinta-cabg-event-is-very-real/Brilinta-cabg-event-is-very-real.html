@@ -48,7 +48,11 @@
     width: 800px;
     height:430px;
     margin-left:50px;
+    display: none;
 }
+
+
+
 
 /*END*/
 
@@ -71,14 +75,6 @@
 
 
             <article class="contents">
-            	<!--<h1> 
-                	<span><i>Give ACS patients their</i></span> 
-                	<span>best chance with 12 months Brilinta <sup>*1</sup></span> 
-             	</h1>
-                <h4>Compared with clopidogrel, ACS patients on BRILINTA showed a<br />
-consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4>-->
-
-
 
                 <!--===== YOUR ELEMENTS/CONTENTS HERE =======-->
               
@@ -96,7 +92,7 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
                     <h2 class="brilOrange">Use Brilinta for 12 months</h2>
                     <p class="belowOrangeText">At one year, patients undergoing primary PCI remain at high risk of major cardiac events<sup>1</sup></p>
                 </div>
-                <div class="graphImage" style="display:none;"></div>
+                <div class="graphImage"></div>
             	 <!--END-->
 
             </article>
@@ -157,49 +153,21 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
 
 /*Alistair Added in*/
 
-$(".belowOrangeText").click(function() {
-       $(".container").css("background","transparent");
-       $(".brilOrange").css("display","none");
-       $(".graphImage").css("display","block");
-    });
 
 
-		$(".controls > [data-control=v]").on('tap', function(){
+        $(".belowOrangeText").click(function() {
+               $(".container").css("background","transparent");
+               $(".brilOrange").css("display","none");
+               $(".graphImage").css("display","block");
+            });
 
-		});
-		$(".controls > [data-control=p]").on('tap', function(){
-
-		});
-		$(".controls > [data-control=g]").on('tap', function(){
-
-		});
-		$(".controls > [data-control=n]").on('tap', function(){
-            $(".container").css("background","transparent");
-			$('.slide').css("display","none");
-			$(".overlay").toggleClass('hide show');
-			$(".notesFirst").toggleClass('hide show');
-			$('.ref').css("display","none");
-
-		});
-		$(".controls > [data-control=pi]").on('tap', function(){
-
-
-		});
-		$(".controls > [data-control=r]").on('tap', function(){
-            $(".container").css("background","transparent");
-			$('.slide').css("display","none");
-			$(".overlay").toggleClass('hide show');
-			$(".refFirst").toggleClass('hide show');
-
-		});
-
-		$(".dyspnoeaBox").on('tap', function(){
-
-			alert("dyspnoeaBox Clicked");
-		});
-
-		
-
+        $('.graphImage').on('tap', function(){
+               $(".container").css("background","url('./img/patient_picture.jpg')");
+               $(".container").css("background-size","100%");
+                $(".container").css("background-repeat", "no-repeat");
+               $(".brilOrange").css("display","block");
+               $(".graphImage").css("display","none");
+        })
 
 		/*END*/
 
