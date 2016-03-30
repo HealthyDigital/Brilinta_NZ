@@ -10,34 +10,22 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 
 
-<link rel="stylesheet" href="./css/swiper.min.css">
-
 <style type="text/css">
 
 	/* ==== YOUR CSS HERE ===== */
 /*Alistair Added in*/
 
-	.graphImage
+	.feature
 	{
         background: url('img/plato_graph.png');
         background-size: 100%;
-        background-repeat: no-repeat;
-        position: absolute;
-        margin-top: 10px;
-        width: 800px;
-        height: 400px;
-        margin-left: 30px;
+		height:395px;
 	}
-	.graphImage2
+	.diabetestLink .feature
 	{
 		background: url('img/Plato_NSTE_graph.png');
 		background-size: 100%;
-		background-repeat: no-repeat;
-		position: absolute;
-		margin-top:10px;
-		width:800px;
-		height: 400px;
-		margin-left:70px;
+		height:395px;
 	}
 
 	.platoBox
@@ -140,6 +128,27 @@
 	.box-2  .diabetestLink  { display: block; }
 	.box-1 .acs, .box-2 .cabg { display: inline; } 
 	em { font-style: normal; font-weight: bold; } 
+
+
+
+
+
+	.tablet { width: 71%; }
+	.tablet > li {
+		width: 284px;
+		height: 282px;
+ 		background: url('./img/box.png') 0 0 no-repeat;
+ 		background-size: 100% auto;
+	}
+	.tablet > li:last-child { margin-left: 65px; background-position-y: -285px;  }
+	.tablet p:last-child { margin-top: -13px; }
+	.tablet  .last { font-size: 22px; line-height: 22px; }
+
+
+
+
+
+
     /*END*/
 
 
@@ -173,20 +182,20 @@
 
 
                 <div class="diabetestLink">
-                		<div class="graphImage2"></div>
-                		<p style="position: absolute; margin-top:410px;">Compared with BRILINTA, NSTE-ACS patients on clopidogrel have a 43.7% relative increase in CV death at 12 months (2.3% vs 1.6%; p=0.001).</p>
+                		<div class="feature"></div>
+                		<p>Compared with BRILINTA, NSTE-ACS patients on clopidogrel have a 43.7% relative increase in CV death at 12 months (2.3% vs 1.6%; p=0.001).</p>
                 </div>
                 
                 <div class="platoLink">
-					<div class="graphImage"></div>
-					<p style="position: absolute; margin-top:410px;">Compared with BRILINTA, ACS patients on clopidogrel have a 27.5% relative increase in CV death at 12 months (5.1% vs 4%); p=0.001.<sup>1</sup></p>
+					<div class="feature"></div>
+					<p>Compared with BRILINTA, ACS patients on clopidogrel have a 27.5% relative increase in CV death at 12 months (5.1% vs 4%); p=0.001.<sup>1</sup></p>
 				</div>
 
 
 				<div class="mainMenu">                
 	                <h4 style="width:890px; margin: 0 auto;">Compared with clopidogrel, ACS patients on BRILINTA showed a reduction in relative risk of CV death in the overall PLATO group and the NSTE-ACS revascularisation sub-group for up to 12 months.</h4>
 
-	                <ul class="boxInfo">
+	                <!--<ul class="boxInfo">
 		                <li class="platoBox">
 		                	<div class="platoContainer">
 			                	<p class="fTitle">BRILINTA REDUCES RELATIVE RISK</p>
@@ -203,7 +212,27 @@
 			                	<p class="tdTitle" style="font-size:36px;">PLATO NSTE-ACS revascularisation sub-group<sup> 2</sup></p>
 			                	</div>
 		                </li>
+					</ul>-->
+
+
+	                <ul class="tablet">
+		                <li class="arrow">
+		                	
+			                	<h5>BRILINTA REDUCES<br />RELATIVE RISK</h5>
+			     
+			                	<p class="cent">16<sup>%</sup></p>
+			                	<p>PLATO 12 months</p>
+			               
+		                </li>
+		                <li class="arrow">
+			                	<h5>BRILINTA REDUCES<br />RELATIVE RISK</h5>
+			                	<p class="cent">13<sup>%</sup></p>
+			                	<p class="last">DIABETES sub-group 12&nbsp;months</p>
+			                	
+		                </li>
 					</ul>
+
+
 
 					<h4 style="margin: 0 auto; margin-top: -20px;">The absolute benefits of BRILINTA increase over time. <sup>1,2</sup></h4>
 				</div>
@@ -244,7 +273,6 @@
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/touchy.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
 
 <script type="text/javascript">
 	$( function(){
@@ -252,7 +280,7 @@
 /*Alistair Added in*/
 
 		var contents = $('.contents');
-		$('.boxInfo > li').on('tap', function(){
+		$('.tablet > li').on('tap', function(){
 
 			contents.removeClass('box-1 box-2');
 			contents.addClass('box-'+($(this).index()+1));
