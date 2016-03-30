@@ -7,38 +7,18 @@
 <meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no">
 <meta name="apple-mobile-web-app-title" content="BRILINTA - Efficacy or Firstline">
 <title>BRILINTA - Efficacy or Firstline</title>
+<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-
-
-<link rel="stylesheet" href="./css/swiper.min.css">
 
 <style type="text/css">
 
 	/* ==== YOUR CSS HERE ===== */
 /*Alistair Added in*/
 
-	.graphImage
-	{
-        background: url('img/risk_graph.png');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        position: absolute;
-        margin-top: 10px;
-        width: 800px;
-        height: 400px;
-        margin-left: 30px;
-	}
-	.graphImage2
-	{
-		background: url('img/reduction_graph.png');
-		background-size: 100%;
-		background-repeat: no-repeat;
-		position: absolute;
-		margin-top:10px;
-		width:800px;
-		height: 360px;
-		margin-left:70px;
-	}
+	.feature {
+        background-image: url('img/risk_graph.png'); height: 393px; margin-top: 15px; }
+	
+	.diabetestLink .feature { background: url('img/reduction_graph.png'); background-size: 100% auto; }
     .textUnderGraph
     {
         position: absolute;
@@ -65,78 +45,20 @@
 	{
 		padding: 30px;
 	}
-	.diabetesBox
-	{
-		width: 570px;
-		height: 570px;
-		position: absolute;
-		margin-left: 350px;
-		margin-top: -110px;
-		background: url('./img/yellow.png');
-		transform: scale(0.48);
-		background-repeat: no-repeat;
+	.tablet { width: 71%; }
+	.tablet > li {
+		width: 284px;
+		height: 282px;
+ 		background: url('./img/box.png') 0 0 no-repeat;
+ 		background-size: 100% auto;
 	}
+	.tablet > li:last-child { margin-left: 65px; background-position-y: -285px;  }
+	.tablet p:last-child { margin-top: -13px; }
+	.tablet  .last { font-size: 22px; line-height: 22px; }
 
-	.fTitle
-	{
-		color: white;
-		/* position: absolute; */
-		margin-left: 20px;
-		font-size: 45px;
-		width: 460px;
-		line-height: 40px;
-		text-align: center;
-		margin-bottom: 60px;
-	}
-	.arrowImage
-	{
-		color: white;
-		/* position: absolute; */
-		/* margin-top: 200px; */
-		margin-left:150px;
-		font-size: 55px;
-		padding: 30px;
-	}
+	
 
-	.sTitle
-	{
-		color: white;
-		font-size: 95px;
-		/*position: absolute;*/
-		margin-top: 15px;
-		margin-left: 150px;
-		font-family: 'CodePro';
-		padding: 30px;
-	}
-	.tTitle
-	{
-		color: white;
-		/*position: absolute;
-		margin-top: 460px;*/
-		font-size: 55px;
-		padding: 30px;
-		/*margin-left: 60px;*/
-	}
-	.tdTitle
-	{
-		color: white;
-		/*position: absolute;
-		margin-top: 460px;*/
-		font-size: 55px;
-		padding: 30px;
-		/*margin-left: 60px;*/
-		text-align: center;
-		line-height: 45px;
-	}
-	.boxInfo
-	{
-		width: 800px;
-		height: 350px;
-	}
-	.platoLink
-	{
-		width:910px;
-	}
+
 	.diabetestLink, 
 	.platoLink , 
 	.box-1 .mainMenu, 
@@ -181,8 +103,8 @@
 		                	<span>BEST CHANCE WITH 12 MONTHS BRILINTA<sup> 1-3</sup></span>
 	                </h1>
                 	<p>Compared with BRILINTA, Diabetes patients on clopidogrel have a 14.58% relative increase in CV death at 12 months (16.2% vs 14.1%).<sup>2</sup></p>
-                		<div class="graphImage2"></div>
-                	<p class="textUnderGraph">Significance not evaluated. Adapted from James et al 2010.<sup>3</sup></p>
+                		<div class="feature"></div>
+                	<p class="footnote">Significance not evaluated. Adapted from James et al 2010.<sup>3</sup></p>
                 </div>
                 
                 <div class="platoLink">
@@ -193,7 +115,7 @@
 	                </h1>
 					<p>Compared with BRILINTA, ACS patients on clopidogrel have a 19.4% relative increase in the primary endpoint, a composite of CV death, MI or stroke, at 12 months (11.7% vs 9.8%; p < 0.001).<sup>1</sup></p>
 
-					<div class="graphImage"></div>
+					<div class="feature"></div>
 				</div>
 				<div class="mainMenu">
 					 <h1>
@@ -202,24 +124,22 @@
 	                	<span>BEST CHANCE WITH 12 MONTHS BRILINTA<sup> 1,2</sup></span>
 	                </h1>
 
-	                <h4 style="width:750px; margin: 0 auto;">Compared with clopidogrel, ACS patients on BRILINTA showed a reduction in relative risk of CV death in the overall PLATO group and the diabetes sub-group for up to 12 months.</h4>
+	                <h4>Compared with clopidogrel, ACS patients on BRILINTA showed a<br />reduction in relative risk of CV death in the overall PLATO group and<br />the diabetes sub-group for up to 12 months.</h4>
 
-	                <ul class="boxInfo">
-		                <li class="platoBox">
-		                	<div class="platoContainer">
-			                	<p class="fTitle">BRILINTA REDUCES RELATIVE RISK</p>
-			                	<span class="arrowImage"><</span>
-			                	<p class="sTitle">16<sup>%</sup></p>
-			                	<p class="tTitle">PLATO 12 months</p>
-		                	</div>
+	                <ul class="tablet">
+		                <li class="arrow">
+		                	
+			                	<h5>BRILINTA REDUCES<br />RELATIVE RISK</h5>
+			     
+			                	<p class="cent">16<sup>%</sup></p>
+			                	<p>PLATO 12 months</p>
+			               
 		                </li>
-		                <li class="diabetesBox">
-		                	<div class="diabetesContainer">
-			                	<p class="fTitle">BRILINTA REDUCES RELATIVE RISK</p>
-			                	<span class="arrowImage"><</span>
-			                	<p class="sTitle">13<sup>%</sup></p>
-			                	<p class="tdTitle">DIABETES sub-group 12 months</p>
-			                	</div>
+		                <li class="arrow">
+			                	<h5>BRILINTA REDUCES<br />RELATIVE RISK</h5>
+			                	<p class="cent">13<sup>%</sup></p>
+			                	<p class="last">DIABETES sub-group 12&nbsp;months</p>
+			                	
 		                </li>
 					</ul>
 				</div>
@@ -262,7 +182,6 @@
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/touchy.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
 
 <script type="text/javascript">
 	$( function(){
@@ -270,7 +189,7 @@
 /*Alistair Added in*/
 
 		var contents = $('.contents');
-		$('.boxInfo > li').on('tap', function(){
+		$('.tablet > li').on('tap', function(){
 
 			contents.removeClass('box-1 box-2');
 			contents.addClass('box-'+($(this).index()+1));
