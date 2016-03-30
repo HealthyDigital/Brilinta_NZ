@@ -7,10 +7,9 @@
 <meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no">
 <meta name="apple-mobile-web-app-title" content="BRILINTA - Efficacy or Firstline">
 <title>BRILINTA - Efficacy or Firstline</title>
+<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-
-<link rel="stylesheet" href="./css/swiper.min.css">
 
 <style type="text/css">
 
@@ -24,27 +23,19 @@
 	font-size: 17px;
 	width: 835px;
 }
-	.graphImage
+	.feature
 	{
         background: url('img/risk_graph.png');
         background-size: 100%;
         background-repeat: no-repeat;
-        position: absolute;
-        margin-top: 10px;
-        width: 800px;
-        height: 400px;
-        margin-left: 30px;
+        height:395px;
 	}
-	.graphImage2
+	.diabetestLink .feature
 	{
 		background: url('img/reduction_graph.png');
 		background-size: 100%;
 		background-repeat: no-repeat;
-		position: absolute;
-		margin-top:-10px;
-		width:800px;
-		height: 400px;
-		margin-left:70px;
+		height:395px;
 	}
 	.platoBox
 	{
@@ -148,6 +139,21 @@
 	.box-2  .diabetestLink  { display: block; }
 	.box-1 .acs, .box-2 .cabg { display: inline; } 
 	em { font-style: normal; font-weight: bold; } 
+
+
+	.tablet { width: 71%; }
+	.tablet > li {
+		width: 284px;
+		height: 282px;
+ 		background: url('./img/box.png') 0 0 no-repeat;
+ 		background-size: 100% auto;
+	}
+	.tablet > li:last-child { margin-left: 65px; background-position-y: -285px;  }
+	.tablet p:last-child { margin-top: -13px; }
+	.tablet  .last { font-size: 22px; line-height: 22px; }
+
+
+
     /*END*/
 
 
@@ -180,8 +186,8 @@
 	                	<br />
 	                	<span>BEST CHANCE WITH 12 MONTHS BRILINTA<sup> 2</sup></span>
 	                </h1>
-                		<div class="graphImage2"></div>
-                	<p class="textUnderGraph">Response to BRILINTA is not affected by patient CYP2C19 genotype.<br /> Compared with BRILINTA, ACS patients with Genotype CYP2C19 on clopidogrel showed a 30.2% relative
+                		<div class="feature"></div>
+                	<p>Response to BRILINTA is not affected by patient CYP2C19 genotype.<br /> Compared with BRILINTA, ACS patients with Genotype CYP2C19 on clopidogrel showed a 30.2% relative
                 	increase in the primary endpoint, a composite of CV death, MI or stroke at 12 months (11.2% vs 8.6%); p=0.038.</p>
                 </div>
                 
@@ -191,8 +197,8 @@
 	                	<br />
 	                	<span>BEST CHANCE WITH 12 MONTHS BRILINTA<sup> 1</sup></span>
 	                </h1>
-					<div class="graphImage"></div>
-					<p style="position: absolute; margin-top:400px;">Compared with BRILINTA, ACS patients on clopidogrel have a 19.4% relative increase in the primary endpoint, a composite of CV death, MI or stroke, at 12 months (11.7% vs 9.8%; p < 0.001).<sup>1</sup></p>
+					<div class="feature"></div>
+					<p>Compared with BRILINTA, ACS patients on clopidogrel have a 19.4% relative increase in the primary endpoint, a composite of CV death, MI or stroke, at 12 months (11.7% vs 9.8%; p < 0.001).<sup>1</sup></p>
 
 				</div>
 
@@ -204,7 +210,7 @@
 	                </h1>
 	                <h4 style="width:810px; margin: 0 auto;">Compared with clopidogrel, ACS patients on BRILINTA showed reduced risk of recurrent CV events in the overall PLATO group and the Genotype CUP2C19 sub group for up to 12 months.</h4>
 
-	                <ul class="boxInfo">
+	              <!--  <ul class="boxInfo">
 		                <li class="platoBox">
 		                	<div class="platoContainer">
 			                	<p class="fTitle">BRILINTA REDUCES RELATIVE RISK</p>
@@ -221,7 +227,27 @@
 			                	<p class="tdTitle">Patients with Genotype CYP2C19 12 months</p>
 			                	</div>
 		                </li>
+					</ul>-->
+
+
+	                <ul class="tablet">
+		                <li class="arrow">
+		                	
+			                	<h5>BRILINTA REDUCES<br />RELATIVE RISK</h5>
+			     
+			                	<p class="cent">12<sup>%</sup></p>
+			                	<p>PLATO 12 months</p>
+			               
+		                </li>
+		                <li class="arrow">
+			                	<h5>BRILINTA REDUCES<br />RELATIVE RISK</h5>
+			                	<p class="cent">16<sup>%</sup></p>
+			                	<p class="last">Patients with Genotype CYP2C19 12 months</p>
+			                	
+		                </li>
 					</ul>
+
+
 				</div>
             	 <!--END-->
 
@@ -259,13 +285,12 @@
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/touchy.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
 
 <script type="text/javascript">
 	$( function(){
 
 /*Alistair Added in*/
-		var contents = $('.contents');
+		/*var contents = $('.contents');
 		$('.boxInfo > li').on('tap', function(){
 
 			contents.removeClass('box-1 box-2');
@@ -274,7 +299,20 @@
 
 		$('.diabetestLink, .platoLink').on('tap', function(){
 			contents.removeClass('box-1 box-2');
+		})*/
+
+
+		var contents = $('.contents');
+		$('.tablet > li').on('tap', function(){
+
+			contents.removeClass('box-1 box-2');
+			contents.addClass('box-'+($(this).index()+1));
+		});
+
+		$('.diabetestLink, .platoLink').on('tap', function(){
+			contents.removeClass('box-1 box-2');
 		})
+
 
 		/*END*/
 

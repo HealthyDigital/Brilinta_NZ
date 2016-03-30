@@ -172,18 +172,33 @@ table, th, td {
     font-size:16px;
 }
 
+/*.box-1 .mainMenu, 
+    .box-2 .mainMenu, 
+    .box-1 .diabetestLink, 
+    .box-2  .platoLink,
+    .box-1 .cabg,
+    .box-2 .acs { display: none; }
+    .box-1  .platoLink, 
+    .box-2  .diabetestLink  { display: block; }
+    .box-1 .acs, .box-2 .cabg { display: inline; } 
+    em { font-style: normal; font-weight: bold; } 
 
-    .tablet { width: 71%; }
+
+
+
+
+    .tablet { width:101%; height:450px;}
     .tablet > li {
         width: 284px;
         height: 282px;
-        background: url('./img/box.png') 0 0 no-repeat;
+        background: url('./img/boxes.png') 0 0 no-repeat;
         background-size: 100% auto;
     }
-    .tablet > li:last-child { margin-left: 65px; background-position-y: -285px;  }
+    .tablet > li:last-child { margin-left: 465px; background-position-y: -170px;  }
     .tablet p:last-child { margin-top: -13px; }
     .tablet  .last { font-size: 22px; line-height: 22px; }
 
+*/
 
 
     /*END*/
@@ -221,11 +236,11 @@ table, th, td {
                 <h4 class="tTItleAboveBox">Non-CABG-related bleeding</h4>
                 <h4 class="fourthTItleAboveBox">Major or minor bleeding</h4>
 
-                <!--<ul class="boxes">
+                <ul class="boxes">
                     <li class="orange">
                         <p class="firstTitles">BRILINTA</p>
                         <p>0.57<sup>%</sup></p>
-                        <span class="arrow"><</span>
+                        <span class="arrow"></span>
                         <p class="bottomTitles">vs. clopidogrel</p>
                     </li>
                     <li class="yellow">
@@ -246,9 +261,9 @@ table, th, td {
                         <span class="arrow"><</span>
                         <p class="bottomTitles">vs. clopidogrel</p>
                     </li>
-                </ul>-->
-      
-                    <ul class="tablet">
+                </ul>
+
+                    <!--<ul class="tablet">
                         <li class="arrow">
                             
                                 <h5>BRILINTA REDUCES<br />RELATIVE RISK</h5>
@@ -275,7 +290,7 @@ table, th, td {
                                 <p class="last">DIABETES sub-group 12&nbsp;months</p>
                                 
                         </li>
-                    </ul>
+                    </ul>-->
 
             	 <!--END-->
 
@@ -386,6 +401,21 @@ table, th, td {
 
 /*Alistair Added in*/
 
+       /* var contents = $('.contents');
+        $('.tablet > li').on('tap', function(){
+
+            contents.removeClass('box-1 box-2');
+            contents.addClass('box-'+($(this).index()+1));
+        });
+
+        $('.diabetestLink, .platoLink').on('tap', function(){
+            contents.removeClass('box-1 box-2');
+        })*/
+
+
+
+
+
 
 		$(".orange").on('tap', function(){
 			$('.slide').css("display","none");
@@ -393,7 +423,7 @@ table, th, td {
 		});
         $(".orangeData").on('tap', function(){
             $('.slide').css("display","block");
-            $(".orangeData").toggleClass('hide');
+            $(".orangeData").toggleClass('hide show');
         });
 
 		$(".yellow").on('tap', function(){
