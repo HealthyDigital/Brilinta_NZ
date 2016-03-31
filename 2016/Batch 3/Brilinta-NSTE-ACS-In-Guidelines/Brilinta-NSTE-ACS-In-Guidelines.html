@@ -341,6 +341,7 @@ table, th, td {
 		$(".orange").on('tap', function(){
 			$('.slide').css("display","none");
             $(".orangeData").toggleClass('hide show');
+
 		});
         $(".orangeData").on('tap', function(){
             $('.slide').css("display","block");
@@ -353,7 +354,7 @@ table, th, td {
 		});
         $(".yellowData").on('tap', function(){
             $('.slide').css("display","block");
-            $(".yellowData").toggleClass('hide');
+            $(".yellowData").toggleClass('show hide');
         })
 
         $(".purple").on('tap', function(){
@@ -362,7 +363,7 @@ table, th, td {
         });
         $(".purpleData").on('tap', function(){
             $('.slide').css("display","block");
-            $(".purpleData").toggleClass('hide');
+            $(".purpleData").toggleClass('show hide');
         })
 
         $(".grey").on('tap', function(){
@@ -371,7 +372,7 @@ table, th, td {
         });
         $(".greyData").on('tap', function(){
             $('.slide').css("display","block");
-            $(".greyData").toggleClass('hide');
+            $(".greyData").toggleClass('show hide');
         })
 
 
