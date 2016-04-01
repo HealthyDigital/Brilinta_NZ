@@ -39,6 +39,8 @@ $( function(){
 						controls.find('li').removeClass('active');
 						overlay.addClass('animated slideOutDown').fadeOut();
 					}
+		
+					overlay.find('.purple').length && data === 'n' ? overlay.css('background-position-y','-1430px') : overlay.css('background-position-y','-2286px');
 				break;
 			}
 			removeAnimationClass();
@@ -46,7 +48,7 @@ $( function(){
 	//switch content
 	$('.tablet').on('tap', 'li', function(){
 		var $this = $(this),
-			cl = 's'+($this.index()+1);
+			cl = $this.parents('.single').length ? 's1' : 's'+($this.index()+1);
 			slide.hide();
 			contents.removeClass("s1 s2 s3 s4 s5");
 			contents.addClass(cl);
@@ -58,7 +60,7 @@ $( function(){
 		$(this).hide();
 		contents.removeClass("s1 s2 s3 s4 s5");
 		contents.find("[data-slide=s0]").fadeIn();
-	})
+	});
 	
 	//console.log(slide.length);
 	
@@ -67,7 +69,7 @@ $( function(){
 		setTimeout( function(){ 
 			container.find('.animated')
 				.removeClass("bounceInDown bounceInUp slideOutDown slideInUp"); 
-		}, 1000);
+		}, 900);
 	}
 	removeAnimationClass();
 	

@@ -39,6 +39,8 @@ $( function(){
 						controls.find('li').removeClass('active');
 						overlay.addClass('animated slideOutDown').fadeOut();
 					}
+		
+					overlay.find('.purple').length && data === 'n' ? overlay.css('background-position-y','-1430px') : overlay.css('background-position-y','-2286px');
 				break;
 			}
 			removeAnimationClass();
