@@ -1,0 +1,664 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="BRILINTA - Efficacy or Firstline">
+<title>BRILINTA - Efficacy or Firstline</title>
+<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+
+
+<style type="text/css">
+
+	/* ==== YOUR CSS HERE ===== */
+/*Alistair Added in*/
+
+.boxes
+{
+    width: 800px;
+    height: 400px;
+    margin-left:50px;
+    margin-top: 70px;
+}
+.boxes > li
+{
+    display: inline-block;
+    margin-bottom:50px;
+    margin-left: 55px;
+}
+.orange
+{
+    background:url('./img/orange_b.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width:300px;
+    height: 190px;
+
+}
+.yellow
+{
+    background:url('./img/golden_b.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width:300px;
+    height: 190px;
+}
+.purple
+{
+    background:url('./img/purple_b.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width:300px;
+    height: 190px;
+}
+.grey
+{
+    background:url('./img/grey_b.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width:300px;
+    height: 190px;
+}
+li > p
+{
+    font-size: 26px;
+    color: white;
+    text-align: center;
+
+
+    color: inherit;
+
+line-height: 25px;
+margin-top: -20px;
+margin-bottom: 65px;
+}
+	
+.firstTitles
+{
+    padding: 20px;
+}
+
+
+
+table, th, td {
+    border: 1px solid white;
+    height:30px;
+    color: white;
+
+}
+.tdFWidth
+{
+    width:600px;
+}
+.bText
+{
+    position: absolute;
+    margin-top: 80px;
+    font-size: 25px;
+    font-family: 'HelveNeuLig';
+}
+.dText
+{
+    position: absolute;
+    margin-top: 150px;
+    font-size: 25px;
+    font-family: 'HelveNeuLig';
+}
+.topTDS
+{
+    font-family: 'CodePro';
+    color: white;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.valueInTD
+{
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'HelveNeuLig';
+}
+.tdTextStart
+{
+    font-family: 'HelveNeuLig';
+    color:black;
+    font-size: 15px;
+    width:540px;
+    margin-left:10px;
+}
+
+/*Not NECESSARY ANYMORE
+.arrow
+{
+    color: white;
+    margin-left: 150px;
+    position: absolute;
+    height: 50px;
+}*/
+.bottomTitles
+{
+    margin-top: 50px;
+}
+.fTItleAboveBox
+{
+    position: absolute;
+    margin-left:170px;
+}
+.sTItleAboveBox
+{
+    position: absolute;
+    margin-left: 485px;
+}
+.tTItleAboveBox
+{
+   position: absolute;
+    margin-top: 240px;
+    margin-left:100px;
+}
+.fourthTItleAboveBox
+{
+    position: absolute;
+    margin-left: 485px;
+    margin-top:240px;
+}
+
+.orangeData
+{
+    /*margin-left: 150px;*/
+}
+.tableSideHeadings
+{
+    color: white;
+    margin-top: 10px;
+    margin-left:15px;
+    font-size:16px;
+}
+
+.box-1 .mainMenu, 
+    .box-2 .mainMenu, 
+    .box-1 .diabetestLink, 
+    .box-2  .platoLink,
+    .box-1 .cabg,
+    .box-2 .acs { display: none; }
+    .box-1  .platoLink, 
+    .box-2  .diabetestLink  { display: block; }
+    .box-1 .acs, .box-2 .cabg { display: inline; } 
+    em { font-style: normal; font-weight: bold; } 
+
+
+
+
+
+    .tablet { width:105%; height:450px; margin-top:10px;}
+    .tablet > li {
+        width: 284px;
+        height: 180px;
+        background: url('./img/boxes.png') 0 0 no-repeat;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        margin-bottom:10px;
+    }
+    .tablet > li { background-position-y: 0px;  }
+    .tablet > li:nth-child(2) { background-position-y: -170px;  }
+    .tablet > li:nth-child(3) { background-position-y: -340px;  }
+    .tablet > li:nth-child(4) {margin-left: 150px; background-position-y: -340px;  }
+    .tablet > li:last-child { background-position-y: -515px;  }
+    .tablet p:last-child { margin-top: -13px; }
+    .tablet  .last { font-size: 22px; line-height: 22px; }
+
+.brilinta{
+
+    margin: 15px;
+}
+.arrow:before
+{
+    top:40%;
+
+}
+.arrowColumnOne:before
+{
+    width: 25px;
+    height: 25px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    bottom: auto;
+    top: 43%;
+    left: 0;
+    right: 0;
+    /* margin: 0 auto; */
+    margin-left:70px;
+}
+.arrowColumnTwo
+{
+    width: 25px;
+    height: 25px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    bottom: auto;
+    top: 43%;
+    left: 0;
+    right: 0;
+    /* margin: 0 auto; */
+    margin-left: 180px;
+    position: absolute;
+    transform:rotate(45deg);
+}
+.line
+{
+    border: 1px solid white;
+    position: absolute;
+    margin-top:-170px;
+    height:110px;
+}
+
+table, th, td {
+    border: 1px solid white;
+    /*height:50px;*/
+    color: white;
+     text-align:center;
+}
+
+.topTdAttributes > p
+{
+    font-family:CodePro; 
+    text-align:center;
+    margin-top:5px;
+    margin-left: 35px;
+    position: absolute;
+    color: white;
+    font-size: 15px;
+
+
+}
+    /*END*/
+
+
+</style> 
+</head>
+<body>
+	<section class="container">
+ 		<div class="slide">
+       		<ul class="controls">
+                <li data-control="v">V</li>
+                <li data-control="p">P</li>
+                <li data-control="g">G</li>
+                <li data-control="n" class="disabled">N</li>
+                <li data-control="pi">PI</li>
+                <li data-control="r">R</li>
+            </ul>
+
+
+
+            <article class="contents">
+                <!--===== YOUR ELEMENTS/CONTENTS HERE =======-->
+              
+ 				<!--Alistair Added In-->
+
+
+                    <h1>
+                    	<span><i>BRILINTA BENEFIT CONSISTENT ACROSS</i></span>
+                    	<br />
+                    	<span>AGE, WEIGHT OR MEDICAL HISTORY<sup> †*1</sup></span>
+                    </h1>
+
+                    <div class="mainMenu">
+                        <h4 style="font-size: 23.5px; width:910px;">Compared with clopidogrel, ACS patients on BRILINTA showed reduction in relative risk of primary endpoint (a composite of CV death, MI or stroke) across many co-morbidities.<sup> 1</sup></h4>
+
+                            <ul class="tablet">
+
+                                <li id="orange" class="arrow arrowColumnOne">
+                                    
+                                        <p class="brilinta" style="font-size: 20px;">Age</p>
+                                        <p style="margin-left:-120px; margin-top:3px;">< 75</p>
+                                        <p style="font-size: 35px; margin-top: -15px; font-family: 'CodePro'; margin-left: -105px;">17.3<sup>%</sup></p>
+                                        <span class="line"></span>
+                                        <span class="arrowColumnTwo"></span>
+                                        <p style="margin-left: 170px; margin-top: -165px; position: absolute;">≥ 75</p>
+                                        <p style="font-size: 35px; margin-top: -90px; font-family: 'CodePro'; margin-left: 170px; position: absolute;">8.2<sup>%</sup></p>
+                                   
+                                </li>
+
+                                <li id="yellow" class="arrow arrowColumnOne">
+                                        <p class="brilinta" style="font-size: 20px;">Weight</p>
+                                        <p style="margin-left:-120px; margin-top:3px;"><60kg</p>
+                                        <p style="font-size: 35px; margin-top: -15px; font-family: 'CodePro'; margin-left: -105px;">24.3<sup>%</sup></p>
+                                        <span class="line"></span>
+                                        <span class="arrowColumnTwo"></span>
+                                        <p style="margin-left: 170px; margin-top: -165px; position: absolute;">≥60kg</p>
+                                        <p style="font-size: 35px; margin-top: -90px; font-family: 'CodePro'; margin-left: 170px; position: absolute;">15.2<sup>%</sup></p>
+                                        
+                                </li>
+                                <li id="purpleOne" class="arrow arrowColumnOne">
+                                        <p class="brilinta" style="font-size: 20px;">Diabetes</p>
+                                        <p style="margin-left:-120px; margin-top:3px;">with</p>
+                                        <p style="font-size: 35px; margin-top: -15px; font-family: 'CodePro'; margin-left: -105px;">17.6<sup>%</sup></p>
+                                        <span class="line"></span>
+                                        <span class="arrowColumnTwo"></span>
+                                        <p style="margin-left: 170px; margin-top: -165px; position: absolute;">without</p>
+                                        <p style="font-size: 35px; margin-top: -90px; font-family: 'CodePro'; margin-left: 170px; position: absolute;">13<sup>%</sup></p>
+                                        
+                                </li>
+                                <li id="purpleTwo" class="arrow arrowColumnOne">
+                                        <p class="brilinta" style="font-size: 20px;">Stroke</p>
+                                        <p style="margin-left:-120px; margin-top:3px;">no stroke</p>
+                                        <p style="font-size: 35px; margin-top: -15px; font-family: 'CodePro'; margin-left: -105px;">17.1<sup>%</sup></p>
+                                        <span class="line"></span>
+                                        <span class="arrowColumnTwo"></span>
+                                        <p style="margin-left: 170px; margin-top: -165px; position: absolute;">stroke</p>
+                                        <p style="font-size: 35px; margin-top: -90px; font-family: 'CodePro'; margin-left: 170px; position: absolute;">9.0<sup>%</sup></p>
+                                        
+                                </li>
+                                <li id="grey" class="arrow arrowColumnOne">
+                                        <p class="brilinta" style="font-size: 20px;">Creatinine clearance</p>
+                                        <p style="margin-left:-120px; margin-top:3px;">< 60kg</p>
+                                        <p style="font-size: 35px; margin-top: -15px; font-family: 'CodePro'; margin-left: -105px;">21.4<sup>%</sup></p>
+                                        <span class="line"></span>
+                                        <span class="arrowColumnTwo"></span>
+                                        <p style="margin-left: 170px; margin-top: -165px; position: absolute;">≥60kg</p>
+                                        <p style="font-size: 35px; margin-top: -90px; font-family: 'CodePro'; margin-left: 170px; position: absolute;">11.2<sup>%</sup></p>
+                                        
+                                </li>
+
+                            </ul>
+                    </div>
+
+
+                <div class="orangeData hide">
+                    <table style="width:100%; margin-top:150px;">
+                      <tr style="background-color:rgb(204,105,27);">
+                        <td></td>
+                        <td class="topTdAttributes" style="width:110px; height:50px;"><p style="width: 60px; margin-left:35px; text-align: center;">TOTAL PATIENTS</p></td> 
+                        <td colspan="2" class="topTdAttributes" style="width: 15%;"><p style="margin-left: 20px; margin-top: 5px; width: 80px;">KM % AT MONTH 12</p></td>
+                        <td class="topTdAttributes" style="width:150px;"><p style="margin-left: 25px; margin-top: 5px; width: 120px;">HAZARD RATION (95% CI)</p></td>
+                        <td class="topTdAttributes"><p style="margin-left: 35px; margin-top: 5px; width: 100px;">P VALUE (INTERACTION)</p></td>
+                      </tr>
+                      <tr style="background-color:rgb(164,164,164);">
+                        <td style="background-color:rgb(164,164,164); width:250px;"><p style="font-family: 'HelveNeuLig'; color: white; margin-top: 15px; margin-left: -130px; font-size: 16px; height:30px;">Age group</p></td>
+                        <td style="background-color:rgb(164,164,164);color:black;"></td> 
+
+                        <td  style="with:50px; background-color:rgb(164,164,164); color:black;">Tl</td>
+                        <td  style="with:50px; background-color:rgb(164,164,164); color:black;">Cl.</td>
+                        
+
+                         <td style="background-color:rgb(164,164,164); color:black;"></td>
+                        <td style="background-color:rgb(164,164,164); color:black;"></td> 
+                      </tr>
+                      <tr>
+                        <td style="background-color:rgb(164,164,164); width:110px;"><p style="font-family: 'HelveNeuLig'; color: white; margin-top: 15px; margin-left: -130px; font-size: 16px; height:30px;">< 75 years</p></td>
+                        <td style="background-color:#E6E6E6; color:black;">15,744</td> 
+                        <td style="background-color:#E6E6E6; color:black;">2,878</td>
+                        <td  style="with:50px; background-color:#E6E6E6; color:black;">10.4</td>
+                         <td style="background-color:#E6E6E6; color:black;"> 0.82 (0.74, 0.91)</td>
+                        <td style="background-color:#E6E6E6; color:black;">0.94 (0.78, 1.12)</td> 
+                      </tr>
+                       <tr>
+                        <td style="background-color:rgb(164,164,164); width:110px;"><p style="font-family: 'HelveNeuLig'; color: white; margin-top: 15px; margin-left: -130px; font-size: 16px; height:30px;">≥75 years</p></td>
+                        <td style="background-color:#E6E6E6; color:black;">4,621</td> 
+                        <td style="background-color:#E6E6E6; color:black;">16.8</td>
+                        <td  style="with:50px; background-color:#E6E6E6; color:black;">18.3</td>
+                         <td style="background-color:#E6E6E6; color:black;">0.22</td>
+                        <td style="background-color:#E6E6E6; color:black; width:20%"></td> 
+                      </tr>
+                    </table>
+            </div>
+
+
+
+            <div class="yellowData hide">
+                    <table style="width:100%; margin-top:150px;">
+                      <tr style="background-color:rgb(204,105,27);">
+                        <td></td>
+                        <td class="topTdAttributes" style="width:110px; height:50px;"><p style="width: 60px; margin-left:35px; text-align: center;">TOTAL PATIENTS</p></td> 
+                        <td colspan="2" class="topTdAttributes" style="width: 15%;"><p style="margin-left: 20px; margin-top: 5px; width: 80px;">KM % AT MONTH 12</p></td>
+                        <td class="topTdAttributes" style="width:150px;"><p style="margin-left: 25px; margin-top: 5px; width: 120px;">HAZARD RATION (95% CI)</p></td>
+                        <td class="topTdAttributes"><p style="margin-left: 35px; margin-top: 5px; width: 100px;">P VALUE (INTERACTION)</p></td>
+                      </tr>
+                      <tr style="background-color:rgb(164,164,164);">
+                        <td style="background-color:rgb(164,164,164); width:250px;"><p style="font-family: 'HelveNeuLig'; color: white; margin-top: 15px; margin-left: -130px; font-size: 16px; height:30px;">Weight group</p></td>
+                        <td style="background-color:rgb(164,164,164);color:black;"></td> 
+
+                        <td  style="with:50px; background-color:rgb(164,164,164); color:black;"><p style="margin-top:10px; color:black;">Tl</p></td>
+                        <td  style="with:50px; background-color:rgb(164,164,164); color:black;"><p style="color:black;">Cl.</p></td>
+                        
+
+                         <td style="background-color:rgb(164,164,164); color:black;"></td>
+                        <td style="background-color:rgb(164,164,164); color:black;"></td> 
+                      </tr>
+                      <tr>
+                        <td style="background-color:rgb(164,164,164); width:110px;"><p style="font-family: 'HelveNeuLig'; color: white; margin-top: 15px; margin-left: -180px; font-size: 16px; height:30px;">< 60 kg</p></td>
+                        <td style="background-color:#E6E6E6; color:black;">1,312</td> 
+                        <td style="background-color:#E6E6E6; color:black;">13.1</td>
+                        <td  style="with:50px; background-color:#E6E6E6; color:black;">17.3</td>
+                         <td style="background-color:#E6E6E6; color:black;"> 0.75 (0.60, 0.99)</td>
+                        <td style="background-color:#E6E6E6; color:black;">0.36</td> 
+                      </tr>
+                       <tr>
+                        <td style="background-color:rgb(164,164,164); width:110px;"><p style="font-family: 'HelveNeuLig'; color: white; margin-top: 15px; margin-left: -180px; font-size: 16px; height:30px;">≥60 kg</p></td>
+                        <td style="background-color:#E6E6E6; color:black;">17,256</td> 
+                        <td style="background-color:#E6E6E6; color:black;">9.5</td>
+                        <td  style="with:50px; background-color:#E6E6E6; color:black;">11.2</td>
+                         <td style="background-color:#E6E6E6; color:black;">0.86 (0.78, 0.94)</td>
+                        <td style="background-color:#E6E6E6; color:black; width:20%"></td> 
+                      </tr>
+                    </table>
+            </div>
+
+            <div class="purpleDataOne hide">
+                    <table style="width:100%; margin-top:150px;">
+                      <tr style="background-color:rgb(204,105,27);">
+                        <td></td>
+                        <td class="topTdAttributes" style="width:110px; height:50px;"><p style="width: 60px; margin-left:35px; text-align: center;">TOTAL PATIENTS</p></td> 
+                        <td colspan="2" class="topTdAttributes" style="width: 15%;"><p style="margin-left: 20px; margin-top: 5px; width: 80px;">KM % AT MONTH 12</p></td>
+                        <td class="topTdAttributes" style="width:150px;"><p style="margin-left: 25px; margin-top: 5px; width: 120px;">HAZARD RATION (95% CI)</p></td>
+                        <td class="topTdAttributes"><p style="margin-left: 35px; margin-top: 5px; width: 100px;">P VALUE (INTERACTION)</p></td>
+                      </tr>
+                      <tr style="background-color:rgb(164,164,164);">
+                        <td style="background-color:rgb(164,164,164); width:250px;"></td>
+                        <td style="background-color:rgb(164,164,164);color:black;"></td> 
+
+                        <td  style="with:50px; background-color:rgb(164,164,164); color:black;"><p style="margin-top:10px; color:black;">Tl</p></td>
+                        <td  style="with:50px; background-color:rgb(164,164,164); color:black;"><p style="color:black;">Cl.</p></td>
+                        
+
+                         <td style="background-color:rgb(164,164,164); color:black;"></td>
+                        <td style="background-color:rgb(164,164,164); color:black;"></td> 
+                      </tr>
+                      <tr>
+                        <td style="background-color:rgb(164,164,164); width:110px;"><p style="font-family: 'HelveNeuLig'; color: white; margin-top: 15px; margin-left: -180px; font-size: 16px; height:30px;">no diabetes</p></td>
+                        <td style="background-color:#E6E6E6; color:black;">13,962</td> 
+                        <td style="background-color:#E6E6E6; color:black;">8.4</td>
+                        <td  style="with:50px; background-color:#E6E6E6; color:black;">10.2</td>
+                         <td style="background-color:#E6E6E6; color:black;"> 0.83 (0.74, 0.92)</td>
+                        <td style="background-color:#E6E6E6; color:black;">0.49</td> 
+                      </tr>
+                       <tr>
+                        <td style="background-color:rgb(164,164,164); width:110px;"><p style="font-family: 'HelveNeuLig'; color: white; margin-top: 15px; margin-left: -200px; font-size: 16px; height:30px;">diabetes</p></td>
+                        <td style="background-color:#E6E6E6; color:black;">4,662</td> 
+                        <td style="background-color:#E6E6E6; color:black;">14.1</td>
+                        <td  style="with:50px; background-color:#E6E6E6; color:black;">16.2</td>
+                         <td style="background-color:#E6E6E6; color:black;">0.88 (0.76, 1.03)</td>
+                        <td style="background-color:#E6E6E6; color:black; width:20%"></td> 
+                      </tr>
+                    </table>
+            </div>
+
+
+            <div class="purpleDataTwo hide">
+                    <table style="width:100%; margin-top:150px;">
+                      <tr style="background-color:rgb(204,105,27);">
+                        <td></td>
+                        <td class="topTdAttributes" style="width:110px; height:50px;"><p style="width: 60px; margin-left:35px; text-align: center;">TOTAL PATIENTS</p></td> 
+                        <td colspan="2" class="topTdAttributes" style="width: 15%;"><p style="margin-left: 20px; margin-top: 5px; width: 80px;">KM % AT MONTH 12</p></td>
+                        <td class="topTdAttributes" style="width:150px;"><p style="margin-left: 25px; margin-top: 5px; width: 120px;">HAZARD RATION (95% CI)</p></td>
+                        <td class="topTdAttributes"><p style="margin-left: 35px; margin-top: 5px; width: 100px;">P VALUE (INTERACTION)</p></td>
+                      </tr>
+                      <tr style="background-color:rgb(164,164,164);">
+                        <td style="background-color:rgb(164,164,164); width:250px; height:40px;"></td>
+                        <td style="background-color:rgb(164,164,164);color:black;"></td> 
+
+                        <td  style="with:50px; background-color:rgb(164,164,164); color:black;"><p style="margin-top:10px; color:black;">Tl</p></td>
+                        <td  style="with:50px; background-color:rgb(164,164,164); color:black;"><p style="color:black;">Cl.</p></td>
+                        
+
+                         <td style="background-color:rgb(164,164,164); color:black;"></td>
+                        <td style="background-color:rgb(164,164,164); color:black;"></td> 
+                      </tr>
+                      <tr>
+                        <td style="background-color:rgb(164,164,164); width:110px;"><p style="font-family: 'HelveNeuLig'; color: white; margin-top: 15px; margin-left: -100px; font-size: 16px; height:30px;">No Ischaemic stroke/TIA</p></td>
+                        <td style="background-color:#E6E6E6; color:black;">17,462</td> 
+                        <td style="background-color:#E6E6E6; color:black;">9.2</td>
+                        <td  style="with:50px; background-color:#E6E6E6; color:black;">11.1</td>
+                         <td style="background-color:#E6E6E6; color:black;"> 0.84 (0.76, 0.93)</td>
+                        <td style="background-color:#E6E6E6; color:black;">0.84</td> 
+                      </tr>
+                       <tr>
+                        <td style="background-color:rgb(164,164,164); width:110px;"><p style="font-family: 'HelveNeuLig'; color: white; margin-top: 15px; margin-left: -120px; font-size: 16px; height:30px;">Ischaemic stroke/TIA</p></td>
+                        <td style="background-color:#E6E6E6; color:black;">1,152</td> 
+                        <td style="background-color:#E6E6E6; color:black;">19.0</td>
+                        <td  style="with:50px; background-color:#E6E6E6; color:black;">20.8</td>
+                         <td style="background-color:#E6E6E6; color:black;">0.87 (0.66, 1.13)</td>
+                        <td style="background-color:#E6E6E6; color:black; width:20%"></td> 
+                      </tr>
+                    </table>
+            </div>
+
+            <div class="greyData hide">
+                    <table style="width:100%; margin-top:150px;">
+                      <tr style="background-color:rgb(204,105,27);">
+                        <td></td>
+                        <td class="topTdAttributes" style="width:110px; height:50px;"><p style="width: 60px; margin-left:35px; text-align: center;">TOTAL PATIENTS</p></td> 
+                        <td colspan="2" class="topTdAttributes" style="width: 15%;"><p style="margin-left: 20px; margin-top: 5px; width: 80px;">KM % AT MONTH 12</p></td>
+                        <td class="topTdAttributes" style="width:150px;"><p style="margin-left: 25px; margin-top: 5px; width: 120px;">HAZARD RATION (95% CI)</p></td>
+                        <td class="topTdAttributes"><p style="margin-left: 35px; margin-top: 5px; width: 100px;">P VALUE (INTERACTION)</p></td>
+                      </tr>
+                      <tr style="background-color:rgb(164,164,164);">
+                        <td style="background-color:rgb(164,164,164); width:250px; height:40px;"></td>
+                        <td style="background-color:rgb(164,164,164);color:black;"></td> 
+
+                        <td  style="with:50px; background-color:rgb(164,164,164); color:black;"><p style="margin-top:10px; color:black;">Tl</p></td>
+                        <td  style="with:50px; background-color:rgb(164,164,164); color:black;"><p style="color:black;">Cl.</p></td>
+                        
+
+                         <td style="background-color:rgb(164,164,164); color:black;"></td>
+                        <td style="background-color:rgb(164,164,164); color:black;"></td> 
+                      </tr>
+                      <tr>
+                        <td style="background-color:rgb(164,164,164); width:110px;"><p style="font-family: 'HelveNeuLig'; color: white; margin-top: 15px; margin-left: -100px; font-size: 16px; height:30px;">creatinine clearance < 60</p></td>
+                        <td style="background-color:#E6E6E6; color:black;">3,237</td> 
+                        <td style="background-color:#E6E6E6; color:black;">17.3</td>
+                        <td  style="with:50px; background-color:#E6E6E6; color:black;">22.0</td>
+                         <td style="background-color:#E6E6E6; color:black;"> 0.77 (0.65, 0.90)</td>
+                        <td style="background-color:#E6E6E6; color:black;">0.13</td> 
+                      </tr>
+                       <tr>
+                        <td style="background-color:rgb(164,164,164); width:110px;"><p style="font-family: 'HelveNeuLig'; color: white; margin-top: 15px; margin-left: -80px; font-size: 16px; height:30px;">creatinine clearance ≥60kg</p></td>
+                        <td style="background-color:#E6E6E6; color:black;">11,965</td> 
+                        <td style="background-color:#E6E6E6; color:black;">7.9</td>
+                        <td  style="with:50px; background-color:#E6E6E6; color:black;">8.9</td>
+                         <td style="background-color:#E6E6E6; color:black;">0.90 (0.79, 1.02)</td>
+                        <td style="background-color:#E6E6E6; color:black; width:20%"></td> 
+                      </tr>
+                    </table>
+            </div>
+
+            	 <!--END-->
+
+            </article>
+            
+           <span class="logo"></span>
+           <span class="b-links plato">PLATO</span>
+           <span class="b-links wallentin">WALLENTIN</span>
+         
+   		</div><!-- end .slide -->
+        <!--overlay -->
+        <aside class="overlay hide"> 
+        	<!-- references -->
+        	<div class="ref hide">
+                <h3>REFERENCE</h3>
+                <ol>
+                    <li>Wallentin L, et al. N Engl J Med 2009; 361: 1045-57. (supplementary information).</li>
+                </ol>
+            </div>
+            <!-- Note -->
+            <div class="notes hide">
+                <h3>NOTES</h3>
+                In the PLATO overall population, major bleeding rates were 11.6% with BRILINTA and 11.2% with clopidogrel (HR 1.04; 95% Cl 0.95-1.13; p=0.43).<sup>1</sup>
+                <br />
+                <sup>*</sup>Subanalysis of 7544 ACS patients with STE or left bundle branch-block from the PLATO study. † PLATO major bleed; Requires medical intervention to stop or treat bleeding.
+                <br />
+                ARR = Absolute risk reduction
+               
+            </div>
+       	</aside>
+	</section>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/touchy.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+
+<script type="text/javascript">
+	$( function(){
+
+/*Alistair Added in*/
+
+        $("#orange").on('tap', function(){
+            $('.mainMenu').css("display","none");
+            $(".orangeData").toggleClass('hide show');
+        });
+        $(".orangeData").on('tap', function(){
+            $('.mainMenu').css("display","block");
+            $(".orangeData").toggleClass('hide show');
+        });
+
+        $("#yellow").on('tap', function(){
+            $('.mainMenu').css("display","none");
+            $(".yellowData").toggleClass('hide show');
+        });
+        $(".yellowData").on('tap', function(){
+            $('.mainMenu').css("display","block");
+            $(".yellowData").toggleClass('hide show');
+        });
+
+        $("#purpleOne").on('tap', function(){
+            $('.mainMenu').css("display","none");
+            $(".purpleDataOne").toggleClass('hide show');
+        });
+        $(".purpleDataOne").on('tap', function(){
+            $('.mainMenu').css("display","block");
+            $(".purpleDataOne").toggleClass('hide show');
+        });
+
+        $("#purpleTwo").on('tap', function(){
+            $('.mainMenu').css("display","none");
+            $(".purpleDataTwo").toggleClass('hide show');
+        });
+        $(".purpleDataTwo").on('tap', function(){
+            $('.mainMenu').css("display","block");
+            $(".purpleDataTwo").toggleClass('hide show');
+        });
+
+        $("#grey").on('tap', function(){
+            $('.mainMenu').css("display","none");
+            $(".greyData").toggleClass('hide show');
+        });
+        $(".greyData").on('tap', function(){
+            $('.mainMenu').css("display","block");
+            $(".greyData").toggleClass('hide show');
+        });
+
+
+		/*END*/
+
+		/* ==== YOUR SCRIPT HERE ===== */
+		
+	});
+
+</script>
+</body>
+</html>
