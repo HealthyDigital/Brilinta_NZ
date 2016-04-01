@@ -9,7 +9,24 @@
 <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <style type="text/css">
-	.contents .feature { height:405px; background-image:url('img/graph.png'); }
+	.preview { overflow:hidden; padding:52px 0 20px; margin-top:-30px; position:relative; }
+	.vid { overflow:hidden; margin-bottom:25px; }
+	.vid > li, .bullet > li { float:left; width:425px; }
+	.vid > li {  height:240px; background:url('img/video.png') 0 0 no-repeat; background-size:100% auto; position:relative; }
+		
+		.vid > li:last-child { margin-left: 35px; background-position-y:-240px; }
+	.bullet { overflow:hidden; margin-bottom:50px; }
+	.bullet li { font-size:19px; line-height:23px; }
+	.bullet > li:nth-child(n+2) { float:right; width:410px; }
+	.play { position:absolute; width:36px; height:36px; top: 0px; right:100px; background:url('img/play_btn.png') 0 0 no-repeat; border:2px solid #e76905; -webkit-border-radius:100px; border-radius:100px; color:#e76905; z-index:5; }
+	.play:after { content:"Play video"; position:absolute; left:44px; top:25%; bottom:0; margin:auto 0; white-space:nowrap; }
+		.stop .play:after { content:"Close video"; }
+		.stop .play { background-position-y:-37px; }
+		.video { position:absolute; left:0; top:45px; width:768px; padding:12px 64px; height:inherit; background:rgba(0, 0, 0, 0.7); -webkit-transform:translate3d(900px, 0,0); transform:translate3d(900px, 0, 0); -webkit-transition:all 0.4s ease-in-out; transition:all 0.4s ease-in-out; /*display:none; */}
+		.stop .video { -webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); }
+	
+	
+	.footnote { width:100%; }
 
 </style> 
 </head>
@@ -26,16 +43,31 @@
             </ul> 
             <article class="contents">
             	<h1> 
-                	<span><i>BRILINTA: rapid and potent</i></span><br />
-                    <span>platelet inhibition<sup>1,2</sup></span>
+                	<span><i>UNLIKE THIENOPYRIDINES, BRILINTA binds</i></span><br />
+                    <span>reversibly to the P2Y12 receptor<sup>1</sup></span>
              	</h1>
-                <div class="video">
-                    <video controls width="768" height="432">
-                        <source src="MOA-animation.mp4" type="video/mp4" />
-                    </video>
+                <div class="preview"> <span class="play"></span>
+                	<ul class="vid">
+                        <li></li>
+                        <li></li>
+                        
+               	 	</ul>
+                    <ul class="bullet">
+                        <li>Ticagrelor binds reversibly and leaves<br />
+    the receptor intact</li>
+                            <li>When ticagrelor is bound, ADP can still bind,<br />
+    but does not induce receptor activation</li>
+                            <li>Thienopyridines bind covalently rendering the<br />
+    receptor non-functional for the life of the platelet</li>
+                    </ul>
+                    <div class="video">
+                    	<video controls width="768" height="432">
+                        	<source src="Ticagrelor.mp4" type="video/mp4" />
+                    	</video>
+               		</div>
+                <p class="footnote">ADP, adenosine diphosphate.</p>
                 </div>
-                <div class="feature"></div>
-                <p class="footnote">* This study was performed in a stable coronary artery disease population.1 BRILINTA is not indicated in this population.<sup>2</sup></p>
+                
             </article>
             
            <span class="logo"></span>
@@ -47,10 +79,9 @@
         <aside class="overlay hide"> 
         	<!-- references -->
         	<div class="ref">
-                <h3>REFERENCES:</h3>
+                <h3>REFERENCE:</h3>
                 <ol>
-                    <li>Gurbel PA et al. Circulation 2009; 120: 2577–2585.</li>
-                    <li>BRILINTA<sup>®</sup> (ticagrelor) Data Sheet. 18 November 2015.</li>
+                    <li>Husted S, van Giezen JJJ. Cardiovasc Ther 2009;27:259–74.</li>
                 </ol>
             </div>
             <!-- Note 
@@ -71,6 +102,14 @@ NNT = number needed to treat<br />
 
 <script type="text/javascript">
 	$( function(){
+		var video = $('video').get(0);
+		
+		$('.play').on('tap', function(){
+			$('.preview').toggleClass('stop');
+			
+			$(this).parent('.stop').length ? video.play(): video.pause();
+		})
+		
 		
 		
 	});

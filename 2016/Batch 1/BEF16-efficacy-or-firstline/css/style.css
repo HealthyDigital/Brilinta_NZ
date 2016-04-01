@@ -128,6 +128,8 @@ td { padding:6px 10px; }
 	.tbl .header > td { padding-top:5px; height:51px; }
 	.tbl tr > td:first-child { text-align:left; }
 */
+.bullet li { padding-left:22px; margin-bottom:10px; position:relative; }
+	.bullet li:before { content:""; position:absolute; left:0px; top:0.3em; width:12px; height:12px; background:url('../img/bullet.png') 0 0 no-repeat; background-size:100% auto; }
 .close { width:30px; height:30px; right:60px; top:10px; background: rgba(255, 255, 255, 0.15); border:1px solid #fff; color:#fff; text-align:center; font-size:18px; }
 	.close > i { display:inline-block; vertical-align:-6px; }
 	.close.sub { border-color:#c15f19; top:-42px; right:0; z-index:20; }
