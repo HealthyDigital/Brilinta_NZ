@@ -47,15 +47,15 @@
 
                 <div>
                     <ul class='tablet small'>
-                        <li><div>PCI-STEMI<div></li>
-                        <li><div>PCI-NSTE-ACS<div></li>
-                        <li><div>NON-PCI<div></li>
-                        <li><div>DIABETES<div></li>
-                        <li><div>OTHER CO-<br />MORBIDITIES<div></li>
-                        <li><div>GENOTYPE<br />CYP2C19<div></li>
-                        <li><div>CKD<div></li>
-                        <li><div>ELDERLY<div></li>
-                        <li><div>CABG<div></li>
+                        <li><div>PCI-STEMI</div></li>
+                        <li><div>PCI-NSTE-ACS</div></li>
+                        <li><div>NON-PCI</div></li>
+                        <li><div>DIABETES</div></li>
+                        <li><div>OTHER CO-<br />MORBIDITIES</div></li>
+                        <li><div>GENOTYPE<br />CYP2C19</div></li>
+                        <li><div>CKD</div></li>
+                        <li><div>ELDERLY</div></li>
+                        <li><div>CABG</div></li>
                     </ul>
                 </div>
                     
@@ -92,6 +92,45 @@
 <script type="text/javascript" src="js/touchy.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript">
+	$( function(){
+		$('.tablet > li').on('tap', function(){
+			console.log($(this).index())
+			switch($(this).index()){
+				case 0:
+					asset = "STEMI1625-treatment-in-guidelines";
+				break;
+				case 1:
+					asset = "NST1634-NSTE-ACS-Patients-ACS-Event";
+				break;
+				case 2:
+					asset = "NPCI1644-subsequent-atherothrombotic-events";
+				break;
+				case 3:
+					asset = "DIA1655-diabetes-independent-risk";
+				break;
+				case 4:
+					asset = "OCM1695-consistent-benefit";
+				break;
+				case 5:
+					asset = "GEN1670-cyp2c19-patients-best-chance";
+				break;
+				case 6:
+					asset = "CKD1664-reduced-renal-function";
+				break;
+				case 7:
+					asset = "ELD1677-elderly-overall-plato-study";
+				break;
+				case 8:
+					asset = "CAB1686-cabg-patients-best-chance";
+				break;
+			}
+			
+			document.location = 'veeva:gotoSlide('+asset+'.zip, BF2016)';
+			
+		})
+	});
+
+
 </script>
 </body>
 </html>
