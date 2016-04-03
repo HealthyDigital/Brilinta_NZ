@@ -125,6 +125,7 @@ p { color:#646363; font-size:19px; line-height:23px; letter-spacing:-0.015em; }
 .container, .overlay, .logo, .feature, .tablet > li { background-size:100% auto;  }
 .container .hide, .overlay.n .ref, .overlay.r .notes { display:none; }
 .container .show, .container .overlay.r .ref, .container .overlay.n .notes  { display:block; }
+.group-label { font-size:10px; line-height:12px; font-family: 'CodeProLC'; letter-spacing: 0.5em; position:absolute; top:12px; right:15px;  }
 
 
 /*.video { width:100%; height:610px; left:1025px; top:165px; background:rgba(20, 5, 22, 0.7); -webkit-animation-duration:0.45s; display:none; z-index: 20; }

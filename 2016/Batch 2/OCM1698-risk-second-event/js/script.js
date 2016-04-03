@@ -31,18 +31,24 @@ $( function(){
 			$this.addClass('active');
 			
 			switch(data){
+				case"e":
+					asset = "BE1602-efficacy-ACS-patients";
+					id = "BE2016";
+				break;
 				case"v":
 					asset = "BE1611-Bleeding-the-evidence";
+					id = "BE2016";
 				break;
 				case"p":
 					asset = "BF1624-first-line-most-patient-groups";
+					id = "BF2016";
 				break;
 				case"g":
 					asset = "STEMI1625-treatment-in-guidelines";
+					id = "BF2016";
 				break;
 				case"pi":
 					asset = "BE1617-PI";
-					id = 'BRIREF';
 				break;
 				case"r":
 				case"n":
@@ -92,10 +98,11 @@ $( function(){
 	//navigation
 	navToSlide('logo', 'OCM16100-resource-library');
 	navToSlide('wallentin', 'Wallentin2009PlatoNE', 'BRIREF');
+	navToSlide('b-links.plato', 'BEF1600-Plato-trial-design');
 	
 	//Double tap to menu slide
 	$('.contents').on('doubleTap', function(){
-		document.location = 'veeva:gotoSlide(Brilinta-efficacy-or-firstline.zip, BEF2016)';
+		document.location = 'veeva:gotoSlide(BEF16-efficacy-or-firstline.zip, BEF2016)';
 	});
 
 });

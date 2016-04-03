@@ -42,7 +42,6 @@ $( function(){
 				break;
 				case"pi":
 					asset = "BE1617-PI";
-					id = 'BRIREF';
 				break;
 				case"r":
 				case"n":
