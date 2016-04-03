@@ -98,8 +98,8 @@ p { color:#646363; font-size:19px; line-height:23px; letter-spacing:-0.015em; }
 	.cols > div { float:left; height:inherit; }
 	.cols > div { height:inherit; }
 , .footnote, .overlay > div, .close, .video, .play, .play:after, .abs, .arrow, .arrow:after */
-.controls li, .b-links { -webkit-border-radius:500px; border-radius:500px; background:rgba(193, 193, 193, 0.85); }
-.controls .active { background:rgba(140, 140, 140, 0.8); }
+.controls li, .b-links { -webkit-border-radius:500px; border-radius:500px; background:rgba(166, 165, 165, 0.85); }
+.controls .active { background:rgba(130, 130, 130, .95); }
 .logo, .controls, .overlay, .b-links { position:absolute; }
 	.logo { right:20px; bottom:20px; width:150px; height:44px; background:url('../img/logo.png') 0 2px no-repeat; background-size:100% auto; }
 	.logo.white { background-position-y:-44px; }
@@ -148,6 +148,8 @@ td { padding:6px 10px; }
 	.tbl .header > td { padding-top:5px; height:51px; }
 	.tbl tr > td:first-child { text-align:left; }
 */
+.bullet li { padding-left:22px; margin-bottom:10px; position:relative; }
+	.bullet li:before { content:""; position:absolute; left:0px; top:0.3em; width:12px; height:12px; background:url('../img/bullet.png') 0 0 no-repeat; background-size:100% auto; }
 .close { width:30px; height:30px; right:60px; top:10px; background: rgba(255, 255, 255, 0.15); border:1px solid #fff; color:#fff; text-align:center; font-size:18px; }
 	.close > i { display:inline-block; vertical-align:-6px; }
 	.close.sub { border-color:#c15f19; top:-42px; right:0; z-index:20; }

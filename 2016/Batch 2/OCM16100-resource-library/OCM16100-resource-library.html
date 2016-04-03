@@ -9,23 +9,29 @@
 <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <style type="text/css">
-    .contents > div:nth-child(2) {width:100%; position:relative; margin:90px auto 0px;}
-    .small{font-size:26px; line-height:28px; color:white;}
+    /*.contents > div:nth-child(2) {width:100%; position:relative; margin:90px auto 0px;}*/
+    .small{font-size:26px; line-height:28px; color:white; margin-top:40px; }
     .small > li > div{display:table-cell; vertical-align:middle; margin:0 auto; text-align: center;}
     .small > li{display:table; height:153px; width:262px; background:url('img/buttons.png') no-repeat center; margin-bottom:30px; float:left;}
     /*something*/
     
     /* ORANGE BOXES */
-    .small > li:first-child, .small > li:nth-child(6){background-position-y:0px}
+    .small > li:first-child {background-position-y:0px}
 
     /*YELLOW BOXES */
     .small > li:nth-child(3), .small > li:nth-child(5){background-position-y:-174px;}
 
     /*PURPLE BOXES */
     .small > li:nth-child(2), .small > li:nth-child(4){background-position-y:-347px;}
-
+	.small > li:nth-child(4){ margin-left:160px; }
     /*MARGINS */
-    .small > li:nth-child(2), .small > li:nth-child(3), .small > li:nth-child(5), .small > li:nth-child(6){margin-left:50px;}
+    .small > li:nth-child(2), .small > li:nth-child(3), .small > li:nth-child(5){margin-left:50px; }
+	.preview { overflow:hidden; padding:50px 0 20px; margin-top:-30px; height:430px; position:relative; }
+	.play { position:absolute; width:36px; height:36px; top: -45px; right:100px; background:url('img/play_btn.png') 0 -37px no-repeat; border:2px solid #e76905; -webkit-border-radius:100px; border-radius:100px; color:#e76905; z-index:5; }
+	.play:after { content:"Close video"; position:absolute; left:44px; top:25%; bottom:0; margin:auto 0; white-space:nowrap; }
+		.video { position:absolute; left:0; top:45px; width:768px; padding:12px 64px; height:inherit; background:rgba(0, 0, 0, 0.7); -webkit-transform:translate3d(900px, 0,0); transform:translate3d(900px, 0, 0); -webkit-transition:all 0.4s ease-in-out; transition:all 0.4s ease-in-out; }
+		.stop .video { -webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); }
+	
 </style>
 </head>
 <body>
@@ -35,9 +41,9 @@
                 <li data-control="v">V</li>
                 <li data-control="p">P</li>
                 <li data-control="g">G</li>
-                <li data-control="n">N</li>
+                <li data-control="n" class="disabled">N</li>
                 <li data-control="pi">PI</li>
-                <li data-control="r">R</li>
+                <li data-control="r" class="disabled">R</li>
             </ul>
             <article class="contents">
                 <h1> 
@@ -45,15 +51,21 @@
                     <span>library</span> 
                 </h1>
 
-                <div>
-                    <ul class='tablet small'>
-                        <li><div>New Zealand<br />Data Sheet<div></li>
-                        <li><div>Wallentin L, et al.<br />New England<br />Journal 2009<div></li>
-                        <li><div>Plato Trial Design<div></li>
-                        <li><div>Dr Scott Harding<br />bleeding - real<br />world evidence<div></li>
-                        <li><div>Dr scott Harding<br />bleeding in<br />compromised<br />patients<div></li>
-                        <li><div>Dr Scott Harding<br />bleeding vs<br />clopidogrel<div></li>
+                <div class="preview"> 
+                    <ul class="tablet small">
+                        <li><div>New Zealand<br />Data Sheet</div></li>
+                        <li><div>Wallentin L, et al.<br />New England<br />Journal 2009</div></li>
+                        <li><div>Plato Trial Design</div></li>
+                        <li><div>Dr Scott Harding<br />bleeding - real<br />world evidence</div></li>
+                        <li><div>Dr scott Harding<br />bleeding in<br />compromised<br />patients</div></li>
+                        <!--<li><div>Dr Scott Harding<br />bleeding vs<br />clopidogrel</div></li>-->
                     </ul>
+                
+                <div class="video"><span class="play"></span>
+                        <video controls width="768" height="432">
+                            <source src="video/Dr Scott Harding_Real world evidence.mp4" type="video/mp4" />
+                        </video>
+                    </div>
                 </div>
                     
             </article>
@@ -78,6 +90,48 @@
 <script type="text/javascript" src="js/touchy.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript">
+	$( function(){
+		var video = $('video source'),
+			preview = $('.preview');
+			source = ['Dr Scott Harding_Real world evidence.mp4','Dr Scott Harding_compromised patients.mp4'];
+		
+		$('.tablet > li').on('tap', function(){
+			
+			var $this = $(this), id = '', asset;
+				switch($this.index()){
+					case 0:
+						asset = 'BrilintaDatasheet';
+						id = 'BRIREF';
+					break;
+					case 1:
+						asset = 'Wallentin2009PlatoNE';
+						id = 'BRIREF';
+					break;
+					case 2:
+						asset = 'PlatoGeneticsWallentin';
+						id = 'BRIREF';
+					break;
+					case 3:
+					case 4:
+						preview.addClass('stop');
+						$this.index() === 3 ? video.attr('src', 'video/'+source[0]+'') : video.attr('src', 'video/'+source[1]+'');
+						video.parent().load();
+						video.parent().get(0).play();
+					break;
+				}
+				if($this.index() !== 3 && $this.index() !== 4){
+					id = id !== '' ? ', '+id+'' : '';
+					document.location = 'veeva:gotoSlide('+asset+'.zip'+id+')';
+				}
+		})
+		$('.play').on('tap', function(){
+			video.parent().get(0).pause();
+			preview.removeClass('stop');
+		});
+		
+	})
+	
+
 </script>
 </body>
 </html>
