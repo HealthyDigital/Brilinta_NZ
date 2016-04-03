@@ -9,14 +9,21 @@ $( function(){
 		overlay = $('.overlay'),
 		controls = $('.controls'),
 		slide = contents.find("[data-slide]"),
-		tablet = $('.tablet');
-		
+		tablet = $('.tablet'),
+		section = localStorage.getItem('section');
 	
+	//append section class
+	if(!$.isEmptyObject(section)){
+		container.addClass(section);
+	}
+		
 	//reference & notes 
 	controls.on("tap", "li:not('.disabled')", function(){
 		var $this = $(this),
 			data = $this.attr('data-control'),
-			prevIndex = controls.find('.active').index();
+			prevIndex = controls.find('.active').index(),
+			asset,
+			id = '';
 			
 			overlay.removeClass('show r n');
 			controls.find('li').removeClass('active');
@@ -25,12 +32,17 @@ $( function(){
 			
 			switch(data){
 				case"v":
+					asset = "BE1611-Bleeding-the-evidence";
 				break;
 				case"p":
+					asset = "BF1624-first-line-most-patient-groups";
 				break;
 				case"g":
+					asset = "STEMI1625-treatment-in-guidelines";
 				break;
 				case"pi":
+					asset = "BE1617-PI";
+					id = 'BRIREF';
 				break;
 				case"r":
 				case"n":
@@ -42,6 +54,10 @@ $( function(){
 		
 					overlay.find('.purple').length && data === 'n' ? overlay.css('background-position-y','-1430px') : overlay.css('background-position-y','-2286px');
 				break;
+			}
+			if(data !== 'r' && data !== 'n'){
+				id = id !== '' ? ', '+id+'' : '';
+				document.location = 'veeva:gotoSlide('+asset+'.zip'+id+')';
 			}
 			removeAnimationClass();
 	});
@@ -73,31 +89,22 @@ $( function(){
 	}
 	removeAnimationClass();
 	
-	//reference, study & briefcase buttons
-	/*controls.not('.b').each(function() {
-		var $this = $(this);
-			$this.on('tap', function(){
-				
-             
-			});
-    });*/
-	
-	
-	//go to briefcase
-	//navToSlide('controls > .b','CHSR-Briefcase-Section.zip');
+	//navigation
+	navToSlide('logo', 'OCM16100-resource-library');
+	navToSlide('wallentin', 'Wallentin2009PlatoNE', 'BRIREF');
 	
 	//Double tap to menu slide
 	$('.contents').on('doubleTap', function(){
-		document.location = 'veeva:gotoSlide(Brilinta-efficacy-or-firstline.zip)';
+		document.location = 'veeva:gotoSlide(Brilinta-efficacy-or-firstline.zip, BEF2016)';
 	});
 
 });
 
 //go to slide
-function navToSlide(btn, asset){
+function navToSlide(btn, asset, id){
 	"use strict";
 	$('.'+btn).on('tap', function(){
-		//if(!popup.is(":visible") && !$('.'+btn).hasClass('disb') || btn === 'exa')
-			document.location = 'veeva:gotoSlide('+asset+'zip)';
+		id = id ? ', '+id+'' : '';
+		document.location = 'veeva:gotoSlide('+asset+'.zip'+id+')';
 	});
 }

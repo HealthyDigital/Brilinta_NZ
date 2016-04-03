@@ -36,8 +36,8 @@
             </ul>-->
             <article class="contents">
             	<h1 > 
-                	<span class="animated bounceInDown"><i>BRILINTA</i> EFFICACY</span> 
-                	<span class="animated bounceInDown"><i>BRILINTA</i> FIRSTLINE</span> 
+                	<span class="animated bounceInDown" data-section="efficacy"><i>BRILINTA</i> EFFICACY</span> 
+                	<span class="animated bounceInDown" data-section="firstline"><i>BRILINTA</i> FIRSTLINE</span> 
              	</h1>
                 <!--<h4>Compared with clopidogrel, ACS patients on BRILINTA showed a<br />
 consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4>
@@ -78,7 +78,16 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
 <script type="text/javascript">
 	$( function(){
 		
-		/* ==== YOUR SCRIPT HERE ===== */
+		$('h1 > span').on('tap', function(){
+			var section = $(this).attr('data-section'),
+				id = 'BF2016';
+			if(section === 'efficacy'){
+				id = 'BE2016';
+			}
+			localStorage.setItem('section', section);
+			document.location = 'veeva:gotoSlide(BE1601-contraindications-and-precautions.zip, '+id+')';
+			//console.log(section);
+		});
 		
 	});
 

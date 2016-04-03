@@ -9,11 +9,16 @@
 <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <style type="text/css">
-	.tablet { width:576px; margin-top:90px; }
-	.tablet li { width:262px; height:155px; background-image:url('img/box.png'); margin-bottom:35px; }
-	.tablet li:nth-child(2) { margin-left:50px; background-position-y: -160px; }
-	.tablet li:last-child { margin-left:157px; background-position-y: -320px; }
+	.tablet { width:635px; margin-top:40px; }
+	.tablet li { width:284px; height:284px; background-image:url('img/box.png'); background-position-y: -25px; }
+	.tablet li:last-child { margin-left:65px; background-position-y: -336px; }
+	/*.tablet li:last-child { margin-left:157px; background-position-y: -320px; }*/
 	.tablet p { font-size:26px; line-height:28px; display:table-cell; vertical-align:middle; height:inherit; width:inherit; }
+	.preview { overflow:hidden; padding:50px 0 20px; margin-top:-30px; height:430px; position:relative; }
+	.play { position:absolute; width:36px; height:36px; top: -45px; right:100px; background:url('img/play_btn.png') 0 -37px no-repeat; border:2px solid #e76905; -webkit-border-radius:100px; border-radius:100px; color:#e76905; z-index:5; }
+	.play:after { content:"Close video"; position:absolute; left:44px; top:25%; bottom:0; margin:auto 0; white-space:nowrap; }
+		.video { position:absolute; left:0; top:45px; width:768px; padding:12px 64px; height:inherit; background:rgba(0, 0, 0, 0.7); -webkit-transform:translate3d(900px, 0,0); transform:translate3d(900px, 0, 0); -webkit-transition:all 0.4s ease-in-out; transition:all 0.4s ease-in-out; }
+		.stop .video { -webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); }
 	
 
 </style> 
@@ -34,6 +39,7 @@
                 	<span><i>bleeding –</i></span><br />
                     <span>the evidence</span>
              	</h1>
+                <div class="preview"> 
                 <ul class="tablet">
                 	<li>
                 		<p>Dr Scott Harding<br />
@@ -46,12 +52,19 @@ bleeding in<br />
 compromised<br />
 patients</p>
                 	</li>
-                	<li>
+                	<!--<li>
                 		<p>Dr Scott Harding<br />
 bleeding vs<br />
 clopidogrel</p>
-                	</li>
+                	</li>-->
                 </ul>
+                
+                    <div class="video"><span class="play"></span>
+                        <video controls width="768" height="432">
+                            <source src="video/Dr Scott Harding_Real world evidence.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
                
               
             </article>
@@ -88,13 +101,24 @@ NNT = number needed to treat<br />
 
 <script type="text/javascript">
 	$( function(){
-		var video = $('video').get(0);
+		var video = $('video source'),
+			preview = $('.preview');
+			source = ['Dr Scott Harding_Real world evidence.mp4','Dr Scott Harding_compromised patients.mp4'];
 		
-		$('.play').on('tap', function(){
-			$('.preview').toggleClass('stop');
+		$('.tablet > li').on('tap', function(){
+			preview.addClass('stop');
+			var $this = $(this);
+				$this.index() === 0 ? video.attr('src', 'video/'+source[0]+'') : video.attr('src', 'video/'+source[1]+'');
+				video.parent().load();
+				video.parent().get(0).play();
+				//console.log(video.attr('src'))
 			
-			$(this).parent('.stop').length ? video.play(): video.pause();
+			//$(this).parent('.stop').length ? video.play(): video.pause();
 		})
+		$('.play').on('tap', function(){
+			video.parent().get(0).pause();
+			preview.removeClass('stop');
+		});
 		
 		
 		

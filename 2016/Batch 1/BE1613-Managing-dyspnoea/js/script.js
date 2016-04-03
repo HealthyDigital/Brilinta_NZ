@@ -9,14 +9,21 @@ $( function(){
 		overlay = $('.overlay'),
 		controls = $('.controls'),
 		slide = contents.find("[data-slide]"),
-		tablet = $('.tablet');
-		
+		tablet = $('.tablet'),
+		section = localStorage.getItem('section');
 	
+	//append section class
+	if(!$.isEmptyObject(section)){
+		container.addClass(section);
+	}
+		
 	//reference & notes 
 	controls.on("tap", "li:not('.disabled')", function(){
 		var $this = $(this),
 			data = $this.attr('data-control'),
-			prevIndex = controls.find('.active').index();
+			prevIndex = controls.find('.active').index(),
+			asset,
+			id = '';
 			
 			overlay.removeClass('show r n');
 			controls.find('li').removeClass('active');
@@ -25,12 +32,17 @@ $( function(){
 			
 			switch(data){
 				case"v":
+					asset = "BE1611-Bleeding-the-evidence";
 				break;
 				case"p":
+					asset = "BF1624-first-line-most-patient-groups";
 				break;
 				case"g":
+					asset = "STEMI1625-treatment-in-guidelines";
 				break;
 				case"pi":
+					asset = "BE1617-PI";
+					id = 'BRIREF';
 				break;
 				case"r":
 				case"n":
@@ -42,6 +54,10 @@ $( function(){
 		
 					overlay.find('.purple').length && data === 'n' ? overlay.css('background-position-y','-1430px') : overlay.css('background-position-y','-2286px');
 				break;
+			}
+			if(data !== 'r' && data !== 'n'){
+				id = id !== '' ? ', '+id+'' : '';
+				document.location = 'veeva:gotoSlide('+asset+'.zip'+id+')';
 			}
 			removeAnimationClass();
 	});
@@ -74,7 +90,8 @@ $( function(){
 	removeAnimationClass();
 	
 	//navigation
-	navToSlide();
+	navToSlide('logo', 'OCM16100-resource-library');
+	navToSlide('wallentin', 'Wallentin2009PlatoNE', 'BRIREF');
 	
 	//Double tap to menu slide
 	$('.contents').on('doubleTap', function(){
@@ -86,8 +103,8 @@ $( function(){
 //go to slide
 function navToSlide(btn, asset, id){
 	"use strict";
-	id !== '' ? ',+'id'+' : '';
 	$('.'+btn).on('tap', function(){
-		document.location = 'veeva:gotoSlide('+asset+'zip'+id+')';
+		id = id ? ', '+id+'' : '';
+		document.location = 'veeva:gotoSlide('+asset+'.zip'+id+')';
 	});
 }
