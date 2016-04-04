@@ -26,6 +26,13 @@
     tr:last-child > td{padding-bottom:5px;}
     tr:nth-child(2) > td{padding-top:5px;}
 
+    .notes table, .notes th, .notes tr, .notes td{background-color: transparent; font-size: inherit; font-family: inherit; border:none; font-family: 'HelveNeuLig'; text-align: left; line-height:20px; padding: 0}
+    .notes tr:nth-child(2) > td{padding-top:0;}
+    .notes tr > td:first-child{width:65px;}
+    .notes span{display:block; line-height:22px;}
+    .notes p{margin-bottom: 5px; font-size: inherit; color:white;}
+    .notes table{margin-bottom: 4px}
+
     .bold{font-family: 'Helvetica';}
 </style>
 </head>
@@ -156,16 +163,33 @@ or ischaemia-guided strategy</td>
             <!-- Note -->
             <div class="notes hide">
                 <h3>NOTES:</h3>
-                European Society of Cardiology classes of recommendation and grading levels of evidence:<br>
-                <br style='line-height:10px'>
-                <span class='bold'>CLASSES OF RECOMMENDATION</span><br>
-                Class I/Evidence and/or general agreement that a given treatment or procedure is beneficial, useful and effective<br>
-                Class II. Conflicting evidence and/or divergence of opinion about the usefulness/efficacy of the given treatment or procedure<br>
-                Class IIA. Weight of evidence/opinion is in favour of usefulness/efficacy<br>
-                Class IIB. Usefulness/efficacy is less well established by evidence/opinion<br>
-                Class III. Evidence and/or general agreement that a given treatment or procedure is not useful/effective, and in some cases
-                could be harmful<br><br>
-                <span class='bold'>LEVELS OF EVIDENCE</span><br>
+                <p>European Society of Cardiology classes of recommendation and grading levels of evidence:</p>
+                <span class='bold'>CLASSES OF RECOMMENDATION</span>
+                
+                <table>
+                    <tr>
+                        <td>Class I.</td>
+                        <td>Evidence and/or general agreement that a given treatment or procedure is beneficial, useful and effective</td>
+                    </tr>
+                    <tr>
+                        <td>Class II.</td>
+                        <td>Conflicting evidence and/or divergence of opinion about the usefulness/efficacy of the given treatment or procedure</td>
+                    </tr>
+                    <tr>
+                        <td> Class IIA.</td>
+                        <td>Weight of evidence/opinion is in favour of usefulness/efficacy</td>
+                    </tr>
+                    <tr>
+                        <td>Class IIB.</td>
+                        <td>Usefulness/efficacy is less well established by evidence/opinion</td>
+                    </tr>
+                    <tr>
+                        <td>Class III.</td>
+                        <td>Evidence and/or general agreement that a given treatment or procedure is not useful/effective, and in some cases</td>
+                    </tr>
+                </table>
+
+                <span class='bold'>LEVELS OF EVIDENCE</span>
                 A. Data derived from multiple randomised clinical trials or meta-analysis<br>
                 B. Data derived from a single randomised clinical trial or large non-randomised studies<br>
                 C. Consensus of opinion of the experts and/or small studies, retrospective studies, registries<br>
