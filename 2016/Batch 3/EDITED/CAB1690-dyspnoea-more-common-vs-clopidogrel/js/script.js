@@ -10,12 +10,17 @@ $( function(){
 		controls = $('.controls'),
 		slide = contents.find("[data-slide]"),
 		tablet = $('.tablet'),
-		section = localStorage.getItem('section');
+		section = localStorage.getItem('section'),
+		guideline = localStorage.getItem('guideline');
 	
 	//append section class
 	if(!$.isEmptyObject(section)){
 		container.addClass(section);
 	}
+	if($.isEmptyObject(guideline)){
+		guideline = "STEMI1625-treatment-in-guidelines";
+	}
+	
 		
 	//reference & notes 
 	controls.on("tap", "li:not('.disabled')", function(){
@@ -44,7 +49,7 @@ $( function(){
 					id = "BF2016";
 				break;
 				case"g":
-					asset = "STEMI1625-treatment-in-guidelines";
+					asset = guideline;
 					id = "BF2016";
 				break;
 				case"pi":
