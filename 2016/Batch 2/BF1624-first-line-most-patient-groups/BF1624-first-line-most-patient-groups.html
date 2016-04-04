@@ -32,6 +32,7 @@
     <section class="container">
         <div class="slide">
             <ul class="controls">
+                <li data-control="e">E</li>
                 <li data-control="v">V</li>
                 <li data-control="p">P</li>
                 <li data-control="g">G</li>
@@ -93,17 +94,21 @@
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript">
 	$( function(){
+		var guidelines = ['STEMI1625-treatment-in-guidelines', 'NST1635-treatment-in-guidelines', 'NPCI1645-treatment-in-guidelines'], guideline = '';
 		$('.tablet > li').on('tap', function(){
 			////console.log($(this).index())
+			guideline = 'STEMI1625-treatment-in-guidelines';
 			switch($(this).index()){
 				case 0:
 					asset = "STEMI1625-treatment-in-guidelines";
 				break;
 				case 1:
 					asset = "NST1634-nste-acs-patients-acs-event";
+					guideline = guidelines[1];
 				break;
 				case 2:
 					asset = "NPCI1644-subsequent-atherothrombotic-events";
+					guideline = guidelines[2];
 				break;
 				case 3:
 					asset = "DIA1655-diabetes-independent-risk";
@@ -124,7 +129,7 @@
 					asset = "CAB1686-cabg-patients-best-chance";
 				break;
 			}
-			
+			localStorage.setItem('guideline', guideline);
 			document.location = 'veeva:gotoSlide('+asset+'.zip, BF2016)';
 			
 		})
