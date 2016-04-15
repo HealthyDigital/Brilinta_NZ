@@ -115,6 +115,8 @@ $( function(){
 	navToSlide('husted', 'Husted2012', 'BRIREF');
 	navToSlide('lindholm', 'Lindholm2014', 'BRIREF');
 	navToSlide('stone', 'Stone2011', 'BRIREF');
+	navToSlide('james', 'James2010', 'BRIREF');
+	navToSlide('gurbel', 'Gurbel2009', 'BRIREF');
 	navToSlide('b-links.plato', 'BEF1600-Plato-trial-design');
 	
 	//Double tap to menu slide
