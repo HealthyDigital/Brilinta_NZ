@@ -40,6 +40,10 @@ $( function(){
 					asset = "BE1602-efficacy-ACS-patients";
 					id = "BE2016";
 				break;
+				case"c":
+					asset = "BF1623-risk-of-recurrent-events-lesions";
+					id = "BF2016";
+				break;
 				case"v":
 					asset = "BE1611-Bleeding-the-evidence";
 					id = "BE2016";
@@ -103,6 +107,14 @@ $( function(){
 	//navigation
 	navToSlide('logo', 'OCM16100-resource-library');
 	navToSlide('wallentin', 'Wallentin2009PlatoNE', 'BRIREF');
+	navToSlide('anavekar', 'Anavekar2004', 'BRIREF');
+	navToSlide('caggegi', 'Caggegi2011', 'BRIREF');
+	navToSlide('donahoe', 'Donahoe2007', 'BRIREF');
+	navToSlide('fox', 'Fox2006', 'BRIREF');
+	navToSlide('held', 'Held2011', 'BRIREF');
+	navToSlide('husted', 'Husted2012', 'BRIREF');
+	navToSlide('lindholm', 'Lindholm2014', 'BRIREF');
+	navToSlide('stone', 'Stone2011', 'BRIREF');
 	navToSlide('b-links.plato', 'BEF1600-Plato-trial-design');
 	
 	//Double tap to menu slide
