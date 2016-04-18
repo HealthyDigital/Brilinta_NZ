@@ -41,21 +41,21 @@
 
                 <div>
                     <ul class='tablet small'>
-                        <li><div>James BMJ</div></li>
-                        <li class='orange'><div>James Circulation</div></li>
-                        <li class='purple'><div>Gurbel</div></li>
+                        <li data-asset="James2010"><div>James BMJ</div></li>
+                        <li class='orange' data-asset="James-Circulation2010"><div>James Circulation</div></li>
+                        <li class='purple' data-asset="Gurbel2009"><div>Gurbel</div></li>
 
-                        <li class='purple'><div>Anavekar</div></li>
-                        <li><div>Caggegi</div></li>
-                        <li class='orange'><div>Donahoe</div></li>
+                        <li class='purple' data-asset="Anavekar2004"><div>Anavekar</div></li>
+                        <li data-asset="Caggegi2011"><div>Caggegi</div></li>
+                        <li class='orange' data-asset="Donahoe2007"><div>Donahoe</div></li>
                         
-                        <li class='orange'><div>Fox</div></li>
-                        <li class='purple'><div>Held</div></li>
-                        <li><div>Husted</div></li>
+                        <li class='orange' data-asset="Fox2006"><div>Fox</div></li>
+                        <li class='purple' data-asset="Held2011"><div>Held</div></li>
+                        <li data-asset="Husted2012"><div>Husted</div></li>
                         
-                        <li class='purple'><div>Lindholm</div></li>
-                        <li><div>Stone</div></li>
-                        <li class='purple'><div>Wallentin</div></li>
+                        <li class='purple' data-asset="Lindholm2014"><div>Lindholm</div></li>
+                        <li data-asset="Stone2011"><div>Stone</div></li>
+                        <li class='purple' data-asset="Wallentin2009PlatoNE"><div>Wallentin</div></li>
                     </ul>
                 </div>
                     
@@ -82,8 +82,10 @@
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript">
 	$( function(){
-		
+		$('.tablet > li').on('tap', function(){
+			document.location = 'veeva:gotoSlide('+$(this).attr('data-asset')+'.zip, BRIREF)';
 		})
+	})
 
 </script>
 </body>
