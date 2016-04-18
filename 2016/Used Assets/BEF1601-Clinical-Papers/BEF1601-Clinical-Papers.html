@@ -10,22 +10,14 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <style type="text/css">
     .contents > div:nth-child(2) {width:100%; position:relative; margin:0px auto 0px;}
-    .small{font-size:26px; line-height:28px; color:white;}
-    .small > li > div{display:table-cell; vertical-align:middle; margin:0 auto; text-align: center;}
-    .small > li{display:table; height:126px; width:262px; background:url('img/buttons.png') no-repeat center; margin-bottom:30px; float:left;}
+    .small{font-size:26px; line-height:28px;}
+    .small > li > div{display:table-cell; vertical-align:middle; text-align: center; color:white;}
+    .small > li{display:table; height:87px; width:211px; background:url('img/buttons.png') no-repeat center; margin-bottom:20px; float:left; background-position:0px 0px; margin-left:55px;}
     
     /* ORANGE BOXES */
-    .small > li:first-child, .small > li:nth-child(6), .small > li:nth-child(8){background-position-y:-28px}
+    .small > li.orange{background-position:0px -238px;}
+    .small > li.purple{background-position:0px -119px;}
 
-    /*YELLOW BOXES */
-    .small > li:nth-child(3), .small > li:nth-child(5), .small > li:nth-child(7){background-position-y:-201px;}
-
-    /*PURPLE BOXES */
-    .small > li:nth-child(2), .small > li:nth-child(4), .small > li:nth-child(9){background-position-y:-374px;}
-
-    /*MARGINS */
-    .small > li:nth-child(2), .small > li:nth-child(3), .small > li:nth-child(5), .small > li:nth-child(6), 
-    .small > li:nth-child(8), .small > li:nth-child(9){margin-left:50px;}
 </style>
 </head>
 <body>
@@ -43,26 +35,35 @@
             </ul>
             <article class="contents">
                 <h1> 
-                    <span><i>Clinical Papers</i></span> 
+                    <span><i>Clinical</i></span><br />
+                    <span>Papers</span> 
                 </h1>
 
                 <div>
                     <ul class='tablet small'>
-                        <li><div></div></li>
-                        <li><div></div></li>
-                        <li><div></div></li>
-                        <li><div></div></li>
-                        <li><div></div></li>
-                        <li><div></div></li>
-                        <li><div></div></li>
-                        <li><div></div></li>
-                        <li><div></div></li>
+                        <li><div>James BMJ</div></li>
+                        <li class='orange'><div>James Circulation</div></li>
+                        <li class='purple'><div>Gurbel</div></li>
+
+                        <li class='purple'><div>Anavekar</div></li>
+                        <li><div>Caggegi</div></li>
+                        <li class='orange'><div>Donahoe</div></li>
+                        
+                        <li class='orange'><div>Fox</div></li>
+                        <li class='purple'><div>Held</div></li>
+                        <li><div>Husted</div></li>
+                        
+                        <li class='purple'><div>Lindholm</div></li>
+                        <li><div>Stone</div></li>
+                        <li class='purple'><div>Wallentin</div></li>
                     </ul>
                 </div>
                     
             </article>
             
            <span class="logo"></span>
+           <span class="b-links plato">PLATO</span>
+           <span class="b-links wallentin">WALLENTIN</span>
          
         </div><!-- end .slide -->
         <!--overlay -->

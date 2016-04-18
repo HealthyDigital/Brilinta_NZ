@@ -10,22 +10,20 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <style type="text/css">
     /*.contents > div:nth-child(2) {width:100%; position:relative; margin:90px auto 0px;}*/
-    .small{font-size:26px; line-height:28px; color:white; margin-top:40px; }
-    .small > li > div{display:table-cell; vertical-align:middle; margin:0 auto; text-align: center;}
-    .small > li{display:table; height:153px; width:262px; background:url('img/buttons.png') no-repeat center; margin-bottom:30px; float:left;}
+    .small{font-size:26px; line-height:28px; margin-top:40px; }
+    .small li > div{display:table-cell; vertical-align:middle; text-align: center; color:white;}
+    .small li{display:table; height:137px; width:234px; background:url('img/buttons.png') no-repeat center;background-position:0px 0px; margin-left:35px; margin-bottom:20px; float:left;}
     /*something*/
     
-    /* ORANGE BOXES */
-    .small > li:first-child {background-position-y:0px}
+    .small li.purple{background-position:0px -146px;}
+    .small li.yellow{background-position:0px -287px;}
 
-    /*YELLOW BOXES */
-    .small > li:nth-child(3), .small > li:nth-child(5){background-position-y:-174px;}
 
-    /*PURPLE BOXES */
-    .small > li:nth-child(2), .small > li:nth-child(4){background-position-y:-347px;}
-	.small > li:nth-child(4){ margin-left:160px; }
     /*MARGINS */
-    .small > li:nth-child(2), .small > li:nth-child(3), .small > li:nth-child(5){margin-left:50px; }
+    .small > div li{margin-top:50px;}
+    .small > div > li:last-child{ margin-left:85px;}
+    .small > div > li:first-child{margin-left:145px;}
+
 	.preview { overflow:hidden; padding:50px 0 20px; margin-top:-30px; height:430px; position:relative; }
 	.play { position:absolute; width:36px; height:36px; top: -45px; right:100px; background:url('img/play_btn.png') 0 -37px no-repeat; border:2px solid #e76905; -webkit-border-radius:100px; border-radius:100px; color:#e76905; z-index:5; }
 	.play:after { content:"Close video"; position:absolute; left:44px; top:25%; bottom:0; margin:auto 0; white-space:nowrap; }
@@ -56,10 +54,12 @@
                 <div class="preview"> 
                     <ul class="tablet small">
                         <li><div>New Zealand<br />Data Sheet</div></li>
-                        <li><div>Clinical Papers</div></li>
-                        <li><div>Plato Trial Design</div></li>
-                        <li><div>Dr Scott Harding<br />bleeding - real<br />world evidence</div></li>
-                        <li><div>Dr Scott Harding<br />bleeding in<br />compromised<br />patients</div></li>
+                        <li class='purple'><div>Clinical Papers</div></li>
+                        <li class='yellow'><div>Plato Trial Design</div></li>
+                        <div>
+                            <li class='purple'><div>Dr Scott Harding<br />bleeding - real<br />world evidence</div></li>
+                            <li class='yellow'><div>Dr Scott Harding<br />bleeding in<br />compromised<br />patients</div></li>
+                        </div>
                         <!--<li><div>Dr Scott Harding<br />bleeding vs<br />clopidogrel</div></li>-->
                     </ul>
                 
