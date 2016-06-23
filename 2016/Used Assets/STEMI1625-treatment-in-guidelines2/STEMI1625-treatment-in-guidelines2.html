@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="BRILINTA - Efficacy or Firstline">
+<title>BRILINTA - Efficacy or Firstline</title>
+<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style type="text/css">
+    .tablet-wrapper{
+        display: table;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .tablet.small{
+        display: inherit;
+    }
+
+    .tablet.small li{
+        width:262px;
+        height:153px;
+        background:url(img/buttons.png) no-repeat;
+        line-height:153px;
+
+        background-size: 100% auto;
+    }
+
+    .tablet.small li:first-child{
+        background-position-y:-572px;
+    }
+
+
+    .tablet.small li:nth-child(2){
+        margin-left:50px;
+        background-position-y:-295px;
+    }
+
+    .tablet.small li:last-child{
+        clear: both;
+        margin-left:156px;
+        margin-top:35px;
+        background-position-y:-18px;
+        line-height: initial;
+    }
+
+    .tablet.small li:last-child div{
+        margin-top:45px;
+    }
+
+</style>
+</head>
+<body>
+    <section class="container"><span class="group-label">STEMI</span>
+        <div class="slide">
+            <ul class="controls">
+                <li data-control="e">E</li>
+                <li data-control="c">C</li>
+                <li data-control="v">V</li>
+                <li data-control="p">P</li>
+                <li data-control="g">G</li>
+                <li data-control="n">N</li>
+                <li data-control="pi">PI</li>
+                <li data-control="r" class="disabled">R</li>
+            </ul>
+            <article class="contents">
+                <h1> 
+                    <span><i>brilinta treatment</i></span><br>
+                    <span>in guidelines<sup>1-4</sup></span> 
+                </h1>
+
+                <div class='tablet-wrapper'>
+                    <ul class='tablet small'>
+                        <li><div>NSTE-ACS</div></li>
+                        <li><div>STEMI</div></li>
+                        <li><div>MEDICAL MANAGEMENT</div></li>
+                    </ul>
+                </div>
+                    
+            </article>
+            
+           <span class="logo"></span>
+           <span class="b-links plato">PLATO</span>
+           <span class="b-links wallentin">WALLENTIN</span>
+         
+        </div>
+    </section>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/touchy.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+    $( function(){
+        navToSlide('.tablet.small li:first-child', 'NST1635-treatment-in-guidelines');
+        navToSlide('.tablet.small li:nth-child(2)', 'STEMI1626-stemi-patients-best-chance');
+        navToSlide('.tablet.small li:last-child', 'NPCI1645-treatment-in-guidelines');
+    })
+</script>
+</body>
+</html>
