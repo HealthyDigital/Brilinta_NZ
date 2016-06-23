@@ -116,6 +116,7 @@ $( function(){
 	navToSlide('lindholm', 'Lindholm2014', 'BRIREF');
 	navToSlide('stone', 'Stone2011', 'BRIREF');
 	navToSlide('james', 'James2010', 'BRIREF');
+	navToSlide('james-c', 'James-Circulation2010', 'BRIREF');
 	navToSlide('gurbel', 'Gurbel2009', 'BRIREF');
 	navToSlide('b-links.plato', 'BEF1600-Plato-trial-design');
 	
