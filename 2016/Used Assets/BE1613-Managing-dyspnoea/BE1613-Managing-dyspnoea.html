@@ -75,11 +75,29 @@ patients treated with BRILINTA after ACS.</li>
 
 <script type="text/javascript">
 	$( function(){
-		
-		
+        var container = $('.container');
+
+
+		container.on('swipeleft swiperight', function(e){
+            var next = 'nextSlide()';
+
+            if($(this).hasClass('efficacy')){
+                next = e.type === 'swipeleft' ? 'nextSlide()' : 'prevSlide()';
+                //console.log(asset);
+                document.location = 'veeva:'+next;
+            }
+        })
+        /*
+        .hasClass('efficacy') ? 
+            
+            
+
+            ()
+		*/
 		
 	});
 
 </script>
 </body>
 </html>
+= 

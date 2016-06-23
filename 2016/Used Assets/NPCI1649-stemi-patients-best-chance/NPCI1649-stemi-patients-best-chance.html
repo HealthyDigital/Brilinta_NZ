@@ -11,16 +11,16 @@
 <style type="text/css">
     .tablet { width:635px; overflow: visible;}
     .tablet > li { width:284px; height:230px; background-image:url('img/buttons.png'); background-size:284px auto;}
-    .arrow:first-child { background-position-y:44px; }
-    .arrow:nth-child(2) { margin-left:64px; background-position-y:-256px; }
-    .arrow:nth-child(3) { margin-top:25px; background-position-y:-556px; }
-    .arrow:last-child { margin-top:25px; margin-left:64px; background-position-y:-856px; }
+    .arrow:first-child { background-position-y:41px; }
+    .arrow:nth-child(2) { margin-left:64px; background-position-y:-259px; }
+    .arrow:nth-child(3) { margin-top:10px; background-position-y:-559px; }
+    .arrow:last-child { margin-top:10px; margin-left:64px; background-position-y:-859px; }
     .arrow:before{bottom:55px; top:auto;}
     .up:before, .up:before, .up:after { content:""; position:absolute; -webkit-transform:rotate(225deg); transform:rotate(225deg); }
     .up:before{bottom:25px;}
 
     .tablet{margin:-10px auto 20px;}
-    .tablet p:last-child { margin-top:40px; color:white;}
+    .tablet p:last-child { margin-top:27px; color:white; font-size:22px;}
     .tablet h5{margin:20px 0px 0px;}
 
     li > .feature { background-image:url('img/graph.png'); height:408px; }
@@ -39,6 +39,11 @@
     .arrow:last-child > h4 {position:relative; display:block; width:380px; left:-35px;}
 
     .footnote{margin:0;}
+
+    .tablet{margin-top:-10px;}
+    .tablet .cent{line-height:80px}
+
+    [data-slide=s0] .footnote{position: absolute; top:auto; bottom:110px; left:0px;}
 
 
 </style> 
@@ -92,6 +97,8 @@
                             <p>vs. clopidogrel</p>
                         </li>
                     </ul>
+
+                    <span class='footnote'>Rates are ARR.</span>
                 </div>
 
                 <div data-slide="s1" class="hide">

@@ -38,7 +38,6 @@ $( function(){
 			switch(data){
 				case"df":
 					asset = "BE1613-Managing-dyspnoea";
-					id = "BE2016";
 				break;
 				case"e":
 					asset = "BE1602-efficacy-ACS-patients";
