@@ -95,21 +95,22 @@
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript">
 	$( function(){
-		var guidelines = ['STEMI1625-treatment-in-guidelines', 'NST1635-treatment-in-guidelines', 'NPCI1645-treatment-in-guidelines'], guideline = '';
+		var guidelines = ['STEMI1625-treatment-in-guidelines', 'STEMI1625-treatment-in-guidelines2','NST1635-treatment-in-guidelines', 'NPCI1645-treatment-in-guidelines'], guideline = '';
 		$('.tablet > li').on('tap', function(){
 			////console.log($(this).index())
-			guideline = 'STEMI1625-treatment-in-guidelines';
+			guideline = 'STEMI1625-treatment-in-guidelines2';
 			switch($(this).index()){
 				case 0:
 					asset = "STEMI1625-treatment-in-guidelines";
+					guideline = guidelines[0];
 				break;
 				case 1:
 					asset = "NST1634-nste-acs-patients-acs-event";
-					guideline = guidelines[1];
+					guideline = guidelines[2];
 				break;
 				case 2:
 					asset = "NPCI1644-subsequent-atherothrombotic-events";
-					guideline = guidelines[2];
+					guideline = guidelines[3];
 				break;
 				case 3:
 					asset = "DIA1655-diabetes-independent-risk";
