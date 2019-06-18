@@ -85,12 +85,12 @@ consistent reduction in CV mortality in the overall PLATO study.<sup>1</sup></h4
 				id = 'BF2016';
 			if(section === 'efficacy'){
 				id = 'BE2016';
+				localStorage.setItem('guideline', 'STEMI1625-treatment-in-guidelines2');
 			}
 			localStorage.setItem('section', section);
 			document.location = 'veeva:gotoSlide(BE1601-contraindications-and-precautions.zip, '+id+')';
 			//console.log(section);
 		});
-		
 	});
 
 </script>
